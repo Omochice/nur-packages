@@ -16,6 +16,6 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  firge = pkgs.callPackage ./pkgs/data/fonts/firge { };
-  firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd { };
+  firge = pkgs.callPackage ./pkgs/data/fonts/firge/default.nix { };
+  firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd/default.nix { };
 }
