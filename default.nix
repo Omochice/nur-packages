@@ -17,5 +17,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   firge = pkgs.callPackage ./pkgs/data/fonts/firge { };
-  firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-ned { };
+  firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd { };
 }
