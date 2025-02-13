@@ -28,7 +28,10 @@ buildGoModule rec {
   doCheck = false;
 
   meta = with lib; {
-    description = "pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows. pinact can also update their versions and verify version annotations.";
+    description = ''
+      pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.
+      pinact can also update their versions and verify version annotations.
+    '';
     homepage = "https://github.com/suzuki-shunsuke/pinact";
     changelog = "https://github.com/suzuki-shunsuke/pinact/releases/tag/v${version}";
     license = licenses.mit;
