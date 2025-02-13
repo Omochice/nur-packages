@@ -20,10 +20,19 @@
         treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} (
           { ... }:
           {
-            settings.global.excludes = [ "**/aqua.yaml" ];
+            settings.global.excludes = [ "LICENSE" ];
+            settings.formatter."pinact" = {
+              command = "${self.packages.${system}.pinact}/bin/pinact";
+              options = [ "run" ];
+              includes = [
+                ".github/workflows/*.yaml"
+                ".github/workflows/*.yml"
+              ];
+            };
             programs = {
               nixfmt.enable = true;
               shfmt.enable = true;
+              mdformat.enable = true;
               yamlfmt = {
                 enable = true;
                 settings = {
@@ -36,6 +45,7 @@
               taplo = {
                 enable = true;
               };
+              pinact.enable = true;
             };
           }
         );
