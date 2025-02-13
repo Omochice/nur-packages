@@ -21,6 +21,14 @@
           { ... }:
           {
             settings.global.excludes = [ "**/aqua.yaml" ];
+            settings.formatter."pinact" = {
+              command = "${self.packages.${system}.pinact}/bin/pinact";
+              options = [ "run" ];
+              includes = [
+                ".github/workflows/*.yaml"
+                ".github/workflows/*.yml"
+              ];
+            };
             programs = {
               nixfmt.enable = true;
               shfmt.enable = true;
@@ -36,6 +44,7 @@
               taplo = {
                 enable = true;
               };
+              pinact.enable = true;
             };
           }
         );
