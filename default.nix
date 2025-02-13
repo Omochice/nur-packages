@@ -18,4 +18,6 @@
 
   firge = pkgs.callPackage ./pkgs/data/fonts/firge/default.nix { };
   firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd/default.nix { };
+
+  pinact = pkgs.callPackage ./pkgs/pinact/default.nix { };
 }
