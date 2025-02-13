@@ -20,7 +20,7 @@
         treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} (
           { ... }:
           {
-            settings.global.excludes = [ "**/aqua.yaml" ];
+            settings.global.excludes = [ "LICENSE" ];
             settings.formatter."pinact" = {
               command = "${self.packages.${system}.pinact}/bin/pinact";
               options = [ "run" ];
