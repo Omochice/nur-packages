@@ -32,6 +32,7 @@
             programs = {
               nixfmt.enable = true;
               shfmt.enable = true;
+              mdformat.enable = true;
               yamlfmt = {
                 enable = true;
                 settings = {
