@@ -59,5 +59,16 @@
         system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
       );
       formatter = forAllSystems (system: (treefmt system).config.build.wrapper);
+      devShells = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        {
+          default = pkgs.mkShell {
+            packages = [ pkgs.nvfetcher ];
+          };
+        }
+      );
     };
 }
