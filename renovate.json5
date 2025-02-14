@@ -14,4 +14,14 @@
       ],
     },
   ],
+  postUpgradeTasks: {
+    commands: [
+      "nix run github:berberman/nvfetcher",
+    ],
+    fileFilters: [
+      "nvfetcher.toml",
+      "_sources/*",
+    ],
+    executionMode: "update",
+  },
 }
