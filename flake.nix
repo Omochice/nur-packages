@@ -20,7 +20,10 @@
         treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} (
           { ... }:
           {
-            settings.global.excludes = [ "LICENSE" ];
+            settings.global.excludes = [
+              "LICENSE"
+              "_sources/*"
+            ];
             settings.formatter."pinact" = {
               command = "${self.packages.${system}.pinact}/bin/pinact";
               options = [ "run" ];
