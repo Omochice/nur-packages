@@ -30,5 +30,6 @@ jobs:
         with:
           configurationFile: renovate.json5
           token: ${{ steps.app-token.outputs.token }}
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|GITHUB_COM_TOKEN|NODE_OPTIONS|AWS_TOKEN)$"
         env:
           LOG_LEVEL: debug
