@@ -3,6 +3,7 @@
   extends: [
     "github>Omochice/personal-renovate-config",
   ],
+  branchPrefix: "self-hosted-renovate/",
   customManagers: [
     {
       customType: "regex",
