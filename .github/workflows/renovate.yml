@@ -33,3 +33,4 @@ jobs:
         env:
           LOG_LEVEL: debug
           RENOVATE_EXTRA_FLAGS: ${{ github.repository }}
+          RENOVATE_REPOSITORIES: ${{ github.repository }}
