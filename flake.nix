@@ -45,10 +45,12 @@
                   };
                 };
               };
-              taplo = {
-                enable = true;
-              };
+              taplo.enable = true;
               pinact.enable = true;
+              formatjson5 = {
+                enable = true;
+                indent = 2;
+              };
             };
           }
         );
