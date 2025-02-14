@@ -25,4 +25,7 @@
     ],
     executionMode: "update",
   },
+  allowedCommands: [
+    "^nix run github:berberman/nvfetcher$",
+  ],
 }
