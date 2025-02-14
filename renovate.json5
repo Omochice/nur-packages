@@ -1,0 +1,17 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "github>Omochice/personal-renovate-config",
+  ],
+  customManagers: [
+    {
+      customType: "regex",
+      fileMatch: [
+        "^nvfetcher.toml$",
+      ],
+      matchStrings: [
+        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\nsrc\\.manual = \"(?<currentValue>.*?)\"",
+      ],
+    },
+  ],
+}
