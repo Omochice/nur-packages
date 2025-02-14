@@ -1,14 +1,14 @@
 [pinact]
-# renovate: datasource=github-release depName=suzuki-shunsuke/pinact
+# renovate: datasource=github-releases depName=suzuki-shunsuke/pinact
 src.manual = "v1.2.1"
 fetch.github = "suzuki-shunsuke/pinact"
 
 [firge]
-# renovate: datasource=github-release depName=yuru7/Firge
+# renovate: datasource=github-releases depName=yuru7/Firge
 src.manual = "v0.3.0"
 fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/Firge_$ver.zip"
 
 [firge-nerd]
-# renovate: datasource=github-release depName=yuru7/Firge
+# renovate: datasource=github-releases depName=yuru7/Firge
 src.manual = "v0.3.0"
 fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/FirgeNerd_$ver.zip"
