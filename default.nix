@@ -9,6 +9,9 @@
 {
   pkgs ? import <nixpkgs> { },
 }:
+let
+  sources = pkgs.callPackage ./_sources/generated.nix { };
+in
 
 {
   # The `lib`, `modules`, and `overlays` names are special
@@ -16,8 +19,10 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  firge = pkgs.callPackage ./pkgs/data/fonts/firge/default.nix { };
-  firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd/default.nix { };
+  firge = pkgs.callPackage ./pkgs/data/fonts/firge/default.nix { source = sources.firge; };
+  firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd/default.nix {
+    source = sources.firge-nerd;
+  };
 
-  pinact = pkgs.callPackage ./pkgs/pinact/default.nix { };
+  pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
 }

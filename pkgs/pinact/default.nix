@@ -1,26 +1,18 @@
 {
+  source,
   lib,
-  fetchFromGitHub,
   buildGoModule,
 }:
 
 buildGoModule rec {
-  pname = "pinact";
-  version = "1.2.1";
-
-  src = fetchFromGitHub {
-    owner = "suzuki-shunsuke";
-    repo = "pinact";
-    rev = "v${version}";
-    sha256 = "sha256-WBKe398W9NXwZwiK6P5SDay45bFGkOf1+cmGlS+fWRc=";
-  };
+  inherit (source) pname src version;
 
   vendorHash = "sha256-Ix7C+Xs8Y4LoI06Xb5qVGwoJ+J87wTjYjmQp6aAeFhw=";
 
   ldflags = [
     "-X main.date=unknown"
     "-X main.commit=unknown"
-    "-X main.version=v${version}"
+    "-X main.version=${version}"
   ];
 
   subPackages = [ "./cmd/pinact" ];
