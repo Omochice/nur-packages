@@ -1,0 +1,53 @@
+{
+    "firge": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "firge",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-yYb2IQAKZZgGTH4geDIu0CBAr094BNJYAz35SbNbBSc=",
+            "type": "url",
+            "url": "https://github.com/yuru7/Firge/releases/download/v0.3.0/Firge_v0.3.0.zip"
+        },
+        "version": "v0.3.0"
+    },
+    "firge-nerd": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "firge-nerd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-VM12N4+8UCX0LUQdlcpuwdPsxCcOYQdViED+18BM/k8=",
+            "type": "url",
+            "url": "https://github.com/yuru7/Firge/releases/download/v0.3.0/FirgeNerd_v0.3.0.zip"
+        },
+        "version": "v0.3.0"
+    },
+    "pinact": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pinact",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "suzuki-shunsuke",
+            "repo": "pinact",
+            "rev": "v1.2.1",
+            "sha256": "sha256-WBKe398W9NXwZwiK6P5SDay45bFGkOf1+cmGlS+fWRc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.2.1"
+    }
+}

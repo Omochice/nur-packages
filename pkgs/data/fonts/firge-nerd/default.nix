@@ -1,17 +1,14 @@
 {
+  source,
   lib,
   stdenvNoCC,
-  fetchzip,
+  unzip,
 }:
 
-stdenvNoCC.mkDerivation rec {
-  pname = "FirgeNerd";
-  version = "0.3.0";
+stdenvNoCC.mkDerivation {
+  inherit (source) pname version src;
 
-  src = fetchzip {
-    url = "https://github.com/yuru7/Firge/releases/download/v${version}/${pname}_v${version}.zip";
-    hash = "sha256-Zb95RroGitkOetmLPa4r8EsIKnKiYw7pAlVg6j9lgoc=";
-  };
+  nativeBuildInputs = [ unzip ];
 
   installPhase = ''
     runHook preInstall

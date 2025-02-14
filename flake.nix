@@ -20,7 +20,10 @@
         treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} (
           { ... }:
           {
-            settings.global.excludes = [ "LICENSE" ];
+            settings.global.excludes = [
+              "LICENSE"
+              "_sources/*"
+            ];
             settings.formatter."pinact" = {
               command = "${self.packages.${system}.pinact}/bin/pinact";
               options = [ "run" ];
@@ -59,5 +62,16 @@
         system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
       );
       formatter = forAllSystems (system: (treefmt system).config.build.wrapper);
+      devShells = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        {
+          default = pkgs.mkShell {
+            packages = [ pkgs.nvfetcher ];
+          };
+        }
+      );
     };
 }
