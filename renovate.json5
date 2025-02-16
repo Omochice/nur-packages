@@ -25,7 +25,4 @@
     ],
     executionMode: "update",
   },
-  allowedCommands: [
-    "^nix",
-  ],
 }
