@@ -26,13 +26,8 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Renovate
-        uses: renovatebot/github-action@b266b24b144602ed4f512f0773009d026722f4cc # v40.2.6
-        with:
-          configurationFile: renovate.json5
-          token: ${{ steps.app-token.outputs.token }}
-          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|GITHUB_COM_TOKEN|NODE_OPTIONS|AWS_TOKEN)$"
-          # NOTE: to run `nix` command, use `full` image
-          renovate-version: full
+        run: nix run nixpkgs#renovate -- --token=${{ steps.app-token.outputs.token }} --platform=github
         env:
           LOG_LEVEL: debug
           RENOVATE_REPOSITORIES: ${{ github.repository }}
+          RENOVATE_ALLOWED_COMMANDS: "^nix"
