@@ -15,14 +15,22 @@
       ],
     },
   ],
-  postUpgradeTasks: {
-    commands: [
-      "nix run github:berberman/nvfetcher",
-    ],
-    fileFilters: [
-      "nvfetcher.toml",
-      "_sources/*",
-    ],
-    executionMode: "update",
-  },
+  packageRules: [
+    {
+      description: "Update sha256 after upgrade",
+      matchFileNames: [
+        "^nvfetcher.toml$",
+      ],
+      postUpgradeTasks: {
+        commands: [
+          "nix run github:berberman/nvfetcher",
+        ],
+        fileFilters: [
+          "nvfetcher.toml",
+          "_sources/*",
+        ],
+        executionMode: "update",
+      },
+    },
+  ],
 }
