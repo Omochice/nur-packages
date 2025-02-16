@@ -17,7 +17,7 @@
   ],
   postUpgradeTasks: {
     commands: [
-      "nix run github:berberman/nvfetcher",
+      "nix --extra-experimental-feature nix-command --extra-experimental-feature flakes run github:berberman/nvfetcher",
     ],
     fileFilters: [
       "nvfetcher.toml",
@@ -26,6 +26,6 @@
     executionMode: "update",
   },
   allowedCommands: [
-    "^nix run github:berberman/nvfetcher$",
+    "^nix",
   ],
 }
