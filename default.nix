@@ -28,4 +28,5 @@ in
   disable-checkout-persist-credentials =
     pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
       { source = sources.disable-checkout-persist-credentials; };
+  ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };
 }

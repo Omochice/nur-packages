@@ -28,6 +28,17 @@
       sha256 = "sha256-VM12N4+8UCX0LUQdlcpuwdPsxCcOYQdViED+18BM/k8=";
     };
   };
+  ghatm = {
+    pname = "ghatm";
+    version = "v0.3.3";
+    src = fetchFromGitHub {
+      owner = "suzuki-shunsuke";
+      repo = "ghatm";
+      rev = "v0.3.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZiT8CTs1ow4jr4YSWtccSY9dvvdX/VETadrxq9dy7oE=";
+    };
+  };
   pinact = {
     pname = "pinact";
     version = "v1.2.1";
