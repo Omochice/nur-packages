@@ -12,3 +12,8 @@ fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/Firge_$ver.zi
 # renovate: datasource=github-releases depName=yuru7/Firge
 src.manual = "v0.3.0"
 fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/FirgeNerd_$ver.zip"
+
+[disable-checkout-persist-credentials]
+# renovate: datasource=github-releases depName=suzuki-shunsuke/disable-checkout-persist-credentials
+src.manual = "v0.1.2"
+fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"

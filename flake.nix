@@ -24,13 +24,24 @@
               "LICENSE"
               "_sources/*"
             ];
-            settings.formatter."pinact" = {
-              command = "${self.packages.${system}.pinact}/bin/pinact";
-              options = [ "run" ];
-              includes = [
-                ".github/workflows/*.yaml"
-                ".github/workflows/*.yml"
-              ];
+            settings.formatter = {
+              pinact = {
+                command = "${self.packages.${system}.pinact}/bin/pinact";
+                options = [ "run" ];
+                includes = [
+                  ".github/workflows/*.yaml"
+                  ".github/workflows/*.yml"
+                ];
+              };
+              disable-checkout-persist-credentials = {
+                command = "${
+                  self.packages.${system}.disable-checkout-persist-credentials
+                }/bin/disable-checkout-persist-credentials";
+                includes = [
+                  ".github/workflows/*.yaml"
+                  ".github/workflows/*.yml"
+                ];
+              };
             };
             programs = {
               nixfmt.enable = true;
@@ -71,7 +82,10 @@
         in
         {
           default = pkgs.mkShell {
-            packages = [ pkgs.nvfetcher ];
+            packages = [
+              pkgs.nvfetcher
+              self.packages.${system}.disable-checkout-persist-credentials
+            ];
           };
         }
       );
