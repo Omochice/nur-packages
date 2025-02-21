@@ -4,6 +4,19 @@
     "github>Omochice/personal-renovate-config",
   ],
   branchPrefix: "self-hosted-renovate/",
+  lockFileMaintenance: {
+    enabled: true,
+    automerge: true,
+    schedule: [
+      "before 3:00am",
+    ],
+  },
+  nix: {
+    enabled: true,
+    fileMatch: [
+      "(^|/)flake\\.nix$",
+    ],
+  },
   customManagers: [
     {
       customType: "regex",
