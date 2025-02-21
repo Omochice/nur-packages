@@ -15,6 +15,8 @@ buildGoModule rec {
     "-X main.version=${version}"
   ];
 
+  CGO_ENABLED = 0;
+
   subPackages = [ "./cmd/pinact" ];
 
   doCheck = false;
