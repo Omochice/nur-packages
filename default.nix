@@ -25,4 +25,7 @@ in
   };
 
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
+  disable-checkout-persist-credentials =
+    pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
+      { source = sources.disable-checkout-persist-credentials; };
 }

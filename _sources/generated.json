@@ -1,4 +1,25 @@
 {
+    "disable-checkout-persist-credentials": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "disable-checkout-persist-credentials",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "suzuki-shunsuke",
+            "repo": "disable-checkout-persist-credentials",
+            "rev": "v0.1.2",
+            "sha256": "sha256-X1qsOhp7L8jNxuJE/MxowkhUZ0YvVjoljvVlG0JaTQg=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1.2"
+    },
     "firge": {
         "cargoLocks": null,
         "date": null,
