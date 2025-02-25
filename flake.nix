@@ -42,6 +42,14 @@
                   ".github/workflows/*.yml"
                 ];
               };
+              ghatm = {
+                command = "${self.packages.${system}.ghatm}/bin/ghatm";
+                options = [ "set" ];
+                includes = [
+                  ".github/workflows/*.yaml"
+                  ".github/workflows/*.yml"
+                ];
+              };
             };
             programs = {
               nixfmt.enable = true;
@@ -84,7 +92,6 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
-              self.packages.${system}.disable-checkout-persist-credentials
             ];
           };
         }

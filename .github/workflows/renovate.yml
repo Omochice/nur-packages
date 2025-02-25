@@ -6,6 +6,7 @@ on:
   workflow_dispatch: null
 jobs:
   update-by-renovate:
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
       - name: Get token
