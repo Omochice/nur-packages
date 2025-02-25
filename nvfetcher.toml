@@ -22,3 +22,7 @@ fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
 # renovate: datasource=github-releases depName=suzuki-shunsuke/ghatm
 src.manual = "v0.3.3"
 fetch.github = "suzuki-shunsuke/ghatm"
+[ghalint]
+# renovate: datasource=github-releases depName=suzuki-shunsuke/ghalint
+src.manual = "v1.2.3"
+fetch.github = "suzuki-shunsuke/ghalint"
