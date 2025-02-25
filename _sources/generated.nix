@@ -28,6 +28,17 @@
       sha256 = "sha256-VM12N4+8UCX0LUQdlcpuwdPsxCcOYQdViED+18BM/k8=";
     };
   };
+  ghalint = {
+    pname = "ghalint";
+    version = "v1.2.3";
+    src = fetchFromGitHub {
+      owner = "suzuki-shunsuke";
+      repo = "ghalint";
+      rev = "v1.2.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-bwHKbuITR+5DvuK1XLFyD/JMbW/OvUbgSyhiKSxqiAs=";
+    };
+  };
   ghatm = {
     pname = "ghatm";
     version = "v0.3.3";

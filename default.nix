@@ -29,4 +29,5 @@ in
     pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
       { source = sources.disable-checkout-persist-credentials; };
   ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };
+  ghalint = pkgs.callPackage ./pkgs/ghalint/default.nix { source = sources.ghalint; };
 }
