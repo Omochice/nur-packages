@@ -10,7 +10,7 @@ buildGoModule rec {
   vendorHash = "sha256-njoBUoc4nB8q54lEPHvugM8CCHYwB0sklg0x8lyKK7Y=";
 
   ldflags = [
-    "-X main.appRevison=unknown"
+    "-X main.appRevision=unknown"
     "-X main.appVersion=${version}"
   ];
 
