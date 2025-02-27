@@ -12,6 +12,17 @@
       sha256 = "sha256-X1qsOhp7L8jNxuJE/MxowkhUZ0YvVjoljvVlG0JaTQg=";
     };
   };
+  duckgo = {
+    pname = "duckgo";
+    version = "v0.1.1";
+    src = fetchFromGitHub {
+      owner = "sheepla";
+      repo = "duckgo";
+      rev = "v0.1.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-+wJexVAKTqEOTyV+PcNcUe5r9Q4MpGx9EnuxiQHq0G0=";
+    };
+  };
   firge = {
     pname = "firge";
     version = "v0.3.0";
