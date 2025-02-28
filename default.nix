@@ -31,4 +31,7 @@ in
   ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };
   ghalint = pkgs.callPackage ./pkgs/ghalint/default.nix { source = sources.ghalint; };
   duckgo = pkgs.callPackage ./pkgs/duckgo/default.nix { source = sources.duckgo; };
+  gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
+    source = sources.gitlab-ci-verify;
+  };
 }

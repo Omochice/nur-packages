@@ -32,3 +32,8 @@ fetch.github = "suzuki-shunsuke/ghalint"
 # renovate: datasource=github-releases depName=sheepla/duckgo
 src.manual = "v0.1.1"
 fetch.github = "sheepla/duckgo"
+
+[gitlab-ci-verify]
+# renovate: datasource=github-releases timo-reymann/gitlab-ci-verify
+src.manual = "v1.2.9"
+fetch.github = "timo-reymann/gitlab-ci-verify"

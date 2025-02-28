@@ -61,6 +61,17 @@
       sha256 = "sha256-ZiT8CTs1ow4jr4YSWtccSY9dvvdX/VETadrxq9dy7oE=";
     };
   };
+  gitlab-ci-verify = {
+    pname = "gitlab-ci-verify";
+    version = "v1.2.9";
+    src = fetchFromGitHub {
+      owner = "timo-reymann";
+      repo = "gitlab-ci-verify";
+      rev = "v1.2.9";
+      fetchSubmodules = false;
+      sha256 = "sha256-Ja/9BQ6h1mznj1u/618PvKSxNGepM9dZYJisdTaG/8Y=";
+    };
+  };
   pinact = {
     pname = "pinact";
     version = "v1.2.1";
