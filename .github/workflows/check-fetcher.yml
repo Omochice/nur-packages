@@ -57,7 +57,7 @@ jobs:
           fi
   check-renovate-config:
     needs: path-filter
-    if: needs.path-filter.outputs.nvfetcher == 'true'
+    if: needs.path-filter.outputs.renovate == 'true'
     timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
