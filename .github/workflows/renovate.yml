@@ -28,7 +28,7 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Renovate
-        run: nix develop .#renovate --command renovate -- --token=${{ steps.app-token.outputs.token }} --platform=github
+        run: nix run nixpkgs#renovate -- --token=${{ steps.app-token.outputs.token }} --platform=github
         env:
           LOG_LEVEL: debug
           RENOVATE_REPOSITORIES: ${{ github.repository }}
