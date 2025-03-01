@@ -29,7 +29,7 @@
     {
       description: "Update sha256 after upgrade",
       matchFileNames: [
-        "^nvfetcher.toml$",
+        "nvfetcher.toml",
       ],
       postUpgradeTasks: {
         commands: [
