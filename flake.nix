@@ -94,6 +94,11 @@
               pkgs.nvfetcher
             ];
           };
+          renovate = pkgs.mkShell {
+            packages = [
+              pkgs.renovate
+            ];
+          };
         }
       );
     };
