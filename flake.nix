@@ -97,6 +97,7 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
+              self.packages.${system}.octocov
             ];
           };
           renovate = pkgs.mkShell {
