@@ -19,19 +19,20 @@ in
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  # keep-sorted start block=yes
+  disable-checkout-persist-credentials =
+    pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
+      { source = sources.disable-checkout-persist-credentials; };
+  duckgo = pkgs.callPackage ./pkgs/duckgo/default.nix { source = sources.duckgo; };
   firge = pkgs.callPackage ./pkgs/data/fonts/firge/default.nix { source = sources.firge; };
   firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd/default.nix {
     source = sources.firge-nerd;
   };
-
-  pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
-  disable-checkout-persist-credentials =
-    pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
-      { source = sources.disable-checkout-persist-credentials; };
-  ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };
   ghalint = pkgs.callPackage ./pkgs/ghalint/default.nix { source = sources.ghalint; };
-  duckgo = pkgs.callPackage ./pkgs/duckgo/default.nix { source = sources.duckgo; };
+  ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
   };
+  pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
+  # keep-sorted end
 }

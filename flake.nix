@@ -25,14 +25,7 @@
               "_sources/*"
             ];
             settings.formatter = {
-              pinact = {
-                command = "${self.packages.${system}.pinact}/bin/pinact";
-                options = [ "run" ];
-                includes = [
-                  ".github/workflows/*.yaml"
-                  ".github/workflows/*.yml"
-                ];
-              };
+              # keep-sorted start block=yes
               disable-checkout-persist-credentials = {
                 command = "${
                   self.packages.${system}.disable-checkout-persist-credentials
@@ -50,11 +43,28 @@
                   ".github/workflows/*.yml"
                 ];
               };
+              pinact = {
+                command = "${self.packages.${system}.pinact}/bin/pinact";
+                options = [ "run" ];
+                includes = [
+                  ".github/workflows/*.yaml"
+                  ".github/workflows/*.yml"
+                ];
+              };
+              # keep-sorted end
             };
             programs = {
-              nixfmt.enable = true;
-              shfmt.enable = true;
+              # keep-sorted start block=yes
+              formatjson5 = {
+                enable = true;
+                indent = 2;
+              };
+              keep-sorted.enable = true;
               mdformat.enable = true;
+              nixfmt.enable = true;
+              pinact.enable = true;
+              shfmt.enable = true;
+              taplo.enable = true;
               yamlfmt = {
                 enable = true;
                 settings = {
@@ -64,12 +74,7 @@
                   };
                 };
               };
-              taplo.enable = true;
-              pinact.enable = true;
-              formatjson5 = {
-                enable = true;
-                indent = 2;
-              };
+              # keep-sorted end
             };
           }
         );
