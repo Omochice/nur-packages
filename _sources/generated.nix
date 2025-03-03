@@ -72,6 +72,17 @@
       sha256 = "sha256-2kCkoIWYrlyRVvJQ6LA+n33CZXVKG60n0gym2ijpq9o=";
     };
   };
+  octocov = {
+    pname = "octocov";
+    version = "v0.64.0";
+    src = fetchFromGitHub {
+      owner = "k1LoW";
+      repo = "octocov";
+      rev = "v0.64.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-JxScV5ihYRBMtbBaAvTE7OzpvynyK5IkaidbnQvhmRg=";
+    };
+  };
   pinact = {
     pname = "pinact";
     version = "v1.2.2";
