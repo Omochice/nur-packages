@@ -15,7 +15,7 @@ buildGoModule rec {
     "-X github.com/timo-reymann/gitlab-ci-verify/internal/buildinfo.Version=${version}"
   ];
 
-  CGO_ENABLED = 0;
+  env.CGO_ENABLED = 0;
 
   doCheck = false;
 
