@@ -1,6 +1,6 @@
 [pinact]
 # renovate: datasource=github-releases depName=suzuki-shunsuke/pinact
-src.manual = "v1.2.1"
+src.manual = "v1.2.2"
 fetch.github = "suzuki-shunsuke/pinact"
 
 [firge]
