@@ -134,6 +134,27 @@
         },
         "version": "v1.2.10"
     },
+    "octocov": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "octocov",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "k1LoW",
+            "repo": "octocov",
+            "rev": "v0.64.0",
+            "sha256": "sha256-JxScV5ihYRBMtbBaAvTE7OzpvynyK5IkaidbnQvhmRg=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.64.0"
+    },
     "pinact": {
         "cargoLocks": null,
         "date": null,
