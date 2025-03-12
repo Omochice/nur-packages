@@ -35,5 +35,8 @@ in
   };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
+  sort-package-json = pkgs.callPackage ./pkgs/sort-package-json/default.nix {
+    source = sources.sort-package-json;
+  };
   # keep-sorted end
 }

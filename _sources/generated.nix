@@ -94,4 +94,15 @@
       sha256 = "sha256-p2kixWkJgQYanbsShMtDWoY6AT0WrTVLI+Borzm8XLA=";
     };
   };
+  sort-package-json = {
+    pname = "sort-package-json";
+    version = "v3.0.0";
+    src = fetchFromGitHub {
+      owner = "keithamus";
+      repo = "sort-package-json";
+      rev = "v3.0.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-mEavws9itWkV2uF2w3bZRGHgR/AGvTfdhSUKAdcgfWs=";
+    };
+  };
 }

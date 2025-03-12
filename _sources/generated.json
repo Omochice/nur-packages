@@ -175,5 +175,26 @@
             "type": "github"
         },
         "version": "v1.2.2"
+    },
+    "sort-package-json": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "sort-package-json",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "keithamus",
+            "repo": "sort-package-json",
+            "rev": "v3.0.0",
+            "sha256": "sha256-mEavws9itWkV2uF2w3bZRGHgR/AGvTfdhSUKAdcgfWs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v3.0.0"
     }
 }
