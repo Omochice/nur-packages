@@ -42,3 +42,7 @@ fetch.github = "timo-reymann/gitlab-ci-verify"
 # renovate: datasource=github-releases depName=k1LoW/octocov
 src.manual = "v0.64.0"
 fetch.github = "k1LoW/octocov"
+
+[hereby]
+src.manual = "v1.10.0"
+fetch.github = "jakebailey/hereby"

@@ -72,6 +72,17 @@
       sha256 = "sha256-2kCkoIWYrlyRVvJQ6LA+n33CZXVKG60n0gym2ijpq9o=";
     };
   };
+  hereby = {
+    pname = "hereby";
+    version = "v1.10.0";
+    src = fetchFromGitHub {
+      owner = "jakebailey";
+      repo = "hereby";
+      rev = "v1.10.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-5vDy3E9zQK0/XhD6TNKYApZennbcI+8F+FrsIU2zp4w=";
+    };
+  };
   octocov = {
     pname = "octocov";
     version = "v0.64.0";
