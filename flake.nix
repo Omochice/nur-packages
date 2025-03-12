@@ -51,6 +51,12 @@
                   ".github/workflows/*.yml"
                 ];
               };
+              sort-package-json = {
+                command = "${self.packages.${system}.sort-package-json}/bin/sort-package-json";
+                includes = [
+                  "**/package.json"
+                ];
+              };
               # keep-sorted end
             };
             programs = {
