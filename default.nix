@@ -33,6 +33,7 @@ in
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
   };
+  hereby = pkgs.callPackage ./pkgs/hereby/default.nix { source = sources.hereby; };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
   # keep-sorted end
