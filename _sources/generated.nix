@@ -105,4 +105,16 @@
       sha256 = "sha256-mEavws9itWkV2uF2w3bZRGHgR/AGvTfdhSUKAdcgfWs=";
     };
   };
+  tsgo = {
+    pname = "tsgo";
+    version = "d508afb79e759fc9da6de6353561e348d8398bbe";
+    src = fetchFromGitHub {
+      owner = "microsoft";
+      repo = "typescript-go";
+      rev = "d508afb79e759fc9da6de6353561e348d8398bbe";
+      fetchSubmodules = false;
+      sha256 = "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=";
+    };
+    date = "2025-03-11";
+  };
 }

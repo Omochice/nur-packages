@@ -38,5 +38,6 @@ in
   sort-package-json = pkgs.callPackage ./pkgs/sort-package-json/default.nix {
     source = sources.sort-package-json;
   };
+  tsgo = pkgs.callPackage ./pkgs/tsgo/default.nix { source = sources.tsgo; };
   # keep-sorted end
 }
