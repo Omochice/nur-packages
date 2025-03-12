@@ -26,7 +26,7 @@ jobs:
         id: changes
         with:
           filters: |
-            actions:
+            nvfetcher:
               - nvfetcher.toml
             renovate:
               - renovate.json5
