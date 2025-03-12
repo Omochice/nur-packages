@@ -196,5 +196,26 @@
             "type": "github"
         },
         "version": "v3.0.0"
+    },
+    "tsgo": {
+        "cargoLocks": null,
+        "date": "2025-03-11",
+        "extract": null,
+        "name": "tsgo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "microsoft",
+            "repo": "typescript-go",
+            "rev": "d508afb79e759fc9da6de6353561e348d8398bbe",
+            "sha256": "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "d508afb79e759fc9da6de6353561e348d8398bbe"
     }
 }

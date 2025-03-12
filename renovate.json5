@@ -22,6 +22,7 @@
       ],
       matchStrings: [
         "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\nsrc\\.manual = \"(?<currentValue>.*?)\"",
+        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?) rev=(?<currentValue>.*?)\\nsrc\\.git = \"(?<packageName>.*?).git\"",
       ],
     },
   ],

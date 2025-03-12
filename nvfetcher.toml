@@ -47,3 +47,8 @@ fetch.github = "k1LoW/octocov"
 # renovate: datasource=github-releases depName=keithamus/sort-package-json
 src.manual = "v3.0.0"
 fetch.github = "keithamus/sort-package-json"
+
+[tsgo]
+# renovate: datasource=git-refs depName=microsoft/typescript-go rev=d508afb
+src.git = "https://github.com/microsoft/typescript-go.git"
+fetch.github = "microsoft/typescript-go"
