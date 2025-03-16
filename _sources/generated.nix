@@ -63,13 +63,13 @@
   };
   gitlab-ci-verify = {
     pname = "gitlab-ci-verify";
-    version = "v1.2.11";
+    version = "v2.0.1";
     src = fetchFromGitHub {
       owner = "timo-reymann";
       repo = "gitlab-ci-verify";
-      rev = "v1.2.11";
+      rev = "v2.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-+67Cq8xnrXQXsKq/GEpbFEaxIXdmLv3EHQbas7flJPY=";
+      sha256 = "sha256-xvMqN6A0XetHht2l6dLbEA1+gND0APe10HyYCYv8xU8=";
     };
   };
   octocov = {
@@ -107,14 +107,14 @@
   };
   tsgo = {
     pname = "tsgo";
-    version = "d508afb79e759fc9da6de6353561e348d8398bbe";
+    version = "a61f96ab090fa379e85afa409ab46ba16606f61c";
     src = fetchFromGitHub {
       owner = "microsoft";
       repo = "typescript-go";
-      rev = "d508afb79e759fc9da6de6353561e348d8398bbe";
+      rev = "a61f96ab090fa379e85afa409ab46ba16606f61c";
       fetchSubmodules = false;
-      sha256 = "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=";
+      sha256 = "sha256-6cQuF9xjfUF0INYuPthmOJ4z1DXInN44+BBUZXn7bT4=";
     };
-    date = "2025-03-11";
+    date = "2025-03-15";
   };
 }

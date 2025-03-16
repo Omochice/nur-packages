@@ -127,12 +127,12 @@
             "name": null,
             "owner": "timo-reymann",
             "repo": "gitlab-ci-verify",
-            "rev": "v1.2.11",
-            "sha256": "sha256-+67Cq8xnrXQXsKq/GEpbFEaxIXdmLv3EHQbas7flJPY=",
+            "rev": "v2.0.1",
+            "sha256": "sha256-xvMqN6A0XetHht2l6dLbEA1+gND0APe10HyYCYv8xU8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.2.11"
+        "version": "v2.0.1"
     },
     "octocov": {
         "cargoLocks": null,
@@ -199,7 +199,7 @@
     },
     "tsgo": {
         "cargoLocks": null,
-        "date": "2025-03-11",
+        "date": "2025-03-15",
         "extract": null,
         "name": "tsgo",
         "passthru": null,
@@ -211,11 +211,11 @@
             "name": null,
             "owner": "microsoft",
             "repo": "typescript-go",
-            "rev": "d508afb79e759fc9da6de6353561e348d8398bbe",
-            "sha256": "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=",
+            "rev": "a61f96ab090fa379e85afa409ab46ba16606f61c",
+            "sha256": "sha256-6cQuF9xjfUF0INYuPthmOJ4z1DXInN44+BBUZXn7bT4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d508afb79e759fc9da6de6353561e348d8398bbe"
+        "version": "a61f96ab090fa379e85afa409ab46ba16606f61c"
     }
 }

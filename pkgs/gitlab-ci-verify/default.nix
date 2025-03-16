@@ -1,13 +1,13 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGo124Module,
 }:
 
-buildGoModule rec {
+buildGo124Module rec {
   inherit (source) pname src version;
 
-  vendorHash = "sha256-JYTRJ4Syno/Kh7bNdUBv61BtkORBM3Qnu2kVTrSuj8U=";
+  vendorHash = "sha256-qTybae2IfJSkypYCYoM+dEMUphSg/XuvNOWompiKLQ0=";
 
   ldflags = [
     "-X github.com/timo-reymann/gitlab-ci-verify/internal/buildinfo.BuildTime=unknown"
