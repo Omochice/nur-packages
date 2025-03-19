@@ -2,6 +2,7 @@
   source,
   lib,
   buildGo124Module,
+  unzip,
 }:
 
 buildGo124Module rec {
@@ -9,7 +10,7 @@ buildGo124Module rec {
 
   vendorHash = "sha256-Hxgoxmu2rqfDKKiJOXfXoPxNMt/iAQnqx4cRFQj1KWU=";
 
-  # nativeBuildInputs = [node];
+  nativeBuildInputs = [ unzip ];
 
   ldflags = [
     "-X main.date=unknown"
@@ -41,7 +42,7 @@ buildGo124Module rec {
   meta = with lib; {
     description = "Staging repo for development of native port of TypeScript";
     homepage = "https://github.com/microsoft/typescript-go/tree/main#";
-    changelog = "https://github.com/microsoft/typescript-go/commit/${source.src.rev}";
+    changelog = "https://github.com/microsoft/typescript-go/commit/${version}";
     license = licenses.asl20;
   };
 }
