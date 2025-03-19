@@ -108,9 +108,9 @@
   tsgo = {
     pname = "tsgo";
     version = "d508afb";
-    src = fetchTarball {
+    src = fetchurl {
       url = "https://github.com/microsoft/typescript-go/archive/d508afb.zip";
-      sha256 = "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=";
+      sha256 = "sha256-F18AKdpVQJvQpWAbAOhs/bwpFI+KMcJwrhVWbmlekB8=";
     };
   };
 }

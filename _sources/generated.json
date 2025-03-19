@@ -205,8 +205,9 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=",
-            "type": "tarball",
+            "name": null,
+            "sha256": "sha256-F18AKdpVQJvQpWAbAOhs/bwpFI+KMcJwrhVWbmlekB8=",
+            "type": "url",
             "url": "https://github.com/microsoft/typescript-go/archive/d508afb.zip"
         },
         "version": "d508afb"
