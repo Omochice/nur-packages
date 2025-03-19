@@ -107,14 +107,10 @@
   };
   tsgo = {
     pname = "tsgo";
-    version = "026e5f9dee255d02730fccc52042e87972eea24b";
-    src = fetchFromGitHub {
-      owner = "microsoft";
-      repo = "typescript-go";
-      rev = "026e5f9dee255d02730fccc52042e87972eea24b";
-      fetchSubmodules = false;
-      sha256 = "sha256-IfAwubhshBI/gyPfB1k3Qt1a40A74jKoKnxzJ/EsVaw=";
+    version = "d508afb";
+    src = fetchTarball {
+      url = "https://github.com/microsoft/typescript-go/archive/d508afb.zip";
+      sha256 = "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=";
     };
-    date = "2025-03-17";
   };
 }

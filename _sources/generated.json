@@ -199,23 +199,16 @@
     },
     "tsgo": {
         "cargoLocks": null,
-        "date": "2025-03-17",
+        "date": null,
         "extract": null,
         "name": "tsgo",
         "passthru": null,
         "pinned": false,
         "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "microsoft",
-            "repo": "typescript-go",
-            "rev": "026e5f9dee255d02730fccc52042e87972eea24b",
-            "sha256": "sha256-IfAwubhshBI/gyPfB1k3Qt1a40A74jKoKnxzJ/EsVaw=",
-            "sparseCheckout": [],
-            "type": "github"
+            "sha256": "sha256-kumRMIqiPUXDAfVV5nJDvmEAfgQjl00/V+oriZyLBaw=",
+            "type": "tarball",
+            "url": "https://github.com/microsoft/typescript-go/archive/d508afb.zip"
         },
-        "version": "026e5f9dee255d02730fccc52042e87972eea24b"
+        "version": "d508afb"
     }
 }

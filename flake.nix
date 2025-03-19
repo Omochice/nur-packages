@@ -103,6 +103,7 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
+              self.packages.${system}.tsgo
             ];
           };
           renovate = pkgs.mkShell {
