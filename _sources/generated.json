@@ -169,12 +169,12 @@
             "name": null,
             "owner": "suzuki-shunsuke",
             "repo": "pinact",
-            "rev": "v1.5.0",
-            "sha256": "sha256-kp9JBQhBaGbcQ0I8tKRQP9cD0NGDxmxnYjznvfWxM6Y=",
+            "rev": "v2.0.0",
+            "sha256": "sha256-SkzqbliWsMLa0BsSqfKzHYk2z8PvsM+nssRihRyH1s4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.0"
+        "version": "v2.0.0"
     },
     "sort-package-json": {
         "cargoLocks": null,
