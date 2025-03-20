@@ -103,12 +103,17 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
-              self.packages.${system}.tsgo
             ];
           };
           renovate = pkgs.mkShell {
             packages = [
               pkgs.renovate
+            ];
+          };
+          check-action = pkgs.mkShell {
+            packages = [
+              pkgs.actionlint
+              self.packages.${system}.ghalint
             ];
           };
         }
