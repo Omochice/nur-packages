@@ -1,4 +1,4 @@
-name: Check nvfetcher result
+name: Check files
 
 on:
   push:
