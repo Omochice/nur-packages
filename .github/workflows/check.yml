@@ -12,7 +12,7 @@ permissions: {}
 
 jobs:
   path-filter:
-    timeout-minutes: 30
+    timeout-minutes: 5
     outputs:
       nvfetcher: ${{steps.changes.outputs.nvfetcher}}
       renovate: ${{steps.changes.outputs.renovate}}
