@@ -35,7 +35,7 @@ fetch.github = "sheepla/duckgo"
 
 [gitlab-ci-verify]
 # renovate: datasource=github-releases depName=timo-reymann/gitlab-ci-verify
-src.manual = "v2.0.2"
+src.manual = "v2.1.1"
 fetch.github = "timo-reymann/gitlab-ci-verify"
 
 [octocov]
