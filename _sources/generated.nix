@@ -41,13 +41,13 @@
   };
   ghalint = {
     pname = "ghalint";
-    version = "v1.2.4";
+    version = "v1.3.0";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "ghalint";
-      rev = "v1.2.4";
+      rev = "v1.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-XV8bjpowU8DcGLhbs6+9X1FrloG4lxhzi59LhLh890Y=";
+      sha256 = "sha256-zIjeKhEk5cbIje+wT5ehnzIYAf/NAlmY7111G+JvAZ8=";
     };
   };
   ghatm = {
