@@ -7,7 +7,7 @@
 buildGo124Module rec {
   inherit (source) pname src version;
 
-  vendorHash = "sha256-FTjqamj+g05Q/if0YLsMlnnFX/draSz/cDdqI5PAeoA=";
+  vendorHash = "sha256-EQKBWcJIoRZOLp56EpEYDA/CxjFYdohyYsDr7ID10v0=";
 
   ldflags = [
     "-X github.com/timo-reymann/gitlab-ci-verify/internal/buildinfo.BuildTime=unknown"
