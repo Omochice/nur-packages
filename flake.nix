@@ -37,7 +37,7 @@
               };
               ghatm = {
                 command = "${self.packages.${system}.ghatm}/bin/ghatm";
-                options = [ "set" ];
+                args = [ "set" ];
                 includes = [
                   ".github/workflows/*.yaml"
                   ".github/workflows/*.yml"
@@ -45,7 +45,7 @@
               };
               pinact = {
                 command = "${self.packages.${system}.pinact}/bin/pinact";
-                options = [ "run" ];
+                args = [ "run" ];
                 includes = [
                   ".github/workflows/*.yaml"
                   ".github/workflows/*.yml"
