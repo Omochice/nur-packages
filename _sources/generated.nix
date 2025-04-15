@@ -113,4 +113,17 @@
       sha256 = "sha256-F18AKdpVQJvQpWAbAOhs/bwpFI+KMcJwrhVWbmlekB8=";
     };
   };
+  veridex = {
+    pname = "veridex";
+    version = "android-15.0.0_r25";
+    src = fetchgit {
+      url = "https://android.googlesource.com/platform/prebuilts/runtime";
+      rev = "android-15.0.0_r25";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
+    };
+  };
 }

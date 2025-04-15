@@ -211,5 +211,25 @@
             "url": "https://github.com/microsoft/typescript-go/archive/d508afb.zip"
         },
         "version": "d508afb"
+    },
+    "veridex": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "veridex",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "android-15.0.0_r25",
+            "sha256": "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://android.googlesource.com/platform/prebuilts/runtime"
+        },
+        "version": "android-15.0.0_r25"
     }
 }

@@ -52,3 +52,8 @@ fetch.github = "keithamus/sort-package-json"
 # renovate: datasource=git-refs depName=https://github.com/microsoft/typescript-go
 src.manual = "d508afb"
 fetch.url = "https://github.com/microsoft/typescript-go/archive/$ver.zip"
+
+[veridex]
+# renovate: datasource=git-refs depName=https://android.googlesource.com/platform/prebuilts/runtime
+src.manual = "android-15.0.0_r25"
+fetch.git = "https://android.googlesource.com/platform/prebuilts/runtime"
