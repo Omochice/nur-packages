@@ -7,7 +7,17 @@
   pkgs,
 }:
 let
-  target = if pkgs.stdenv.hostPlatform.isDarwin then "veridex-mac.zip" else "veridex-linux.zip";
+  target =
+    if pkgs.stdenv.hostPlatform.isDarwin then
+      {
+        file = "veridex-mac.zip";
+        hash = "sha256-IaFtakCDE/VeWAT3Okojon8ajuFzAe/wvY7kEBGajAM=";
+      }
+    else
+      {
+        file = "veridex-linux.zip";
+        hash = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
+      };
 in
 stdenvNoCC.mkDerivation {
   inherit (source) pname version;
@@ -17,7 +27,7 @@ stdenvNoCC.mkDerivation {
   src = fetchFromGitiles {
     url = "https://android.googlesource.com/platform/prebuilts/runtime";
     rev = "android-15.0.0_r25";
-    hash = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
+    hash = target.hash;
   };
 
   installPhase = ''
