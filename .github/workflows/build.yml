@@ -16,6 +16,9 @@ jobs:
     timeout-minutes: 30
     strategy:
       matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
         # Set this to notify the global nur package registry that changes are
         # available.
         #
@@ -38,7 +41,7 @@ jobs:
         nixPath:
           - nixpkgs=https://github.com/NixOS/nixpkgs/archive/refs/heads/nixpkgs-unstable.tar.gz
           - nixpkgs=https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-unstable.tar.gz
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     permissions: {}
     steps:
       - name: Checkout repository

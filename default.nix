@@ -39,5 +39,6 @@ in
     source = sources.sort-package-json;
   };
   tsgo = pkgs.callPackage ./pkgs/tsgo/default.nix { source = sources.tsgo; };
+  veridex = pkgs.callPackage ./pkgs/veridex/default.nix {};
   # keep-sorted end
 }
