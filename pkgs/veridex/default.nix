@@ -1,4 +1,5 @@
 {
+  fetchFromGitiles,
   source,
   lib,
   stdenvNoCC,
@@ -9,9 +10,15 @@ let
   target = if pkgs.stdenv.hostPlatform.isDarwin then "veridex-mac.zip" else "veridex-linux.zip";
 in
 stdenvNoCC.mkDerivation {
-  inherit (source) pname version src;
+  inherit (source) pname version;
 
   nativeBuildInputs = [ unzip ];
+
+  src = fetchFromGitiles {
+    url = "https://android.googlesource.com/platform/prebuilts/runtime";
+    rev = "android-15.0.0_r25";
+    hash = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
+  };
 
   installPhase = ''
     runHook preInstall
