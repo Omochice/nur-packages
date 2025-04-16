@@ -11,12 +11,12 @@ let
     if pkgs.stdenv.hostPlatform.isDarwin then
       {
         path = "veridex-mac.zip";
-        hash = "sha256-IaFtakCDE/VeWAT3Okojon8ajuFzAe/wvY7kEBGajAM=";
+        hash = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
       }
     else
       {
         path = "veridex-linux.zip";
-        hash = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
+        hash = "sha256-IaFtakCDE/VeWAT3Okojon8ajuFzAe/wvY7kEBGajAM=";
       };
 in
 stdenvNoCC.mkDerivation {
