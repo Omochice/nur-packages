@@ -61,6 +61,17 @@
       sha256 = "sha256-CPyZkvO1+WSQvHN4YWNEs9sTk9XiYq5kRGk+JsTM8xE=";
     };
   };
+  ghq = {
+    pname = "ghq";
+    version = "v1.8.0";
+    src = fetchFromGitHub {
+      owner = "x-motemen";
+      repo = "ghq";
+      rev = "v1.8.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-5BN96/RShfJpkfpJe0qrZVDuyFoAV9kgCiBv4REY/5Y=";
+    };
+  };
   gitlab-ci-verify = {
     pname = "gitlab-ci-verify";
     version = "v2.1.5";
