@@ -72,6 +72,17 @@
       sha256 = "sha256-T74OUUTrORqqgYYuTpUCGzMyjaiY6CT9ftwqkppyWVM=";
     };
   };
+  lsd = {
+    pname = "lsd";
+    version = "v1.1.5";
+    src = fetchFromGitHub {
+      owner = "lsd-rs";
+      repo = "lsd";
+      rev = "v1.1.5";
+      fetchSubmodules = false;
+      sha256 = "sha256-LlMcBMb40yN+rlvGVsh7JaC3j9sF60YxitQQXe1q/oI=";
+    };
+  };
   octocov = {
     pname = "octocov";
     version = "v0.66.0";

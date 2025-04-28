@@ -33,12 +33,13 @@ in
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
   };
+  lsd = pkgs.callPackage ./pkgs/lsd/default.nix { source = sources.lsd; };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
   sort-package-json = pkgs.callPackage ./pkgs/sort-package-json/default.nix {
     source = sources.sort-package-json;
   };
   tsgo = pkgs.callPackage ./pkgs/tsgo/default.nix { source = sources.tsgo; };
-  veridex = pkgs.callPackage ./pkgs/veridex/default.nix {};
+  veridex = pkgs.callPackage ./pkgs/veridex/default.nix { };
   # keep-sorted end
 }
