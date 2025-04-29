@@ -45,7 +45,7 @@ fetch.github = "k1LoW/octocov"
 
 [sort-package-json]
 # renovate: datasource=github-releases depName=keithamus/sort-package-json
-src.manual = "v3.0.0"
+src.manual = "v3.1.0"
 fetch.github = "keithamus/sort-package-json"
 
 [tsgo]
