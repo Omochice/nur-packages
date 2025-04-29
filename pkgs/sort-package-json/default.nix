@@ -7,7 +7,7 @@
 buildNpmPackage rec {
   inherit (source) pname src version;
 
-  npmDepsHash = "sha256-2WLPo+/jY0Asd229e6Jq5c0Q30WAApC7SQmwYfK0hwE=";
+  npmDepsHash = "sha256-vPizvY1Wuv1svGiWwQeqUI3UYdu/F4X0vQGdJIyHU0Q=";
 
   # NOTE: Errors occur on fixupPhase
   # > ERROR: noBrokenSymlinks: the symlink /nix/store/b9mqysqk5hsl76dxd2h1851dwvbll6wm-sort-package-json-v3.0.0/lib/node_modules/sort-package-json/node_modules/.bin/sshpk-conv points to a missing target: /nix/store/b9mqysqk5hsl76dxd2h1851dwvbll6wm-sort-package-json-v3.0.0/lib/node_modules/sort-package-json/node_modules/sshpk/bin/sshpk-conv
