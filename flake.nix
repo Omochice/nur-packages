@@ -113,7 +113,6 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
-              pkgs.slack-reminder
             ];
           };
           renovate = pkgs.mkShell {
