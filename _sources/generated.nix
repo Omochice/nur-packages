@@ -94,6 +94,17 @@
       sha256 = "sha256-p8GOXx++wcUrQATlojx0D4ymlPFw9TCqL6YGSTOaRDo=";
     };
   };
+  slack-reminder = {
+    pname = "slack-reminder";
+    version = "v0.1.1";
+    src = fetchFromGitHub {
+      owner = "skanehira";
+      repo = "slack-reminder";
+      rev = "v0.1.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-1MzRZ8E1wtwThnaXteMkAapX5kLFbEi3ix1csatSFF8=";
+    };
+  };
   sort-package-json = {
     pname = "sort-package-json";
     version = "v3.1.0";

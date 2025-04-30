@@ -176,6 +176,27 @@
         },
         "version": "v3.0.5"
     },
+    "slack-reminder": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "slack-reminder",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "skanehira",
+            "repo": "slack-reminder",
+            "rev": "v0.1.1",
+            "sha256": "sha256-1MzRZ8E1wtwThnaXteMkAapX5kLFbEi3ix1csatSFF8=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1.1"
+    },
     "sort-package-json": {
         "cargoLocks": null,
         "date": null,
