@@ -14,10 +14,19 @@
       treefmt-nix,
     }:
     let
+      pkgsFor =
+        system:
+        import nixpkgs {
+          inherit system;
+          overlays = [ self.overlays.default ];
+        };
       forAllSystems = nixpkgs.lib.genAttrs nixpkgs.lib.systems.flakeExposed;
       treefmt =
         system:
-        treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} (
+        let
+          pkgs = pkgsFor system;
+        in
+        treefmt-nix.lib.evalModule pkgs (
           { ... }:
           {
             settings.global.excludes = [
@@ -27,16 +36,14 @@
             settings.formatter = {
               # keep-sorted start block=yes
               disable-checkout-persist-credentials = {
-                command = "${
-                  self.packages.${system}.disable-checkout-persist-credentials
-                }/bin/disable-checkout-persist-credentials";
+                command = "${pkgs.disable-checkout-persist-credentials}/bin/disable-checkout-persist-credentials";
                 includes = [
                   ".github/workflows/*.yaml"
                   ".github/workflows/*.yml"
                 ];
               };
               ghatm = {
-                command = "${self.packages.${system}.ghatm}/bin/ghatm";
+                command = "${pkgs.ghatm}/bin/ghatm";
                 options = [ "set" ];
                 includes = [
                   ".github/workflows/*.yaml"
@@ -44,15 +51,15 @@
                 ];
               };
               pinact = {
-                command = "${self.packages.${system}.pinact}/bin/pinact";
-                options = [ "run" ];
+                command = "${pkgs.pinact}/bin/pinact";
+                args = [ "run" ];
                 includes = [
                   ".github/workflows/*.yaml"
                   ".github/workflows/*.yml"
                 ];
               };
               sort-package-json = {
-                command = "${self.packages.${system}.sort-package-json}/bin/sort-package-json";
+                command = "${pkgs.sort-package-json}/bin/sort-package-json";
                 includes = [
                   "**/package.json"
                 ];
@@ -68,7 +75,10 @@
               keep-sorted.enable = true;
               mdformat.enable = true;
               nixfmt.enable = true;
-              pinact.enable = true;
+              pinact = {
+                enable = true;
+                update = false;
+              };
               shfmt.enable = true;
               taplo.enable = true;
               yamlfmt = {
@@ -97,7 +107,7 @@
       devShells = forAllSystems (
         system:
         let
-          pkgs = nixpkgs.legacyPackages.${system};
+          pkgs = pkgsFor system;
         in
         {
           default = pkgs.mkShell {
@@ -113,7 +123,7 @@
           check-action = pkgs.mkShell {
             packages = [
               pkgs.actionlint
-              self.packages.${system}.ghalint
+              pkgs.ghalint
             ];
           };
         }
