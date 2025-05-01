@@ -134,6 +134,21 @@
         },
         "version": "v2.1.5"
     },
+    "hello": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "hello",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-MeBmE3qWJnbon2nRtlOC3pWn732RS4y5VvQepy4PUWs=",
+            "type": "url",
+            "url": "https://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz"
+        },
+        "version": "2.10"
+    },
     "octocov": {
         "cargoLocks": null,
         "date": null,

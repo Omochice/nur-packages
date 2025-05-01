@@ -57,3 +57,7 @@ fetch.url = "https://github.com/microsoft/typescript-go/archive/$ver.zip"
 # renovate: datasource=github-releases depName=skanehira/slack-reminder
 src.manual = "v0.1.1"
 fetch.github = "skanehira/slack-reminder"
+
+[hello]
+src.manual = "2.10"
+fetch.url = "https://ftp.gnu.org/gnu/hello/hello-$ver.tar.gz"

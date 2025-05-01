@@ -72,6 +72,14 @@
       sha256 = "sha256-T74OUUTrORqqgYYuTpUCGzMyjaiY6CT9ftwqkppyWVM=";
     };
   };
+  hello = {
+    pname = "hello";
+    version = "2.10";
+    src = fetchurl {
+      url = "https://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz";
+      sha256 = "sha256-MeBmE3qWJnbon2nRtlOC3pWn732RS4y5VvQepy4PUWs=";
+    };
+  };
   octocov = {
     pname = "octocov";
     version = "v0.67.0";

@@ -113,6 +113,7 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
+              pkgs.hello
             ];
           };
           renovate = pkgs.mkShell {
