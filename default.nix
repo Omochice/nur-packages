@@ -30,6 +30,10 @@ in
   };
   ghalint = pkgs.callPackage ./pkgs/ghalint/default.nix { source = sources.ghalint; };
   ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };
+  ghq = pkgs.callPackage ./pkgs/ghq/default.nix {
+    source = sources.ghq;
+    original = pkgs.ghq;
+  };
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
   };
