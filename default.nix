@@ -34,7 +34,7 @@ in
     source = sources.gitlab-ci-verify;
   };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
-  pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
+  pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; original = pkgs.pinact; };
   slack-reminder = pkgs.callPackage ./pkgs/slack-reminder/default.nix {
     source = sources.slack-reminder;
   };
