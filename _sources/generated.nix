@@ -96,13 +96,13 @@
   };
   pinact = {
     pname = "pinact";
-    version = "v3.0.5";
+    version = "v3.1.2";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "pinact";
-      rev = "v3.0.5";
+      rev = "v3.1.2";
       fetchSubmodules = false;
-      sha256 = "sha256-p8GOXx++wcUrQATlojx0D4ymlPFw9TCqL6YGSTOaRDo=";
+      sha256 = "sha256-5jJzlMMpfk9fFDoqR0NJNacquZ4Zma0YF/pi80Miv0Y=";
     };
   };
   slack-reminder = {
