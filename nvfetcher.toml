@@ -25,7 +25,7 @@ fetch.github = "suzuki-shunsuke/ghatm"
 
 [ghalint]
 # renovate: datasource=github-releases depName=suzuki-shunsuke/ghalint
-src.manual = "v1.3.0"
+src.manual = "v1.4.0"
 fetch.github = "suzuki-shunsuke/ghalint"
 
 [duckgo]
