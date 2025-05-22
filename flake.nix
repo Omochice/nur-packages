@@ -94,6 +94,15 @@
             };
           }
         );
+      runAsOn =
+        system:
+        let
+          pkgs = pkgsFor system;
+        in
+        name: script: {
+          type = "app";
+          program = script |> pkgs.writeShellScript name |> toString;
+        };
     in
     {
       legacyPackages = forAllSystems (
@@ -104,6 +113,30 @@
         system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
       );
       formatter = forAllSystems (system: (treefmt system).config.build.wrapper);
+      apps = forAllSystems (
+        system:
+        let
+          pkgs = pkgsFor system;
+          runAs = runAsOn system;
+        in
+        {
+          check-action =
+            ''
+              set -e
+              ${pkgs.actionlint}/bin/actionlint --version
+              ${pkgs.actionlint}/bin/actionlint
+              ${pkgs.ghalint}/bin/ghalint --version
+              ${pkgs.ghalint}/bin/ghalint run
+            ''
+            |> runAs "check-action";
+          check-renovate-config =
+            ''
+              set -e
+              ${pkgs.renovate}/bin/renovate-config-validator renovate.json5
+            ''
+            |> runAs "check-renovate-confnig";
+        }
+      );
       devShells = forAllSystems (
         system:
         let
@@ -113,17 +146,6 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
-            ];
-          };
-          renovate = pkgs.mkShell {
-            packages = [
-              pkgs.renovate
-            ];
-          };
-          check-action = pkgs.mkShell {
-            packages = [
-              pkgs.actionlint
-              pkgs.ghalint
             ];
           };
         }

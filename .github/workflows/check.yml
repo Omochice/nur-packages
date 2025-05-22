@@ -79,7 +79,7 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Validate renovate config
-        run: nix develop .#renovate --command renovate-config-validator renovate.json5
+        run: nix run .#check-renovate-config
   check-actions:
     needs: path-filter
     if: needs.path-filter.outputs.actions == 'true'
@@ -98,11 +98,7 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: check actions
-        run: |
-          nix develop .#check-action -c actionlint --version
-          nix develop .#check-action -c actionlint
-          nix develop .#check-action -c ghalint --version
-          nix develop .#check-action -c ghalint run
+        run: nix run .#check-action
   status-check:
     timeout-minutes: 5
     runs-on: ubuntu-latest
