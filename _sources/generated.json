@@ -148,12 +148,12 @@
             "name": null,
             "owner": "timo-reymann",
             "repo": "gitlab-ci-verify",
-            "rev": "v2.1.5",
-            "sha256": "sha256-T74OUUTrORqqgYYuTpUCGzMyjaiY6CT9ftwqkppyWVM=",
+            "rev": "v2.1.6",
+            "sha256": "sha256-XY2kBZ+5Fl8e/xfNVxXJqqoRaeBSfkb1pu3778Ue+vM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.5"
+        "version": "v2.1.6"
     },
     "octocov": {
         "cargoLocks": null,
