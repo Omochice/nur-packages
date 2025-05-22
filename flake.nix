@@ -134,7 +134,7 @@
               set -e
               ${pkgs.renovate}/bin/renovate-config-validator renovate.json5
             ''
-            |> runAs "check-renovate-confnig";
+            |> runAs "check-renovate-config";
         }
       );
       devShells = forAllSystems (
