@@ -1,9 +1,9 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: [
-    "github>Omochice/personal-renovate-config",
+    'github>Omochice/personal-renovate-config',
   ],
-  branchPrefix: "self-hosted-renovate/",
+  branchPrefix: 'self-hosted-renovate/',
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
@@ -13,35 +13,31 @@
   },
   customManagers: [
     {
-      customType: "jsonata",
-      fileFormat: "toml",
-      fileMatch: [
-        "^nvfetcher.toml$",
+      customType: 'jsonata',
+      fileFormat: 'toml',
+      managerFilePatterns: [
+        '/^nvfetcher.toml$/',
       ],
       matchStrings: [
-        '*.{ \
-          "depName": fetch.github ? fetch.github : (fetch.url ~> /^https:\\/\\/github\\.com\\/[^\\/]+?\\/[^\\/]+/ ~> $lookup("match")), \
-          "currentValue": src.manual, \
-          "datasource": src.manual ~> /^[0-9a-f]{7}$/ ? "git-refs" : "github-releases" \
-        }',
+        '*.{           "depName": fetch.github ? fetch.github : (fetch.url ~> /^https:\\/\\/github\\.com\\/[^\\/]+?\\/[^\\/]+/ ~> $lookup("match")),           "currentValue": src.manual,           "datasource": src.manual ~> /^[0-9a-f]{7}$/ ? "git-refs" : "github-releases"         }',
       ],
     },
   ],
   packageRules: [
     {
-      description: "Update sha256 after upgrade",
+      description: 'Update sha256 after upgrade',
       matchFileNames: [
-        "nvfetcher.toml",
+        'nvfetcher.toml',
       ],
       postUpgradeTasks: {
         commands: [
-          "nix run github:berberman/nvfetcher",
+          'nix run github:berberman/nvfetcher',
         ],
         fileFilters: [
-          "nvfetcher.toml",
-          "_sources/*",
+          'nvfetcher.toml',
+          '_sources/*',
         ],
-        executionMode: "update",
+        executionMode: 'update',
       },
     },
   ],
