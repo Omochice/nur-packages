@@ -25,6 +25,7 @@ jobs:
           owner: ${{ github.repository_owner }}
           repositories: |
             nur-packages
+          permission-contents: write
           permission-issues: write
           permission-pull-requests: write
       - name: Checkout repository
