@@ -13,12 +13,17 @@
   },
   customManagers: [
     {
-      customType: "regex",
+      customType: "jsonata",
+      fileFormat: "toml",
       fileMatch: [
         "^nvfetcher.toml$",
       ],
       matchStrings: [
-        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\nsrc\\.manual = \"(?<currentValue>.*?)\"",
+        '*.{ \
+          "depName": fetch.github ? fetch.github : (fetch.url ~> /^https:\\/\\/github\\.com\\/([^\\/]+/[^\\/]+)/ ~> $lookup("groups"))[0], \
+          "currentValue": src.manual, \
+          "datasource": src.manual ~> /^[0-9a-f]{7}$/ ? "git-refs" : "github-releases" \
+        }',
       ],
     },
   ],
