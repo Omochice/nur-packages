@@ -20,7 +20,7 @@
       ],
       matchStrings: [
         '*.{ \
-          "depName": fetch.github ? fetch.github : (fetch.url ~> /^https:\\/\\/github\\.com\\/([^\\/]+/[^\\/]+)/ ~> $lookup("groups"))[0], \
+          "depName": fetch.github ? fetch.github : (fetch.url ~> /^https:\\/\\/github\\.com\\/[^\\/]+?\\/[^\\/]+/ ~> $lookup("match")), \
           "currentValue": src.manual, \
           "datasource": src.manual ~> /^[0-9a-f]{7}$/ ? "git-refs" : "github-releases" \
         }',
