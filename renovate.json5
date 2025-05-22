@@ -15,8 +15,8 @@
     {
       customType: "jsonata",
       fileFormat: "toml",
-      fileMatch: [
-        "^nvfetcher.toml$",
+      managerFilePatterns: [
+        "/^nvfetcher.toml$/",
       ],
       matchStrings: [
         '*.{ \
