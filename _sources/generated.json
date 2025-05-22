@@ -232,12 +232,12 @@
             "name": null,
             "owner": "keithamus",
             "repo": "sort-package-json",
-            "rev": "v3.1.0",
-            "sha256": "sha256-W7pvzq8992ojim70kEvHSRgmOaxbdPTN2jhZFCRMPyE=",
+            "rev": "v3.2.1",
+            "sha256": "sha256-MXWcCCAeUdcDdju7XO81hP3ZjSJ19AMOu3HiI/56V3M=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.1.0"
+        "version": "v3.2.1"
     },
     "tsgo": {
         "cargoLocks": null,
