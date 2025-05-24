@@ -19,11 +19,16 @@
         "/^nvfetcher.toml$/",
       ],
       matchStrings: [
-        '*.{ \
-          "depName": fetch.github ? fetch.github : (fetch.url ~> /^https:\\/\\/github\\.com\\/[^\\/]+?\\/[^\\/]+/ ~> $lookup("match")), \
+        '*.( \
+          $isCommitHash := src.manual ~> /^[0-9a-f]{7}$/; \
+          { \
+          "depName": fetch.github ? fetch.github : ( \
+            $url := fetch.url ~> /^https:\\/\\/github\\.com\\/([^\\/]+?\\/[^\\/]+)/; \
+            $isCommitHash ? $url.match : $url.groups[0] \
+          ), \
           "currentValue": src.manual, \
-          "datasource": src.manual ~> /^[0-9a-f]{7}$/ ? "git-refs" : "github-releases" \
-        }',
+          "datasource": $isCommitHash ? "git-refs" : "github-releases" \
+        })',
       ],
     },
   ],
