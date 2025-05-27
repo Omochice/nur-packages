@@ -53,3 +53,7 @@ fetch.github = "x-motemen/ghq"
 [lazygit]
 src.manual = "v0.51.1"
 fetch.github = "jesseduffield/lazygit"
+
+[vim-startuptime]
+src.manual = "v1.3.2"
+fetch.github = "rhysd/vim-startuptime"
