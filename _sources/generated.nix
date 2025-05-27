@@ -146,4 +146,15 @@
       sha256 = "sha256-F18AKdpVQJvQpWAbAOhs/bwpFI+KMcJwrhVWbmlekB8=";
     };
   };
+  vim-startuptime = {
+    pname = "vim-startuptime";
+    version = "v1.3.2";
+    src = fetchFromGitHub {
+      owner = "rhysd";
+      repo = "vim-startuptime";
+      rev = "v1.3.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-d6AXTWTUawkBCXCvMs3C937qoRUZmy0qCFdSLcWh0BE=";
+    };
+  };
 }
