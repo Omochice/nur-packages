@@ -83,6 +83,17 @@
       sha256 = "sha256-1bJG4X7PzHzcC+KLV1ynQkRF7KdOsM+lc9xCE1vSEZk=";
     };
   };
+  lazygit = {
+    pname = "lazygit";
+    version = "v0.51.1";
+    src = fetchFromGitHub {
+      owner = "jesseduffield";
+      repo = "lazygit";
+      rev = "v0.51.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-PktxVf+2xOpkZBHlm9oLV4WXoz9bNaXa+cvnI9RCcRA=";
+    };
+  };
   octocov = {
     pname = "octocov";
     version = "v0.67.2";
