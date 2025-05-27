@@ -105,7 +105,6 @@ jobs:
     secrets:
       CACHIX_SIGNING_KEY: ${{ secrets.CACHIX_SIGNING_KEY }}
       CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   status-check:
     timeout-minutes: 5
     runs-on: ubuntu-latest
