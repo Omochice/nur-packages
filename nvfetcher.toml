@@ -19,7 +19,7 @@ src.manual = "v0.3.5"
 fetch.github = "suzuki-shunsuke/ghatm"
 
 [ghalint]
-src.manual = "v1.4.0"
+src.manual = "v1.4.1"
 fetch.github = "suzuki-shunsuke/ghalint"
 
 [duckgo]
