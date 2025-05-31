@@ -7,7 +7,7 @@
 buildGoModule rec {
   inherit (source) pname src version;
 
-  vendorHash = "sha256-yt6REaykpzgvtOFAOSzzl1bTVrCLK0QzpVt518oPjdM=";
+  vendorHash = "sha256-oQNudszwZkO9e1d35MHl8pGefhBXlzJ4BLgaC/a/es4=";
 
   ldflags = [
     "-X main.date=unknown"
