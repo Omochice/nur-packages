@@ -26,5 +26,6 @@ buildGo124Module rec {
     homepage = "https://github.com/timo-reymann/gitlab-ci-verify";
     changelog = "https://github.com/timo-reymann/gitlab-ci-verify/releases/tag/v${version}";
     license = licenses.gpl3Plus;
+    mainProgram = "gitlab-ci-verify";
   };
 }

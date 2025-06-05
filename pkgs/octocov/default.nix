@@ -29,5 +29,6 @@ buildGoModule rec {
     homepage = "https://github.com/k1LoW/octocov";
     changelog = "https://github.com/k1LoW/octocov/releases/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "octocov";
   };
 }
