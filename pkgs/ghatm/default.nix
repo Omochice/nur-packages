@@ -26,5 +26,6 @@ buildGoModule rec {
     homepage = "https://github.com/suzuki-shunsuke/ghatm";
     changelog = "https://github.com/suzuki-shunsuke/ghatm/releases/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "ghatm";
   };
 }

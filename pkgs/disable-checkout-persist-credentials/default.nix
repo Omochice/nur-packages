@@ -26,5 +26,6 @@ buildGoModule rec {
     homepage = "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials";
     changelog = "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "disable-checkout-persist-credentials";
   };
 }

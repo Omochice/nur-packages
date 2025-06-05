@@ -21,5 +21,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/keithamus/sort-package-json";
     changelog = "https://github.com/keithamus/sort-package-json/releases/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "sort-package-json";
   };
 }

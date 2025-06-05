@@ -26,5 +26,6 @@ buildGoModule rec {
     homepage = "https://github.com/skanehira/slack-reminder";
     changelog = "https://github.com/skanehira/slack-reminder/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "slack-reminder";
   };
 }

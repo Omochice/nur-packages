@@ -26,5 +26,6 @@ buildGoModule rec {
     homepage = "https://github.com/suzuki-shunsuke/ghalint";
     changelog = "https://github.com/suzuki-shunsuke/ghalint/releases/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "ghalint";
   };
 }

@@ -44,5 +44,6 @@ buildGo124Module rec {
     homepage = "https://github.com/microsoft/typescript-go/tree/main#";
     changelog = "https://github.com/microsoft/typescript-go/commit/${version}";
     license = licenses.asl20;
+    mainProgram = "tsgo";
   };
 }

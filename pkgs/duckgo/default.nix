@@ -23,5 +23,6 @@ buildGoModule rec {
     homepage = "https://github.com/sheepla/duckgo";
     changelog = "https://github.com/sheepla/duckgo/releases/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "duckgo";
   };
 }

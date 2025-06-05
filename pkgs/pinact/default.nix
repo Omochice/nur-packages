@@ -29,5 +29,6 @@ buildGoModule rec {
     homepage = "https://github.com/suzuki-shunsuke/pinact";
     changelog = "https://github.com/suzuki-shunsuke/pinact/releases/tag/v${version}";
     license = licenses.mit;
+    mainProgram = "pinact";
   };
 }
