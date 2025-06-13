@@ -148,12 +148,12 @@
             "name": null,
             "owner": "timo-reymann",
             "repo": "gitlab-ci-verify",
-            "rev": "v2.1.9",
-            "sha256": "sha256-MULLNA9I8BJEqU88p2YpB+cBOAXjCRMD4I8YwY5Kde0=",
+            "rev": "v2.1.10",
+            "sha256": "sha256-nB2aR/R8xp3OtxQrpVx4Pob3vDNtNLstH38KdGulZYI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.9"
+        "version": "v2.1.10"
     },
     "lazygit": {
         "cargoLocks": null,
