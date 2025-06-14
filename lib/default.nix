@@ -1,8 +1,15 @@
 { pkgs }:
 
-with pkgs.lib;
 {
-  # Add your library functions here
-  #
-  # hexint = x: hexvals.${toLower x};
+  runAs =
+    name: runtimeInputs: text:
+    let
+      program = pkgs.writeShellApplication {
+        inherit name runtimeInputs text;
+      };
+    in
+    {
+      type = "app";
+      program = "${program}/bin/${name}";
+    };
 }
