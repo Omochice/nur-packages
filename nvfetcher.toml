@@ -1,5 +1,5 @@
 [pinact]
-src.manual = "v3.1.2"
+src.manual = "v3.2.0"
 fetch.github = "suzuki-shunsuke/pinact"
 
 [firge]
