@@ -211,12 +211,12 @@
             "name": null,
             "owner": "suzuki-shunsuke",
             "repo": "pinact",
-            "rev": "v3.1.2",
-            "sha256": "sha256-5jJzlMMpfk9fFDoqR0NJNacquZ4Zma0YF/pi80Miv0Y=",
+            "rev": "v3.2.0",
+            "sha256": "sha256-lZ3AXtPuHYlAOSn138NKVk9QNfjZyT8lV2z2PbLRtZI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.1.2"
+        "version": "v3.2.0"
     },
     "slack-reminder": {
         "cargoLocks": null,
