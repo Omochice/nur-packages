@@ -14,6 +14,21 @@
         },
         "version": "15.2.0"
     },
+    "claude-code": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "claude-code",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-Lz9PK8KSSqvRIQcVoOIjWqjx+tQXhFauTh386WDsQmw=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.31.tgz"
+        },
+        "version": "1.0.31"
+    },
     "disable-checkout-persist-credentials": {
         "cargoLocks": null,
         "date": null,
