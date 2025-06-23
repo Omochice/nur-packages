@@ -53,6 +53,7 @@ jobs:
           extra_nix_config: |
             experimental-features = nix-command flakes pipe-operators
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+            allowUnfree = true
       - name: Run nvfetcher
         run: nix develop --command nvfetcher
       - name: Check diff
@@ -78,6 +79,7 @@ jobs:
           extra_nix_config: |
             experimental-features = nix-command flakes pipe-operators
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+            allowUnfree = true
       - name: Validate renovate config
         run: nix run .#check-renovate-config
   check-actions:
@@ -97,6 +99,7 @@ jobs:
           extra_nix_config: |
             experimental-features = nix-command flakes pipe-operators
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+            allowUnfree = true
       - name: check actions
         run: nix run .#check-action
   check-build:
