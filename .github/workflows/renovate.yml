@@ -33,12 +33,9 @@ jobs:
         with:
           persist-credentials: false
       - name: Install nix
-        uses: cachix/install-nix-action@526118121621777ccd86f79b04685a9319637641 # 31.3.0
+        uses: ./.github/actions/setup-nix
         with:
-          nix_path: nixpkgs=https://github.com/NixOS/nixpkgs/archive/refs/heads/nixpkgs-unstable.tar.gz
-          extra_nix_config: |
-            experimental-features = nix-command flakes
-            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.github_token }}
       - name: Renovate
         run: nix run nixpkgs#renovate -- --token=${{ steps.app-token.outputs.token }} --platform=github
         env:
