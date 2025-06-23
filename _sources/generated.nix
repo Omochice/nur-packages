@@ -9,6 +9,14 @@
       sha256 = "sha256-rMRHWSeGN+xiKp89VF0NiKUWbBxFFWEO3nhSeQlq4DM=";
     };
   };
+  claude-code = {
+    pname = "claude-code";
+    version = "1.0.31";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.31.tgz";
+      sha256 = "sha256-Lz9PK8KSSqvRIQcVoOIjWqjx+tQXhFauTh386WDsQmw=";
+    };
+  };
   disable-checkout-persist-credentials = {
     pname = "disable-checkout-persist-credentials";
     version = "v0.1.2";

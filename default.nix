@@ -37,6 +37,10 @@ in
     inherit nodeEnv;
     source = sources.ccusage;
   };
+  claude-code = pkgs.callPackage ./pkgs/claude-code/default.nix {
+    inherit nodeEnv;
+    source = sources.claude-code;
+  };
   disable-checkout-persist-credentials =
     pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
       { source = sources.disable-checkout-persist-credentials; };
