@@ -57,3 +57,7 @@ fetch.github = "jesseduffield/lazygit"
 [vim-startuptime]
 src.manual = "v1.3.2"
 fetch.github = "rhysd/vim-startuptime"
+
+[ccusage]
+src.manual = "15.2.0"
+fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"

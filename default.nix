@@ -11,6 +11,19 @@
 }:
 let
   sources = pkgs.callPackage ./_sources/generated.nix { };
+  nodeEnv = import ./node2nix/node-env.nix {
+    inherit (pkgs)
+      stdenv
+      lib
+      python2
+      runCommand
+      writeTextFile
+      writeShellScript
+      ;
+    inherit (pkgs) nodejs;
+    inherit pkgs;
+    libtool = if pkgs.stdenv.isDarwin then pkgs.cctools or pkgs.darwin.cctools else null;
+  };
 in
 
 {
@@ -20,6 +33,10 @@ in
   overlays = import ./overlays; # nixpkgs overlays
 
   # keep-sorted start block=yes
+  ccusage = pkgs.callPackage ./pkgs/ccusage/default.nix {
+    inherit nodeEnv;
+    source = sources.ccusage;
+  };
   disable-checkout-persist-credentials =
     pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
       { source = sources.disable-checkout-persist-credentials; };

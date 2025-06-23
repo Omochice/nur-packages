@@ -1,4 +1,19 @@
 {
+    "ccusage": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ccusage",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-rMRHWSeGN+xiKp89VF0NiKUWbBxFFWEO3nhSeQlq4DM=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/ccusage/-/ccusage-15.2.0.tgz"
+        },
+        "version": "15.2.0"
+    },
     "disable-checkout-persist-credentials": {
         "cargoLocks": null,
         "date": null,
