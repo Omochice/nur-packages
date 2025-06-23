@@ -100,9 +100,15 @@
         let
           pkgs = pkgsFor system;
         in
-        name: script: {
+        name: runtimeInputs: text:
+        let
+          program = pkgs.writeShellApplication {
+            inherit name runtimeInputs text;
+          };
+        in
+        {
           type = "app";
-          program = script |> pkgs.writeShellScript name |> toString;
+          program = "${program}/bin/${name}";
         };
     in
     {
@@ -123,19 +129,22 @@
         {
           check-action =
             ''
-              set -e
-              ${pkgs.actionlint}/bin/actionlint --version
-              ${pkgs.actionlint}/bin/actionlint
-              ${pkgs.ghalint}/bin/ghalint --version
-              ${pkgs.ghalint}/bin/ghalint run
+              actionlint --version
+              actionlint
+              ghalint --version
+              ghalint run
             ''
-            |> runAs "check-action";
+            |> runAs "check-action" [
+              pkgs.actionlint
+              pkgs.ghalint
+            ];
           check-renovate-config =
             ''
-              set -e
-              ${pkgs.renovate}/bin/renovate-config-validator renovate.json5
+              renovate-config-validator renovate.json5
             ''
-            |> runAs "check-renovate-config";
+            |> runAs "check-renovate-config" [
+              pkgs.renovate
+            ];
         }
       );
       devShells = forAllSystems (
