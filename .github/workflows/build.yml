@@ -51,12 +51,10 @@ jobs:
         with:
           persist-credentials: false
       - name: Install nix
-        uses: cachix/install-nix-action@526118121621777ccd86f79b04685a9319637641 # 31.3.0
+        uses: ./.github/actions/setup-nix
         with:
-          nix_path: "${{ matrix.nixPath }}"
-          extra_nix_config: |
-            experimental-features = nix-command flakes pipe-operators
-            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          nix-path: "${{ matrix.nixPath }}"
       - name: Show nixpkgs version
         run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
       - name: Setup cachix
