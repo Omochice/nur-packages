@@ -32,6 +32,7 @@
             settings.global.excludes = [
               "LICENSE"
               "_sources/*"
+              "node2nix/node-env.nix"
             ];
             settings.formatter = {
               # keep-sorted start block=yes
