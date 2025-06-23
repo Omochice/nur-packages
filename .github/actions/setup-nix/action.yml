@@ -13,7 +13,7 @@ runs:
   using: composite
   steps:
     - name: Install nix
-      uses: cachix/install-nix-action@526118121621777ccd86f79b04685a9319637641 # v31.3.0
+      uses: cachix/install-nix-action@17fe5fb4a23ad6cbbe47d6b3f359611ad276644c # v31.4.0
       with:
         nix_path: ${{ inputs.nix-path }}
         extra_nix_config: |
