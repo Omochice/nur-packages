@@ -283,12 +283,12 @@
             "name": null,
             "owner": "keithamus",
             "repo": "sort-package-json",
-            "rev": "v3.2.2",
-            "sha256": "sha256-mrymBdbDrw1rk1gsNfeyIlqlviVTAuBJENTkILeqD0o=",
+            "rev": "v3.3.0",
+            "sha256": "sha256-SV3SxBtDIYBI072jjr2nTBrheObpw19xeA3okig8FcU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.2.2"
+        "version": "v3.3.0"
     },
     "tsgo": {
         "cargoLocks": null,
