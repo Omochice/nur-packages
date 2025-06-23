@@ -21,13 +21,18 @@
       matchStrings: [
         '*.( \
           $isCommitHash := src.manual ~> /^[0-9a-f]{7}$/; \
+          $npmPackage := fetch.url ~> /^https:\\/\\/registry\\.npmjs\\.org\\/(.+)\\/-\\//; \
           { \
-          "depName": fetch.github ? fetch.github : ( \
-            $url := fetch.url ~> /^https:\\/\\/github\\.com\\/([^\\/]+?\\/[^\\/]+)/; \
-            $isCommitHash ? $url.match : $url.groups[0] \
-          ), \
-          "currentValue": src.manual, \
-          "datasource": $isCommitHash ? "git-refs" : "github-releases" \
+            "depName": fetch.github ? fetch.github : ( \
+              $npmPackage ? $npmPackage.groups[0] : ( \
+                $url := fetch.url ~> /^https:\\/\\/github\\.com\\/([^\\/]+?\\/[^\\/]+)/; \
+                $isCommitHash ? $url.match : $url.groups[0] \
+              ) \
+            ), \
+            "currentValue": src.manual, \
+            "datasource": $isCommitHash ? "git-refs" : ( \
+              $npmPackage ? "npm" : "github-releases" \
+            ) \
         })',
       ],
     },
