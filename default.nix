@@ -61,6 +61,7 @@ in
   lazygit = pkgs.callPackage ./pkgs/lazygit/default.nix { source = sources.lazygit; };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
+  roots = pkgs.callPackage ./pkgs/roots/default.nix { source = sources.roots; };
   slack-reminder = pkgs.callPackage ./pkgs/slack-reminder/default.nix {
     source = sources.slack-reminder;
   };
