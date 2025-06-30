@@ -65,3 +65,7 @@ fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"
 [claude-code]
 src.manual = "1.0.35"
 fetch.url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-$ver.tgz"
+
+[roots]
+src.manual = "v0.4.0"
+fetch.github = "k1LoW/roots"
