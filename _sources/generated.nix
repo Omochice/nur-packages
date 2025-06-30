@@ -132,6 +132,17 @@
       sha256 = "sha256-aNRDz0mAc5fsS01W0PZxCGw0NgEcExtciTcv/Omdv3g=";
     };
   };
+  roots = {
+    pname = "roots";
+    version = "v0.4.0";
+    src = fetchFromGitHub {
+      owner = "k1LoW";
+      repo = "roots";
+      rev = "v0.4.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-NOUxbYp3dPJiK6ZJ96tyCrdQfeQWMsWfwIpinIQfowU=";
+    };
+  };
   slack-reminder = {
     pname = "slack-reminder";
     version = "v0.1.1";
