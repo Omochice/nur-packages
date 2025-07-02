@@ -156,13 +156,13 @@
   };
   sort-package-json = {
     pname = "sort-package-json";
-    version = "v3.3.1";
+    version = "v3.4.0";
     src = fetchFromGitHub {
       owner = "keithamus";
       repo = "sort-package-json";
-      rev = "v3.3.1";
+      rev = "v3.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-p1YK7PimQHL2QuXdQZRCvfd6kIlZkb9E9dn2+S6LjaM=";
+      sha256 = "sha256-CnMWuokQistBfvyyPHJTqAlVj+8r4CcZ8VGYRKB1Mmo=";
     };
   };
   tsgo = {

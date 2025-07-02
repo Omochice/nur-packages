@@ -35,7 +35,7 @@ src.manual = "v0.68.1"
 fetch.github = "k1LoW/octocov"
 
 [sort-package-json]
-src.manual = "v3.3.1"
+src.manual = "v3.4.0"
 fetch.github = "keithamus/sort-package-json"
 
 [tsgo]
