@@ -88,6 +88,17 @@
       sha256 = "sha256-5BN96/RShfJpkfpJe0qrZVDuyFoAV9kgCiBv4REY/5Y=";
     };
   };
+  gitlab-ci-ls = {
+    pname = "gitlab-ci-ls";
+    version = "1.1.1";
+    src = fetchFromGitHub {
+      owner = "alesbrelih";
+      repo = "gitlab-ci-ls";
+      rev = "1.1.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-3DR1MV9YSugWFodLh4wBa6oT8yGEkir0rVm0mcHXpxU=";
+    };
+  };
   gitlab-ci-verify = {
     pname = "gitlab-ci-verify";
     version = "v2.1.12";
