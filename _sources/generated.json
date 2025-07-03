@@ -164,6 +164,27 @@
         },
         "version": "v1.8.0"
     },
+    "gitlab-ci-ls": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "gitlab-ci-ls",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "alesbrelih",
+            "repo": "gitlab-ci-ls",
+            "rev": "1.1.1",
+            "sha256": "sha256-3DR1MV9YSugWFodLh4wBa6oT8yGEkir0rVm0mcHXpxU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "1.1.1"
+    },
     "gitlab-ci-verify": {
         "cargoLocks": null,
         "date": null,

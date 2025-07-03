@@ -55,6 +55,7 @@ in
     source = sources.ghq;
     original = pkgs.ghq;
   };
+  gitlab-ci-ls = pkgs.callPackage ./pkgs/gitlab-ci-ls/default.nix { source = sources.gitlab-ci-ls; };
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
   };
