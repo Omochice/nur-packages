@@ -147,7 +147,7 @@
             ];
           update-readme =
             ''
-              ${pkgs.callPackage ./scripts/generate-package-table.nix {}}/bin/generate-package-table
+              ${pkgs.callPackage ./scripts/generate-package-table.nix { }}/bin/generate-package-table
             ''
             |> runAs "update-readme" [ ];
         }

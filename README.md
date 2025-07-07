@@ -29,15 +29,15 @@ Uncomment this if you use travis:
 | ghq | v1.8.0 | Remote repository management made easy | [https://github.com/x-motemen/ghq](https://github.com/x-motemen/ghq) |
 | gitlab-ci-ls | 1.1.1 | Language server for Gitlab CI | [https://github.com/alesbrelih/gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls) |
 | gitlab-ci-verify | v2.1.12 | Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks
- | [https://github.com/timo-reymann/gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify) |
+| [https://github.com/timo-reymann/gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify) |
 | lazygit | v0.53.0 | simple terminal UI for git commands | [https://github.com/jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) |
 | octocov | v0.68.1 | octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).
- | [https://github.com/k1LoW/octocov](https://github.com/k1LoW/octocov) |
+| [https://github.com/k1LoW/octocov](https://github.com/k1LoW/octocov) |
 | pinact | v3.3.0 | pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.
 pinact can also update their versions and verify version annotations.
- | [https://github.com/suzuki-shunsuke/pinact](https://github.com/suzuki-shunsuke/pinact) |
+| [https://github.com/suzuki-shunsuke/pinact](https://github.com/suzuki-shunsuke/pinact) |
 | roots | v0.4.0 | `roots` is a tool for exploring multiple root directories, such as those in a monorepo project.
- | [https://github.com/k1LoW/roots](https://github.com/k1LoW/roots) |
+| [https://github.com/k1LoW/roots](https://github.com/k1LoW/roots) |
 | slack-reminder | v0.1.1 | Slack remind generator | [https://github.com/skanehira/slack-reminder](https://github.com/skanehira/slack-reminder) |
 | sort-package-json | v3.4.0 | Sort an Object or package.json based on the well-known package.json keys | [https://github.com/keithamus/sort-package-json](https://github.com/keithamus/sort-package-json) |
 | tsgo | d508afb | Staging repo for development of native port of TypeScript | [https://github.com/microsoft/typescript-go/tree/main#](https://github.com/microsoft/typescript-go/tree/main#) |
