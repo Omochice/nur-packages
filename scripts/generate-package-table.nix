@@ -35,15 +35,13 @@ let
       );
 
   # Generate markdown table
-  generateRow =
-    name: info:
-    "| ${name} | ${info.version} | ${info.description} | [${info.homepage}](${info.homepage}) |";
+  generateRow = name: info: "| [${name}](${info.homepage}) | ${info.version} | ${info.description} |";
 
   tableHeader = ''
     ## Available Packages
 
-    | Package | Version | Description | Homepage |
-    |---------|---------|-------------|----------|'';
+    | Package | Version | Description |
+    |---------|---------|-------------|'';
 
   tableRows = lib.mapAttrsToList generateRow packageInfo;
 
