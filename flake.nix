@@ -145,12 +145,16 @@
             |> runAs "check-renovate-config" [
               pkgs.renovate
             ];
-          update-readme =
+          post-renovate =
             ''
+              nvfetcher
               ${pkgs.callPackage ./scripts/generate-package-table.nix { }}/bin/generate-package-table
               nix fmt
             ''
-            |> runAs "update-readme" [ pkgs.nix ];
+            |> runAs "post-renovate" [
+              pkgs.nix
+              pkgs.nvfetcher
+            ];
         }
       );
       devShells = forAllSystems (
