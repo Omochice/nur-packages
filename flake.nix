@@ -145,6 +145,11 @@
             |> runAs "check-renovate-config" [
               pkgs.renovate
             ];
+          update-readme =
+            ''
+              ${pkgs.callPackage ./scripts/generate-package-table.nix {}}/bin/generate-package-table
+            ''
+            |> runAs "update-readme" [ ];
         }
       );
       devShells = forAllSystems (
