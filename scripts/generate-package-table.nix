@@ -63,8 +63,7 @@ let
     )
     |> lib.map (row: [ "" ] ++ row ++ [ "" ])
     |> lib.map (row: lib.concatStringsSep "|" row)
-    |> lib.concatStringsSep "\n"
-    |> lib.strings.escapeShellArg;
+    |> lib.concatStringsSep "\n";
 
   script = pkgs.writeShellApplication {
     name = "generate-package-table";
