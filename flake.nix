@@ -148,8 +148,9 @@
           update-readme =
             ''
               ${pkgs.callPackage ./scripts/generate-package-table.nix { }}/bin/generate-package-table
+              nix fmt
             ''
-            |> runAs "update-readme" [ ];
+            |> runAs "update-readme" [ pkgs.nix ];
         }
       );
       devShells = forAllSystems (
