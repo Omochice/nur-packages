@@ -150,7 +150,7 @@
               ${pkgs.callPackage ./scripts/generate-package-table.nix { }}/bin/generate-package-table
               nix fmt
             ''
-            |> runAs "post-renovate" [
+            |> runAs "sync-readme" [
               pkgs.nix
             ];
         }
