@@ -145,15 +145,13 @@
             |> runAs "check-renovate-config" [
               pkgs.renovate
             ];
-          post-renovate =
+          sync-readme =
             ''
-              nvfetcher
               ${pkgs.callPackage ./scripts/generate-package-table.nix { }}/bin/generate-package-table
               nix fmt
             ''
             |> runAs "post-renovate" [
               pkgs.nix
-              pkgs.nvfetcher
             ];
         }
       );
