@@ -112,10 +112,10 @@
   };
   ibm-plex-sans-jp = {
     pname = "ibm-plex-sans-jp";
-    version = "2.0.0";
+    version = "@ibm/plex-sans-jp@2.0.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@ibm/plex-sans-jp/-/plex-sans-jp-2.0.0.tgz";
-      sha256 = "sha256-QNrdrymy9wTSwaX7IHQR2z+JrZGCezDL/vyqwetr+c4=";
+      url = "https://github.com/IBM/plex/releases/download/@ibm/plex-sans-jp@2.0.0/ibm-plex-sans-jp.zip";
+      sha256 = "sha256-zmrxxxa/4k0vgSkSnk/qjNS1c4adhBfsTyLqseB9pRA=";
     };
   };
   lazygit = {

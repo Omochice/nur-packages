@@ -2,10 +2,13 @@
   source,
   lib,
   stdenvNoCC,
+  unzip,
 }:
 
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
+
+  nativeBuildInputs = [ unzip ];
 
   installPhase = ''
     mkdir -p $out/share/fonts/opentype
