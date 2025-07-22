@@ -59,6 +59,9 @@ in
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
   };
+  ibm-plex-sans-jp = pkgs.callPackage ./pkgs/data/fonts/ibm-plex-sans-jp/default.nix {
+    source = sources.ibm-plex-sans-jp;
+  };
   lazygit = pkgs.callPackage ./pkgs/lazygit/default.nix { source = sources.lazygit; };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
