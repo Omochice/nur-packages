@@ -11,7 +11,7 @@
 |Package|Version|Description|
 |-|-|-|
 |[ccusage](https://github.com/ryoppippi/ccusage)|v15.3.1|A CLI tool for analyzing Claude Code usage from local JSONL files.|
-|[claude-code](https://github.com/anthropics/claude-code)|v1.0.56|Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.|
+|[claude-code](https://github.com/anthropics/claude-code)|v1.0.57|Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.|
 |[disable-checkout-persist-credentials](https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials)|v0.1.2|CLI to disable actions/checkout's persist-credentials.|
 |[duckgo](https://github.com/sheepla/duckgo)|v0.1.1|A command line DuckDuckGo client with fuzzyfinder UI written in Go.|
 |[firge](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono.|
@@ -21,6 +21,7 @@
 |[ghq](https://github.com/x-motemen/ghq)|v1.8.0|Remote repository management made easy.|
 |[gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls)|v1.1.1|Language server for Gitlab CI.|
 |[gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)|v2.1.12|Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .|
+|[ibm-plex-sans-jp](https://github.com/IBM/plex)|v2.0.0|The package of IBM’s typeface, IBM Plex.|
 |[lazygit](https://github.com/jesseduffield/lazygit)|v0.53.0|simple terminal UI for git commands.|
 |[octocov](https://github.com/k1LoW/octocov)|v0.68.1|octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).|
 |[pinact](https://github.com/suzuki-shunsuke/pinact)|v3.3.0|pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.|
