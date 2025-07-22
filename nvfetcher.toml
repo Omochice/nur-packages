@@ -75,5 +75,5 @@ src.manual = "1.1.1"
 fetch.github = "alesbrelih/gitlab-ci-ls"
 
 [ibm-plex-sans-jp]
-src.manual = "2.0.0"
-fetch.url = "https://registry.npmjs.org/@ibm/plex-sans-jp/-/plex-sans-jp-$ver.tgz"
+src.manual = "@ibm/plex-sans-jp@2.0.0"
+fetch.url = "https://github.com/IBM/plex/releases/download/$ver/ibm-plex-sans-jp.zip"
