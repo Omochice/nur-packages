@@ -110,6 +110,14 @@
       sha256 = "sha256-dZZHRIbfoA58NlWpvlEgb3CpeKb2TS6/Y85otj32rcE=";
     };
   };
+  ibm-plex-sans-jp = {
+    pname = "ibm-plex-sans-jp";
+    version = "2.0.0";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/@ibm/plex-sans-jp/-/plex-sans-jp-2.0.0.tgz";
+      sha256 = "sha256-QNrdrymy9wTSwaX7IHQR2z+JrZGCezDL/vyqwetr+c4=";
+    };
+  };
   lazygit = {
     pname = "lazygit";
     version = "v0.53.0";

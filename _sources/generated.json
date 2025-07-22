@@ -206,6 +206,21 @@
         },
         "version": "v2.1.12"
     },
+    "ibm-plex-sans-jp": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ibm-plex-sans-jp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-QNrdrymy9wTSwaX7IHQR2z+JrZGCezDL/vyqwetr+c4=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/@ibm/plex-sans-jp/-/plex-sans-jp-2.0.0.tgz"
+        },
+        "version": "2.0.0"
+    },
     "lazygit": {
         "cargoLocks": null,
         "date": null,

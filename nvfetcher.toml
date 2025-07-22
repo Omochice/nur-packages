@@ -73,3 +73,7 @@ fetch.github = "k1LoW/roots"
 [gitlab-ci-ls]
 src.manual = "1.1.1"
 fetch.github = "alesbrelih/gitlab-ci-ls"
+
+[ibm-plex-sans-jp]
+src.manual = "2.0.0"
+fetch.url = "https://registry.npmjs.org/@ibm/plex-sans-jp/-/plex-sans-jp-$ver.tgz"
