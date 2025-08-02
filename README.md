@@ -17,7 +17,7 @@
 |[firge](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono.|
 |[firge-nerd](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono with Nerd Font.|
 |[ghalint](https://github.com/suzuki-shunsuke/ghalint)|v1.5.3|GitHub Actions linter.|
-|[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v0.3.5|Set timeout-minutes to all GitHub Actions jobs.|
+|[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v0.3.7|Set timeout-minutes to all GitHub Actions jobs.|
 |[ghq](https://github.com/x-motemen/ghq)|v1.8.0|Remote repository management made easy.|
 |[gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls)|v1.1.1|Language server for Gitlab CI.|
 |[gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)|v2.1.12|Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .|
