@@ -19,13 +19,13 @@
   };
   disable-checkout-persist-credentials = {
     pname = "disable-checkout-persist-credentials";
-    version = "v0.1.2";
+    version = "v0.1.3";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "disable-checkout-persist-credentials";
-      rev = "v0.1.2";
+      rev = "v0.1.3";
       fetchSubmodules = false;
-      sha256 = "sha256-X1qsOhp7L8jNxuJE/MxowkhUZ0YvVjoljvVlG0JaTQg=";
+      sha256 = "sha256-CRngoxWKeiYvA6AM6o3M6t0AsWEvA+D+1d34/vT+n3Y=";
     };
   };
   duckgo = {
