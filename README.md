@@ -22,7 +22,7 @@
 |[gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls)|v1.1.1|Language server for Gitlab CI.|
 |[gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)|v2.1.12|Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .|
 |[ibm-plex-sans-jp](https://github.com/IBM/plex)|@ibm/plex-sans-jp@2.0.0|The package of IBM’s typeface, IBM Plex.|
-|[lazygit](https://github.com/jesseduffield/lazygit)|v0.53.0|simple terminal UI for git commands.|
+|[lazygit](https://github.com/jesseduffield/lazygit)|v0.54.0|simple terminal UI for git commands.|
 |[octocov](https://github.com/k1LoW/octocov)|v0.68.1|octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).|
 |[pinact](https://github.com/suzuki-shunsuke/pinact)|v3.3.2|pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.|
 |[roots](https://github.com/k1LoW/roots)|v0.4.0|`roots` is a tool for exploring multiple root directories, such as those in a monorepo project.|
