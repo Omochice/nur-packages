@@ -20,7 +20,7 @@
 |[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v0.3.7|Set timeout-minutes to all GitHub Actions jobs.|
 |[ghq](https://github.com/x-motemen/ghq)|v1.8.0|Remote repository management made easy.|
 |[gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls)|v1.1.1|Language server for Gitlab CI.|
-|[gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)|v2.1.12|Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .|
+|[gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)|v2.4.0|Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .|
 |[ibm-plex-sans-jp](https://github.com/IBM/plex)|@ibm/plex-sans-jp@2.0.0|The package of IBM’s typeface, IBM Plex.|
 |[lazygit](https://github.com/jesseduffield/lazygit)|v0.54.0|simple terminal UI for git commands.|
 |[octocov](https://github.com/k1LoW/octocov)|v0.68.1|octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).|
