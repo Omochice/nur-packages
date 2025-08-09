@@ -6,8 +6,8 @@
   branchPrefix: "self-hosted-renovate/",
   lockFileMaintenance: {
     enabled: true,
-    automerge: true,
   },
+  automerge: true,
   nix: {
     enabled: true,
   },
