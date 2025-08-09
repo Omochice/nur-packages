@@ -184,14 +184,6 @@
       sha256 = "sha256-CnMWuokQistBfvyyPHJTqAlVj+8r4CcZ8VGYRKB1Mmo=";
     };
   };
-  tsgo = {
-    pname = "tsgo";
-    version = "d508afb";
-    src = fetchurl {
-      url = "https://github.com/microsoft/typescript-go/archive/d508afb.zip";
-      sha256 = "sha256-F18AKdpVQJvQpWAbAOhs/bwpFI+KMcJwrhVWbmlekB8=";
-    };
-  };
   vim-startuptime = {
     pname = "vim-startuptime";
     version = "v1.3.2";

@@ -38,10 +38,6 @@ fetch.github = "k1LoW/octocov"
 src.manual = "v3.4.0"
 fetch.github = "keithamus/sort-package-json"
 
-[tsgo]
-src.manual = "d508afb"
-fetch.url = "https://github.com/microsoft/typescript-go/archive/$ver.zip"
-
 [slack-reminder]
 src.manual = "v0.1.1"
 fetch.github = "skanehira/slack-reminder"
