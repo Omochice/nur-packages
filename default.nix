@@ -72,7 +72,6 @@ in
   sort-package-json = pkgs.callPackage ./pkgs/sort-package-json/default.nix {
     source = sources.sort-package-json;
   };
-  tsgo = pkgs.callPackage ./pkgs/tsgo/default.nix { source = sources.tsgo; };
   veridex = pkgs.callPackage ./pkgs/veridex/default.nix { };
   vim-startuptime = pkgs.callPackage ./pkgs/vim-startuptime/default.nix {
     source = sources.vim-startuptime;

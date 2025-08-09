@@ -28,6 +28,5 @@
 |[roots](https://github.com/k1LoW/roots)|v0.4.0|`roots` is a tool for exploring multiple root directories, such as those in a monorepo project.|
 |[slack-reminder](https://github.com/skanehira/slack-reminder)|v0.1.1|Slack remind generator.|
 |[sort-package-json](https://github.com/keithamus/sort-package-json)|v3.4.0|Sort an Object or package.|
-|[tsgo](https://github.com/microsoft/typescript-go/tree/main#)|d508afb|Staging repo for development of native port of TypeScript.|
 |[veridex](https://android.googlesource.com/platform/art/+/refs/tags/android-15.0.0_r25/tools/veridex/)|unknown|Given an APK, finds API uses that fall into the blocklist/max-target-X/unsupported APIs.|
 |[vim-startuptime](https://github.com/rhysd/vim-startuptime)|v1.3.2|A small Go program for better `vim --startuptime` alternative.|
