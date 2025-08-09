@@ -119,6 +119,9 @@
       packages = forAllSystems (
         system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
       );
+      checks = forAllSystems (system: {
+        formatting = (treefmt system).config.build.check self;
+      });
       formatter = forAllSystems (system: (treefmt system).config.build.wrapper);
       apps = forAllSystems (
         system:
