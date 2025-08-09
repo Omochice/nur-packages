@@ -167,6 +167,7 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
+              (treefmt system).config.build.wrapper
             ];
           };
           renovate = pkgs.mkShell {
