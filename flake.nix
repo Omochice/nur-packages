@@ -51,14 +51,6 @@
                   ".github/workflows/*.yml"
                 ];
               };
-              pinact = {
-                command = "${pkgs.pinact}/bin/pinact";
-                args = [ "run" ];
-                includes = [
-                  ".github/workflows/*.yaml"
-                  ".github/workflows/*.yml"
-                ];
-              };
               sort-package-json = {
                 command = "${pkgs.sort-package-json}/bin/sort-package-json";
                 includes = [
@@ -76,10 +68,6 @@
               keep-sorted.enable = true;
               mdformat.enable = true;
               nixfmt.enable = true;
-              pinact = {
-                enable = true;
-                update = false;
-              };
               shfmt.enable = true;
               taplo.enable = true;
               yamlfmt = {
