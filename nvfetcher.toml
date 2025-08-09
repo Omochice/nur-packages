@@ -59,7 +59,7 @@ src.manual = "v1.3.2"
 fetch.github = "rhysd/vim-startuptime"
 
 [ccusage]
-src.manual = "15.8.0"
+src.manual = "15.9.1"
 fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"
 
 [claude-code]
