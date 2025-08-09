@@ -51,8 +51,8 @@ jobs:
         uses: ./.github/actions/setup-nix
         with:
           github-token: ${{ secrets.github_token }}
-        # we need to specify `--impure` because this includes unfree package like claude-code
-      - run: nix flake check --impure
+          # we need to specify `--impure` because this includes unfree package like claude-code
+      - run: nix develop -c -- treefmt --ci
         env:
           NIXPKGS_ALLOW_UNFREE: 1
   check-nvfetcher:
