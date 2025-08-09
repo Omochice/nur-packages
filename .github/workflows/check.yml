@@ -51,10 +51,9 @@ jobs:
         uses: ./.github/actions/setup-nix
         with:
           github-token: ${{ secrets.github_token }}
-        # we need to specify `--impure` because this includes unfree package like claude-code
       - run: mkdir -p ~/.config/nixpkgs
       - run: 'echo "{ allowUnfree = true; }" >> ~/.config/nixpkgs/config.nix'
-      - run: nix flake check --impure
+      - run: nix flake check
         env:
           NIXPKGS_ALLOW_UNFREE: 1
   check-nvfetcher:
