@@ -51,14 +51,6 @@
                   ".github/workflows/*.yml"
                 ];
               };
-              pinact = {
-                command = "${pkgs.pinact}/bin/pinact";
-                args = [ "run" ];
-                includes = [
-                  ".github/workflows/*.yaml"
-                  ".github/workflows/*.yml"
-                ];
-              };
               sort-package-json = {
                 command = "${pkgs.sort-package-json}/bin/sort-package-json";
                 includes = [
@@ -76,10 +68,6 @@
               keep-sorted.enable = true;
               mdformat.enable = true;
               nixfmt.enable = true;
-              pinact = {
-                enable = true;
-                update = false;
-              };
               shfmt.enable = true;
               taplo.enable = true;
               yamlfmt = {
@@ -119,6 +107,9 @@
       packages = forAllSystems (
         system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
       );
+      checks = forAllSystems (system: {
+        formatting = (treefmt system).config.build.check self;
+      });
       formatter = forAllSystems (system: (treefmt system).config.build.wrapper);
       apps = forAllSystems (
         system:
@@ -164,6 +155,7 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.nvfetcher
+              (treefmt system).config.build.wrapper
             ];
           };
           renovate = pkgs.mkShell {
