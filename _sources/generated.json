@@ -178,12 +178,12 @@
             "name": null,
             "owner": "alesbrelih",
             "repo": "gitlab-ci-ls",
-            "rev": "1.1.8",
-            "sha256": "sha256-8386MX5jR4LNrpuXVmv+aLnfEvzSJBZgggS3Uj2MU9A=",
+            "rev": "1.1.9",
+            "sha256": "sha256-RHdzcNqnibWpGn8eqekTlFf201HHwWABV2PNtbbTook=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.1.8"
+        "version": "1.1.9"
     },
     "gitlab-ci-verify": {
         "cargoLocks": null,
