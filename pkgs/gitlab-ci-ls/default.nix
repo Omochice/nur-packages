@@ -10,7 +10,7 @@ rustPlatform.buildRustPackage rec {
   inherit (source) pname src version;
 
   useFetchCargoVendor = true;
-  cargoHash = "sha256-esAVFr1ghgrjLFa4eyzxLpzKbKUDSv1tkve1wsL51P0=";
+  cargoHash = "sha256-NuGKpCgjqezNvEgXDx2nBW3vJswTfaoDg+kj9XSUoSY=";
 
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ openssl ];
