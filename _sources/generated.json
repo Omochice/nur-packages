@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-zzbpzrTr2vmJBYEF3yW8cRaOGLAcPNHtl6YxyDHVmE4=",
+            "sha256": "sha256-DfEIwwg8qfbJyiKbpz0rHgTOaOB5GLYfhVrK4JWTRxg=",
             "type": "url",
-            "url": "https://registry.npmjs.org/ccusage/-/ccusage-16.2.2.tgz"
+            "url": "https://registry.npmjs.org/ccusage/-/ccusage-16.2.3.tgz"
         },
-        "version": "16.2.2"
+        "version": "16.2.3"
     },
     "claude-code": {
         "cargoLocks": null,
