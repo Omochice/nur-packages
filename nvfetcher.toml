@@ -27,7 +27,7 @@ src.manual = "v0.1.1"
 fetch.github = "sheepla/duckgo"
 
 [gitlab-ci-verify]
-src.manual = "v2.4.0"
+src.manual = "v2.4.2"
 fetch.github = "timo-reymann/gitlab-ci-verify"
 
 [octocov]
