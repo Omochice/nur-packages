@@ -256,12 +256,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "octocov",
-            "rev": "v0.71.2",
-            "sha256": "sha256-EDpdctwUU/QtCPU/Qu+LLPQOpAI0vqnO9eZXXrgMbJg=",
+            "rev": "v0.71.3",
+            "sha256": "sha256-TM+udBkRkNrT/iPnCJ8PSSe7yHi/dn5mKmmN8CmaGb8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.71.2"
+        "version": "v0.71.3"
     },
     "pinact": {
         "cargoLocks": null,
