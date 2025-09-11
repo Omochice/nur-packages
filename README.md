@@ -10,7 +10,7 @@
 
 |Package|Version|Description|
 |-|-|-|
-|[ccusage](https://github.com/ryoppippi/ccusage)|v16.2.3|A CLI tool for analyzing Claude Code usage from local JSONL files.|
+|[ccusage](https://github.com/ryoppippi/ccusage)|v16.2.4|A CLI tool for analyzing Claude Code usage from local JSONL files.|
 |[claude-code](https://github.com/anthropics/claude-code)|v1.0.111|Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.|
 |[disable-checkout-persist-credentials](https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials)|v0.1.3|CLI to disable actions/checkout's persist-credentials.|
 |[duckgo](https://github.com/sheepla/duckgo)|v0.1.1|A command line DuckDuckGo client with fuzzyfinder UI written in Go.|
