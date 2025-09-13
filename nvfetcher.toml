@@ -59,7 +59,7 @@ src.manual = "16.2.4"
 fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"
 
 [claude-code]
-src.manual = "1.0.112"
+src.manual = "1.0.113"
 fetch.url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-$ver.tgz"
 
 [roots]
