@@ -8,18 +8,19 @@
 
 rustPlatform.buildRustPackage rec {
   inherit (source) pname src version;
-
-  useFetchCargoVendor = true;
-  cargoHash = "sha256-NuGKpCgjqezNvEgXDx2nBW3vJswTfaoDg+kj9XSUoSY=";
-
-  nativeBuildInputs = [ pkg-config ];
+  # keep-sorted start block=yes
   buildInputs = [ openssl ];
-
+  cargoHash = "sha256-NuGKpCgjqezNvEgXDx2nBW3vJswTfaoDg+kj9XSUoSY=";
   meta = with lib; {
+    # keep-sorted start
+    changelog = "https://github.com/alesbrelih/gitlab-ci-ls/releases/tag/${version}";
     description = "Language server for Gitlab CI";
     homepage = "https://github.com/alesbrelih/gitlab-ci-ls";
-    changelog = "https://github.com/alesbrelih/gitlab-ci-ls/releases/tag/${version}";
     license = licenses.mit;
     mainProgram = "gitlab-ci-ls";
+    # keep-sorted end
   };
+  nativeBuildInputs = [ pkg-config ];
+  useFetchCargoVendor = true;
+  # keep-sorted end
 }
