@@ -55,6 +55,17 @@
       sha256 = "sha256-VM12N4+8UCX0LUQdlcpuwdPsxCcOYQdViED+18BM/k8=";
     };
   };
+  gh-triage = {
+    pname = "gh-triage";
+    version = "v0.10.0";
+    src = fetchFromGitHub {
+      owner = "k1LoW";
+      repo = "gh-triage";
+      rev = "v0.10.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-91XO/secpps7+dXt0bO6rdltqV2cAEMc1DvvITKP+JU=";
+    };
+  };
   ghalint = {
     pname = "ghalint";
     version = "v1.5.3";
