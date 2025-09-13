@@ -11,6 +11,7 @@ rustPlatform.buildRustPackage rec {
   # keep-sorted start block=yes
   buildInputs = [ openssl ];
   cargoHash = "sha256-d8X4EuXJjgQ4vPhqMJR+w/pSu/muqYtpoNXKxvPLUkA=";
+  doCheck = true;
   meta = with lib; {
     # keep-sorted start
     changelog = "https://github.com/alesbrelih/gitlab-ci-ls/releases/tag/${version}";
