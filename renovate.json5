@@ -45,7 +45,7 @@
       ],
       postUpgradeTasks: {
         commands: [
-          "nix run github:berberman/nvfetcher",
+          "nix run .#nvfetcher",
           "nix run .#sync-readme",
         ],
         fileFilters: [
