@@ -144,6 +144,7 @@
             |> runAs "sync-readme" [
               pkgs.nix
             ];
+          nvfetcher = "nvfetcher" |> runAs "nvfetcher" [ pkgs.nvfetcher ];
         }
       );
       devShells = forAllSystems (
