@@ -75,6 +75,7 @@ jobs:
         run: |
           CHANGES=$(git diff --name-only _sources/generated.json _sources/generated.nix)
           if [ -n "$CHANGES" ]; then
+            echo "$CHANGES" >&2
             exit 1
           fi
   check-renovate-config:
