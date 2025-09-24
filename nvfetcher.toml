@@ -67,7 +67,7 @@ src.manual = "v0.4.0"
 fetch.github = "k1LoW/roots"
 
 [gitlab-ci-ls]
-src.manual = "1.2.1"
+src.manual = "1.2.2"
 fetch.github = "alesbrelih/gitlab-ci-ls"
 
 [ibm-plex-sans-jp]
