@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9s/WeCxFHccBtnwgHexgKFICDdUxtiMF/1H/JapP63I=",
+            "sha256": "sha256-GSXRo3Sy+5iuLCr4LhajobZNoj38dVKwcEe+gUPHBdU=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.126.tgz"
+            "url": "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.127.tgz"
         },
-        "version": "1.0.126"
+        "version": "1.0.127"
     },
     "disable-checkout-persist-credentials": {
         "cargoLocks": null,
