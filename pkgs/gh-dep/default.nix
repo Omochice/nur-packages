@@ -8,7 +8,6 @@ buildGoModule rec {
   # keep-sorted start block=yes
   doCheck = false;
   env.CGO_ENABLED = 0;
-patches = [ ./patches/go-1-25-0.patch ];
   ldflags = [
     "-s"
     "-w"
@@ -22,6 +21,7 @@ patches = [ ./patches/go-1-25-0.patch ];
     mainProgram = "gh-dep";
     # keep-sorted end
   };
+  patches = [ ./patches/go-1-25-0.patch ];
   vendorHash = "sha256-kLLZw+56YiJ/CE/B5u5Y1vCSTs/YRqpQ9OkqBjgZ46E=";
   # keep-sorted end
 }
