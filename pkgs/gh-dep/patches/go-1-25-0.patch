@@ -1,0 +1,12 @@
+diff --git a/go.mod b/go.mod
+index 27ecede..1238350 100644
+--- a/go.mod
++++ b/go.mod
+@@ -1,6 +1,6 @@
+ module github.com/jackchuka/gh-dep
+ 
+-go 1.25.1
++go 1.25.0
+ 
+ require (
+ 	github.com/charmbracelet/bubbles v0.21.0

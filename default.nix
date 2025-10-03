@@ -49,6 +49,7 @@ in
   firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd/default.nix {
     source = sources.firge-nerd;
   };
+  gh-dep = pkgs.callPackage ./pkgs/gh-dep/default.nix { source = sources.gh-dep; };
   gh-triage = pkgs.callPackage ./pkgs/gh-triage/default.nix { source = sources.gh-triage; };
   ghalint = pkgs.callPackage ./pkgs/ghalint/default.nix { source = sources.ghalint; };
   ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };
