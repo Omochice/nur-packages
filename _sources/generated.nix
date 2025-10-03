@@ -55,6 +55,17 @@
       sha256 = "sha256-VM12N4+8UCX0LUQdlcpuwdPsxCcOYQdViED+18BM/k8=";
     };
   };
+  gh-dep = {
+    pname = "gh-dep";
+    version = "v0.1.0";
+    src = fetchFromGitHub {
+      owner = "jackchuka";
+      repo = "gh-dep";
+      rev = "v0.1.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-D7gbLcE2Ej7bFiP/0laxheDpUKyJ8xj1MS2dKFI/OkM=";
+    };
+  };
   gh-triage = {
     pname = "gh-triage";
     version = "v0.10.1";

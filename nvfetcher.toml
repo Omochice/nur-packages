@@ -77,3 +77,7 @@ fetch.url = "https://github.com/IBM/plex/releases/download/$ver/ibm-plex-sans-jp
 [gh-triage]
 src.manual = "v0.10.1"
 fetch.github = "k1LoW/gh-triage"
+
+[gh-dep]
+src.manual = "v0.1.0"
+fetch.github = "jackchuka/gh-dep"
