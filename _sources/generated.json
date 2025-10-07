@@ -115,12 +115,12 @@
             "name": null,
             "owner": "jackchuka",
             "repo": "gh-dep",
-            "rev": "v0.2.0",
-            "sha256": "sha256-52La5W4aSOQPXzbm6xCb1tjlNC07JLkS8NBMJURHils=",
+            "rev": "v0.2.1",
+            "sha256": "sha256-8QNqU9BJvA/LL/xX5+CHpdAy07C6JZ6SoS0O0mzV3cU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.2.0"
+        "version": "v0.2.1"
     },
     "gh-triage": {
         "cargoLocks": null,
