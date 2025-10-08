@@ -136,12 +136,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "gh-triage",
-            "rev": "v0.10.1",
-            "sha256": "sha256-5iVRKf4RnGSKvbLTOdagu/zM6sHqGWOgJmkIcDJKrsQ=",
+            "rev": "v0.10.2",
+            "sha256": "sha256-lPxNZpdN6uTzD10NEx4qSWxifBGIGCmU3XbQwIFxAaM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.10.1"
+        "version": "v0.10.2"
     },
     "ghalint": {
         "cargoLocks": null,
