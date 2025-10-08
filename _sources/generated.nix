@@ -68,13 +68,13 @@
   };
   gh-triage = {
     pname = "gh-triage";
-    version = "v0.10.1";
+    version = "v0.10.2";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "gh-triage";
-      rev = "v0.10.1";
+      rev = "v0.10.2";
       fetchSubmodules = false;
-      sha256 = "sha256-5iVRKf4RnGSKvbLTOdagu/zM6sHqGWOgJmkIcDJKrsQ=";
+      sha256 = "sha256-lPxNZpdN6uTzD10NEx4qSWxifBGIGCmU3XbQwIFxAaM=";
     };
   };
   ghalint = {
