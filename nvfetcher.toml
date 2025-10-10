@@ -79,5 +79,5 @@ src.manual = "v0.10.2"
 fetch.github = "k1LoW/gh-triage"
 
 [gh-dep]
-src.manual = "v0.3.0"
+src.manual = "v0.4.0"
 fetch.github = "jackchuka/gh-dep"
