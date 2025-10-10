@@ -16,7 +16,7 @@
 |[duckgo](https://github.com/sheepla/duckgo)|v0.1.1|A command line DuckDuckGo client with fuzzyfinder UI written in Go.|
 |[firge](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono.|
 |[firge-nerd](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono with Nerd Font.|
-|[gh-dep](https://github.com/jackchuka/gh-dep)|v0.3.0|A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.|
+|[gh-dep](https://github.com/jackchuka/gh-dep)|v0.4.0|A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.|
 |[gh-triage](https://github.com/k1LoW/gh-triage)|v0.10.2|`gh-triage` is a tool that helps you manage and triage GitHub issues and pull requests through unread notifications.|
 |[ghalint](https://github.com/suzuki-shunsuke/ghalint)|v1.5.3|GitHub Actions linter.|
 |[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v0.3.7|Set timeout-minutes to all GitHub Actions jobs.|
