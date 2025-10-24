@@ -13,7 +13,7 @@ buildGoModule rec {
     "-s"
     "-w"
     "-X github.com/k1LoW/gh-grep.version=${version}"
-    "-X github.com/k1LoW/gh-grep.commit=unknown"
+    "-X github.com/k1LoW/gh-grep.commit=${builtins.readFile "${src}/.git/shallow"}"
     "-X github.com/k1LoW/gh-grep.date=unknown"
     "-X github.com/k1LoW/gh-grep/version.Version=${version}"
   ];

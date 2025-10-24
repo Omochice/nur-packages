@@ -25,7 +25,10 @@
       repo = "disable-checkout-persist-credentials";
       rev = "v0.1.3";
       fetchSubmodules = false;
-      sha256 = "sha256-CRngoxWKeiYvA6AM6o3M6t0AsWEvA+D+1d34/vT+n3Y=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-fJK9jtoy7z9tluloU0S0/QAUVQ/m4plInCA1jqlAVwc=";
     };
   };
   duckgo = {
@@ -74,7 +77,10 @@
       repo = "gh-grep";
       rev = "v1.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-xCr68IMrGPIQr+RmAgNdgD+Bw0dQSSi9GcpoDy3q86U=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-hOnWydVs58Dv3FtFuKkbXylwvdhuvz92KJBhSZSVyhA=";
     };
   };
   gh-triage = {
@@ -85,7 +91,10 @@
       repo = "gh-triage";
       rev = "v0.10.2";
       fetchSubmodules = false;
-      sha256 = "sha256-lPxNZpdN6uTzD10NEx4qSWxifBGIGCmU3XbQwIFxAaM=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-9JeV8R/gophbgrE9L3sT87Q0ciYQgGFE7+wMjCSWR7I=";
     };
   };
   ghalint = {
@@ -96,7 +105,10 @@
       repo = "ghalint";
       rev = "v1.5.3";
       fetchSubmodules = false;
-      sha256 = "sha256-zll71vSqSKIij/TUi4LnGtVqmLhK9UViFDkpnuEvmz8=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-iX2Rk1tJ7yKm7uXENmvzwkeSnTebQTD6gxc4yhoQEj8=";
     };
   };
   ghatm = {
@@ -107,7 +119,10 @@
       repo = "ghatm";
       rev = "v0.3.7";
       fetchSubmodules = false;
-      sha256 = "sha256-t8DjUHsbU1ovBaB2bINEG7gpm1MFQCnoanunfrrTKWU=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-AgKqQl3wgfsR5RMtEzkZfKoT5DDBvNLWlJrsbBTOo5E=";
     };
   };
   ghq = {
@@ -159,7 +174,10 @@
       repo = "lazygit";
       rev = "v0.55.1";
       fetchSubmodules = false;
-      sha256 = "sha256-UofhgILZhVXnYiGpb25m4Ct4sbu5pRmjVgj3oEf5Uyk=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-gvqubpUmDXbnG0C509Tz2CvzjJaEXAyxfVO6ztN0by4=";
     };
   };
   octocov = {
@@ -170,7 +188,10 @@
       repo = "octocov";
       rev = "v0.73.0";
       fetchSubmodules = false;
-      sha256 = "sha256-tw+pS1ZVx/+sFrDbR9knKDzs+ciYX4HmOTopIwnj6EU=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-GcanXDKrOIUoCHhgzfzIYjUFr32yLulQZgtSQ8GIZmQ=";
     };
   };
   pinact = {
@@ -181,7 +202,10 @@
       repo = "pinact";
       rev = "v3.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-O+yLhvkF84uCrgb5MPvk8i/YJ4tLR7YQvBAYbpnxwEM=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-G32GI5c/+SMuLvLSiiC09vxcYol7W2GbRfvqria3ATg=";
     };
   };
   roots = {
@@ -192,7 +216,10 @@
       repo = "roots";
       rev = "v0.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-NOUxbYp3dPJiK6ZJ96tyCrdQfeQWMsWfwIpinIQfowU=";
+      deepClone = false;
+      leaveDotGit = true;
+      sparseCheckout = [ ];
+      sha256 = "sha256-8vvpUCAIm9Pg61VwiUaP1Xs7HkBE7mUt0Ge6rVQ5oPs=";
     };
   };
   slack-reminder = {
