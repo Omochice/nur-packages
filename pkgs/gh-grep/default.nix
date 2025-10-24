@@ -20,7 +20,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Print lines matching a pattern in repositories using GitHub API ";
     homepage = "https://github.com/k1LoW/gh-grep";
-    changelog = "https://github.com/k1LoW/gh-grep/releases/tag/v${version}";
+    changelog = "https://github.com/k1LoW/gh-grep/releases/tag/${version}";
     license = licenses.mit;
     mainProgram = "gh-grep";
   };
