@@ -11,7 +11,7 @@ buildGoModule rec {
   ldflags = [
     "-s"
     "-w"
-    "-X github.com/k1LoW/gh-triage.commit=unknown"
+    "-X github.com/k1LoW/gh-triage.commit=${builtins.readFile "${src}/.git/shallow"}"
     "-X github.com/k1LoW/gh-triage.date=unknown"
   ];
   meta = {

@@ -13,7 +13,7 @@ buildGoModule rec {
     "-s"
     "-w"
     "-X github.com/k1LoW/octocov.version=${version}"
-    "-X github.com/k1LoW/octocov.commit=unknown"
+    "-X github.com/k1LoW/octocov.commit=${builtins.readFile "${src}/.git/shallow"}"
     "-X github.com/k1LoW/octocov.date=unknown"
     "-X github.com/k1LoW/octocov/version.version=${version}"
   ];

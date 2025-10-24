@@ -11,7 +11,7 @@ buildGoModule rec {
 
   ldflags = [
     "-X main.date=unknown"
-    "-X main.commit=unknown"
+    "-X main.commit=${builtins.readFile "${src}/.git/shallow"}"
     "-X main.version=${version}"
   ];
 
