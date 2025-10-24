@@ -26,6 +26,10 @@ src.manual = "v0.3.0"
 fetch.github = "jackchuka/gh-dep"
 src.manual = "v0.7.0"
 
+[gh-grep]
+fetch.github = "k1LoW/gh-grep"
+src.manual = "v1.2.5"
+
 [gh-triage]
 fetch.github = "k1LoW/gh-triage"
 src.manual = "v0.10.2"

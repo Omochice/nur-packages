@@ -66,6 +66,17 @@
       sha256 = "sha256-KMGAzvEVdGH3lK294VtU8HnGJsczHyHxNG44NKo0Jg8=";
     };
   };
+  gh-grep = {
+    pname = "gh-grep";
+    version = "v1.2.5";
+    src = fetchFromGitHub {
+      owner = "k1LoW";
+      repo = "gh-grep";
+      rev = "v1.2.5";
+      fetchSubmodules = false;
+      sha256 = "sha256-xCr68IMrGPIQr+RmAgNdgD+Bw0dQSSi9GcpoDy3q86U=";
+    };
+  };
   gh-triage = {
     pname = "gh-triage";
     version = "v0.10.2";
