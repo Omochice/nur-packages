@@ -1,83 +1,83 @@
-[pinact]
-src.manual = "v3.4.2"
-fetch.github = "suzuki-shunsuke/pinact"
-
-[firge]
-src.manual = "v0.3.0"
-fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/Firge_$ver.zip"
-
-[firge-nerd]
-src.manual = "v0.3.0"
-fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/FirgeNerd_$ver.zip"
-
-[disable-checkout-persist-credentials]
-src.manual = "v0.1.3"
-fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
-
-[ghatm]
-src.manual = "v0.3.7"
-fetch.github = "suzuki-shunsuke/ghatm"
-
-[ghalint]
-src.manual = "v1.5.3"
-fetch.github = "suzuki-shunsuke/ghalint"
-
-[duckgo]
-src.manual = "v0.1.1"
-fetch.github = "sheepla/duckgo"
-
-[gitlab-ci-verify]
-src.manual = "v2.4.3"
-fetch.github = "timo-reymann/gitlab-ci-verify"
-
-[octocov]
-src.manual = "v0.73.0"
-fetch.github = "k1LoW/octocov"
-
-[sort-package-json]
-src.manual = "v3.4.0"
-fetch.github = "keithamus/sort-package-json"
-
-[slack-reminder]
-src.manual = "v0.1.1"
-fetch.github = "skanehira/slack-reminder"
-
-[ghq]
-src.manual = "v1.8.0"
-fetch.github = "x-motemen/ghq"
-
-[lazygit]
-src.manual = "v0.55.1"
-fetch.github = "jesseduffield/lazygit"
-
-[vim-startuptime]
-src.manual = "v1.3.2"
-fetch.github = "rhysd/vim-startuptime"
-
 [ccusage]
-src.manual = "17.1.3"
 fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"
+src.manual = "17.1.3"
 
 [claude-code]
-src.manual = "2.0.26"
 fetch.url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-$ver.tgz"
+src.manual = "2.0.26"
 
-[roots]
-src.manual = "v0.4.0"
-fetch.github = "k1LoW/roots"
+[disable-checkout-persist-credentials]
+fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
+src.manual = "v0.1.3"
 
-[gitlab-ci-ls]
-src.manual = "1.2.2"
-fetch.github = "alesbrelih/gitlab-ci-ls"
+[duckgo]
+fetch.github = "sheepla/duckgo"
+src.manual = "v0.1.1"
 
-[ibm-plex-sans-jp]
-src.manual = "@ibm/plex-sans-jp@3.0.0"
-fetch.url = "https://github.com/IBM/plex/releases/download/$ver/ibm-plex-sans-jp.zip"
+[firge]
+fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/Firge_$ver.zip"
+src.manual = "v0.3.0"
 
-[gh-triage]
-src.manual = "v0.10.2"
-fetch.github = "k1LoW/gh-triage"
+[firge-nerd]
+fetch.url = "https://github.com/yuru7/Firge/releases/download/$ver/FirgeNerd_$ver.zip"
+src.manual = "v0.3.0"
 
 [gh-dep]
-src.manual = "v0.7.0"
 fetch.github = "jackchuka/gh-dep"
+src.manual = "v0.7.0"
+
+[gh-triage]
+fetch.github = "k1LoW/gh-triage"
+src.manual = "v0.10.2"
+
+[ghalint]
+fetch.github = "suzuki-shunsuke/ghalint"
+src.manual = "v1.5.3"
+
+[ghatm]
+fetch.github = "suzuki-shunsuke/ghatm"
+src.manual = "v0.3.7"
+
+[ghq]
+fetch.github = "x-motemen/ghq"
+src.manual = "v1.8.0"
+
+[gitlab-ci-ls]
+fetch.github = "alesbrelih/gitlab-ci-ls"
+src.manual = "1.2.2"
+
+[gitlab-ci-verify]
+fetch.github = "timo-reymann/gitlab-ci-verify"
+src.manual = "v2.4.3"
+
+[ibm-plex-sans-jp]
+fetch.url = "https://github.com/IBM/plex/releases/download/$ver/ibm-plex-sans-jp.zip"
+src.manual = "@ibm/plex-sans-jp@3.0.0"
+
+[lazygit]
+fetch.github = "jesseduffield/lazygit"
+src.manual = "v0.55.1"
+
+[octocov]
+fetch.github = "k1LoW/octocov"
+src.manual = "v0.73.0"
+
+[pinact]
+fetch.github = "suzuki-shunsuke/pinact"
+src.manual = "v3.4.2"
+
+[roots]
+fetch.github = "k1LoW/roots"
+src.manual = "v0.4.0"
+
+[slack-reminder]
+fetch.github = "skanehira/slack-reminder"
+src.manual = "v0.1.1"
+
+[sort-package-json]
+fetch.github = "keithamus/sort-package-json"
+src.manual = "v3.4.0"
+
+[vim-startuptime]
+fetch.github = "rhysd/vim-startuptime"
+src.manual = "v1.3.2"

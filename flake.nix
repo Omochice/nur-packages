@@ -70,6 +70,7 @@
               nixfmt.enable = true;
               shfmt.enable = true;
               taplo.enable = true;
+              toml-sort.enable = true;
               yamlfmt = {
                 enable = true;
                 settings = {
