@@ -11,12 +11,13 @@
 |Package|Version|Description|
 |-|-|-|
 |[ccusage](https://github.com/ryoppippi/ccusage)|v17.1.3|A CLI tool for analyzing Claude Code usage from local JSONL files.|
-|[claude-code](https://github.com/anthropics/claude-code)|v2.0.26|Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.|
+|[claude-code](https://github.com/anthropics/claude-code)|v2.0.27|Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.|
 |[disable-checkout-persist-credentials](https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials)|v0.1.3|CLI to disable actions/checkout's persist-credentials.|
 |[duckgo](https://github.com/sheepla/duckgo)|v0.1.1|A command line DuckDuckGo client with fuzzyfinder UI written in Go.|
 |[firge](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono.|
 |[firge-nerd](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono with Nerd Font.|
 |[gh-dep](https://github.com/jackchuka/gh-dep)|v0.7.0|A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.|
+|[gh-grep](https://github.com/k1LoW/gh-grep)|v1.2.5|Print lines matching a pattern in repositories using GitHub API.|
 |[gh-triage](https://github.com/k1LoW/gh-triage)|v0.10.2|`gh-triage` is a tool that helps you manage and triage GitHub issues and pull requests through unread notifications.|
 |[ghalint](https://github.com/suzuki-shunsuke/ghalint)|v1.5.3|GitHub Actions linter.|
 |[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v0.3.7|Set timeout-minutes to all GitHub Actions jobs.|
