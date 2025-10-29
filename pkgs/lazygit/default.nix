@@ -13,7 +13,7 @@ buildGoModule rec {
     "-s"
     "-w"
     "-X main.version=${version}"
-    "-X main.commit=unknown"
+    "-X main.commit=${builtins.readFile "${src}/.git/shallow"}"
     "-X main.date=unknown"
     "-X main.buildSource=nix"
   ];
