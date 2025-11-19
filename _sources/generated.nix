@@ -11,10 +11,10 @@
   };
   claude-code = {
     pname = "claude-code";
-    version = "2.0.43";
+    version = "2.0.45";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.43.tgz";
-      sha256 = "sha256-+g5xiCUYRQmq2VCmGgX4TANYYGHByHa6ZwHt+FVA/08=";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.45.tgz";
+      sha256 = "sha256-U0a6GqrjTZ65ssCfNQGtxAJTU0WdGOeI6PP5U9H1eRE=";
     };
   };
   disable-checkout-persist-credentials = {
