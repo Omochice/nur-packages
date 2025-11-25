@@ -7,7 +7,6 @@
 buildGoModule rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
-
   doCheck = false;
   env.CGO_ENABLED = 0;
   ldflags = [
@@ -27,6 +26,6 @@ buildGoModule rec {
     license = licenses.mit;
     mainProgram = "octocov";
   };
-  vendorHash = "sha256-NrPsqKhEzqzI/iGo+OIyvTFVS928P7TVuRuLTSdBAPs=";
+  vendorHash = "sha256-qwqDGObQXQ4+C23WaOwAxgOLCf/yvnSDdlxODpYwd2k=";
   # keep-sorted end
 }
