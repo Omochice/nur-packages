@@ -23,6 +23,6 @@ buildGo124Module rec {
     license = licenses.gpl3Plus;
     mainProgram = "gitlab-ci-verify";
   };
-  vendorHash = "sha256-VotpIztQjJgIuiscUin8q33FdhWXmW2jNE+yEYRIgRo=";
+  vendorHash = "sha256-Vw6sbUF3GVd1WGC+fWJKxthDzrSUTDdq02+jMjaEXRs=";
   # keep-sorted end
 }
