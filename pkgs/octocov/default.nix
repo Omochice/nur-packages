@@ -6,9 +6,9 @@
 
 buildGoModule rec {
   inherit (source) pname src version;
-
-  vendorHash = "sha256-NrPsqKhEzqzI/iGo+OIyvTFVS928P7TVuRuLTSdBAPs=";
-
+  # keep-sorted start block=yes
+  doCheck = false;
+  env.CGO_ENABLED = 0;
   ldflags = [
     "-s"
     "-w"
@@ -17,11 +17,6 @@ buildGoModule rec {
     "-X github.com/k1LoW/octocov.date=unknown"
     "-X github.com/k1LoW/octocov/version.version=${version}"
   ];
-
-  env.CGO_ENABLED = 0;
-
-  doCheck = false;
-
   meta = with lib; {
     description = ''
       octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).
@@ -31,4 +26,6 @@ buildGoModule rec {
     license = licenses.mit;
     mainProgram = "octocov";
   };
+  vendorHash = "sha256-qwqDGObQXQ4+C23WaOwAxgOLCf/yvnSDdlxODpYwd2k=";
+  # keep-sorted end
 }

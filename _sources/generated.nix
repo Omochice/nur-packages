@@ -164,13 +164,13 @@
   };
   octocov = {
     pname = "octocov";
-    version = "v0.73.0";
+    version = "v0.73.1";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "octocov";
-      rev = "v0.73.0";
+      rev = "v0.73.1";
       fetchSubmodules = false;
-      sha256 = "sha256-tw+pS1ZVx/+sFrDbR9knKDzs+ciYX4HmOTopIwnj6EU=";
+      sha256 = "sha256-1A0O4r2m6IE4Qe9zPtUAhQ3gbWh44XrydqkESREC6JA=";
     };
   };
   pinact = {
