@@ -262,12 +262,12 @@
             "name": null,
             "owner": "timo-reymann",
             "repo": "gitlab-ci-verify",
-            "rev": "v2.4.4",
-            "sha256": "sha256-/aL18EoPcXrlAjk6Dq3MPs0ZPNXLHr7jYx1x2NwVMh0=",
+            "rev": "v2.4.5",
+            "sha256": "sha256-gORnl6t3FeVAHSf7fiePSQSPyFx+ndY9LyL+hdG+600=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.4.4"
+        "version": "v2.4.5"
     },
     "ibm-plex-sans-jp": {
         "cargoLocks": null,
