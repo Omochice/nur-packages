@@ -120,32 +120,43 @@
         in
         {
           check-action =
-            ''
-              actionlint --version
-              actionlint
-              ghalint --version
-              ghalint run
-            ''
-            |> runAs "check-action" [
-              pkgs.actionlint
-              pkgs.ghalint
-            ];
+            nixpkgs.lib.pipe
+              ''
+                actionlint --version
+                actionlint
+                ghalint --version
+                ghalint run
+              ''
+              [
+                (runAs "check-action" [
+                  pkgs.actionlint
+                  pkgs.ghalint
+                ])
+              ];
           check-renovate-config =
-            ''
-              renovate-config-validator renovate.json5
-            ''
-            |> runAs "check-renovate-config" [
-              pkgs.renovate
-            ];
+            nixpkgs.lib.pipe
+              ''
+                renovate-config-validator renovate.json5
+              ''
+              [
+                (runAs "check-renovate-config" [
+                  pkgs.renovate
+                ])
+              ];
           sync-readme =
-            ''
-              ${pkgs.callPackage ./scripts/generate-package-table.nix { }}/bin/generate-package-table
-              nix fmt
-            ''
-            |> runAs "sync-readme" [
-              pkgs.nix
-            ];
-          nvfetcher = "nvfetcher \"$@\"" |> runAs "nvfetcher" [ pkgs.nvfetcher ];
+            nixpkgs.lib.pipe
+              ''
+                ${pkgs.callPackage ./scripts/generate-package-table.nix { }}/bin/generate-package-table
+                nix fmt
+              ''
+              [
+                (runAs "sync-readme" [
+                  pkgs.nix
+                ])
+              ];
+          nvfetcher = nixpkgs.lib.pipe "nvfetcher \"$@\"" [
+            (runAs "nvfetcher" [ pkgs.nvfetcher ])
+          ];
         }
       );
       devShells = forAllSystems (
