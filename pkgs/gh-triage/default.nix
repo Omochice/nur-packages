@@ -23,6 +23,6 @@ buildGoModule rec {
     mainProgram = "gh-triage";
     # keep-sorted end
   };
-  vendorHash = "sha256-4rcgvua3dpV4KrwhHCLuuMSuH8VHPY9Xv51CTgn/vWw=";
+  vendorHash = "sha256-uBPwtlOpdWvGg+ZZNu8b1XCn2vDN5J6qwFeZFGC5V4s=";
   # keep-sorted end
 }
