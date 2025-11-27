@@ -403,12 +403,12 @@
             "name": null,
             "owner": "keithamus",
             "repo": "sort-package-json",
-            "rev": "v3.4.0",
-            "sha256": "sha256-CnMWuokQistBfvyyPHJTqAlVj+8r4CcZ8VGYRKB1Mmo=",
+            "rev": "v3.5.0",
+            "sha256": "sha256-/QxTXEYBAqVcfKw9HU1rJL2ijC0733PVY2n/OIdflEg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.4.0"
+        "version": "v3.5.0"
     },
     "vim-startuptime": {
         "cargoLocks": null,
