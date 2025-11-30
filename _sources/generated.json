@@ -1,4 +1,19 @@
 {
+    "cc-sdd": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "cc-sdd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-QGSct0riYB8ndhsgg5h1/qZb86R3wGpUzlpf4MYfvcM=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.3.tgz"
+        },
+        "version": "2.0.3"
+    },
     "ccusage": {
         "cargoLocks": null,
         "date": null,
