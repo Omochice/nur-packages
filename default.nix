@@ -33,6 +33,10 @@ in
   overlays = import ./overlays; # nixpkgs overlays
 
   # keep-sorted start block=yes
+  cc-sdd = pkgs.callPackage ./pkgs/cc-sdd/default.nix {
+    inherit nodeEnv;
+    source = sources.cc-sdd;
+  };
   ccusage = pkgs.callPackage ./pkgs/ccusage/default.nix {
     inherit nodeEnv;
     source = sources.ccusage;
