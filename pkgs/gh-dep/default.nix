@@ -21,7 +21,6 @@ buildGoModule rec {
     mainProgram = "gh-dep";
     # keep-sorted end
   };
-  patches = [ ./patches/go-1-25-0.patch ];
-  vendorHash = "sha256-kLLZw+56YiJ/CE/B5u5Y1vCSTs/YRqpQ9OkqBjgZ46E=";
+  vendorHash = "sha256-AeDiQgkapLHCgdBCe7FfQpKccAx7HTME6CmAafEMkgY=";
   # keep-sorted end
 }
