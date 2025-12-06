@@ -109,13 +109,13 @@
   };
   ghatm = {
     pname = "ghatm";
-    version = "v0.3.7";
+    version = "v1.0.0";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "ghatm";
-      rev = "v0.3.7";
+      rev = "v1.0.0";
       fetchSubmodules = false;
-      sha256 = "sha256-t8DjUHsbU1ovBaB2bINEG7gpm1MFQCnoanunfrrTKWU=";
+      sha256 = "sha256-MX1VilyfxJ9GKIkDSGeAE007DyjPkWL5W4b08EqAyC4=";
     };
   };
   ghq = {

@@ -214,12 +214,12 @@
             "name": null,
             "owner": "suzuki-shunsuke",
             "repo": "ghatm",
-            "rev": "v0.3.7",
-            "sha256": "sha256-t8DjUHsbU1ovBaB2bINEG7gpm1MFQCnoanunfrrTKWU=",
+            "rev": "v1.0.0",
+            "sha256": "sha256-MX1VilyfxJ9GKIkDSGeAE007DyjPkWL5W4b08EqAyC4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.7"
+        "version": "v1.0.0"
     },
     "ghq": {
         "cargoLocks": null,
