@@ -11,10 +11,10 @@
   };
   ccusage = {
     pname = "ccusage";
-    version = "17.1.8";
+    version = "17.2.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.8.tgz";
-      sha256 = "sha256-sJbnF6A2cQgkA5fa9S3KvRhYhN8bC3MaOyY7aWKcnwY=";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.2.0.tgz";
+      sha256 = "sha256-jCi9Q7depEBUGRBnnfq05L9znDs72igAE2+crnOv2nY=";
     };
   };
   claude-code = {
