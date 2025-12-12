@@ -11,7 +11,7 @@
 |Package|Version|Description|
 |-|-|-|
 |[cc-sdd](https://github.com/gotalab/cc-sdd)|v2.0.3|Spec-driven development (SDD) for your team's workflow.|
-|[ccusage](https://github.com/ryoppippi/ccusage)|v17.1.8|A CLI tool for analyzing Claude Code usage from local JSONL files.|
+|[ccusage](https://github.com/ryoppippi/ccusage)|v17.2.0|A CLI tool for analyzing Claude Code usage from local JSONL files.|
 |[claude-code](https://github.com/anthropics/claude-code)|v2.0.67|Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.|
 |[disable-checkout-persist-credentials](https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials)|v0.1.3|CLI to disable actions/checkout's persist-credentials.|
 |[duckgo](https://github.com/sheepla/duckgo)|v0.1.1|A command line DuckDuckGo client with fuzzyfinder UI written in Go.|
