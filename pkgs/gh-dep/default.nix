@@ -21,6 +21,6 @@ buildGoModule rec {
     mainProgram = "gh-dep";
     # keep-sorted end
   };
-  vendorHash = "sha256-AeDiQgkapLHCgdBCe7FfQpKccAx7HTME6CmAafEMkgY=";
+  vendorHash = "sha256-NS6r8NcHFvZ7xMvUC+88tlUstUthanTRFtveN7/vJ3s=";
   # keep-sorted end
 }
