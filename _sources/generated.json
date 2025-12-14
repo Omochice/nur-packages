@@ -256,12 +256,12 @@
             "name": null,
             "owner": "alesbrelih",
             "repo": "gitlab-ci-ls",
-            "rev": "1.2.2",
-            "sha256": "sha256-ZpLkiTJP3pofDcXrQPdl5Vm6SKsp6DecwSfXWC9h2qI=",
+            "rev": "1.2.3",
+            "sha256": "sha256-sJ2cYuuo/30aV6m5RXiqM4N7pcneAcrJo1N//Yh/EpM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.2.2"
+        "version": "1.2.3"
     },
     "gitlab-ci-verify": {
         "cargoLocks": null,
