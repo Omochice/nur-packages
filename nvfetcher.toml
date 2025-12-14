@@ -12,7 +12,7 @@ src.manual = "2.0.69"
 
 [disable-checkout-persist-credentials]
 fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
-src.manual = "v0.1.3"
+src.manual = "v1.0.0"
 
 [duckgo]
 fetch.github = "sheepla/duckgo"
