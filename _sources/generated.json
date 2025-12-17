@@ -334,12 +334,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "octocov",
-            "rev": "v0.74.0",
-            "sha256": "sha256-ImoSZkFUbKkU5IcWUJb/6+oqhJztuFV8oZA1RnYU9G8=",
+            "rev": "v0.74.1",
+            "sha256": "sha256-JypTAcBrAo2Z95c3MfWhRUODV9RPJqCF/5zZw7jGruU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.74.0"
+        "version": "v0.74.1"
     },
     "pinact": {
         "cargoLocks": null,
