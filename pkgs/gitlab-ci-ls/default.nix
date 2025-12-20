@@ -10,7 +10,7 @@ rustPlatform.buildRustPackage rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   buildInputs = [ openssl ];
-  cargoLock.lockFile = "${src}/Cargo.lock";
+  cargoLock.lockFile = "${source.src}/Cargo.lock";
   doCheck = true;
   meta = with lib; {
     # keep-sorted start
