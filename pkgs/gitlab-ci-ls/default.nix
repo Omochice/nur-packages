@@ -22,6 +22,5 @@ rustPlatform.buildRustPackage rec {
     # keep-sorted end
   };
   nativeBuildInputs = [ pkg-config ];
-  useFetchCargoVendor = true;
   # keep-sorted end
 }
