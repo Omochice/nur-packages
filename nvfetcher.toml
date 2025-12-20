@@ -52,7 +52,7 @@ src.manual = "v1.8.0"
 
 [gitlab-ci-ls]
 fetch.github = "alesbrelih/gitlab-ci-ls"
-src.manual = "1.2.3"
+src.manual = "1.2.4"
 
 [gitlab-ci-verify]
 fetch.github = "timo-reymann/gitlab-ci-verify"
