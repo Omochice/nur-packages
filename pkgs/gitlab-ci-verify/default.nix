@@ -4,7 +4,7 @@
   buildGoModule,
 }:
 let
-  # below need to write filesystem but, /homeless-shelter is readonly filesystem.
+  # Needs write access, but /homeless-shelter is read-only
   skippedTests = [
     # keep-sorted start
     "TestExists"
