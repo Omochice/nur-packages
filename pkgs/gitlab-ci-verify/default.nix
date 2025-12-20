@@ -3,11 +3,25 @@
   lib,
   buildGoModule,
 }:
-
+let
+  # below need to write filesystem but, /homeless-shelter is readonly filesystem.
+  skippedTests = [
+    # keep-sorted start
+    "TestExists"
+    "TestOpenFile/binary_data"
+    "TestOpenFile/empty_file"
+    "TestOpenFile/simple_read"
+    "TestReadRemoteOrCached"
+    "TestWriteAndReadFile/binary_data"
+    "TestWriteAndReadFile/empty_file"
+    "TestWriteAndReadFile/simple_write"
+    # keep-sorted end
+  ];
+in
 buildGoModule rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
-  doCheck = false;
+  checkFlags = [ "-skip=^${builtins.concatStringsSep "$|^" skippedTests}$" ];
   env.CGO_ENABLED = 0;
   ldflags = [
     "-X github.com/timo-reymann/gitlab-ci-verify/internal/buildinfo.BuildTime=unknown"
