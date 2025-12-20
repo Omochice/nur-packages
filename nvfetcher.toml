@@ -56,7 +56,7 @@ src.manual = "1.2.3"
 
 [gitlab-ci-verify]
 fetch.github = "timo-reymann/gitlab-ci-verify"
-src.manual = "v2.4.6"
+src.manual = "v2.7.3"
 
 [ibm-plex-sans-jp]
 fetch.url = "https://github.com/IBM/plex/releases/download/$ver/ibm-plex-sans-jp.zip"

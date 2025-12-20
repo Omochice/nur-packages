@@ -1,13 +1,27 @@
 {
   source,
   lib,
-  buildGo124Module,
+  buildGoModule,
 }:
-
-buildGo124Module rec {
+let
+  # Needs write access, but /homeless-shelter is read-only
+  skippedTests = [
+    # keep-sorted start
+    "TestExists"
+    "TestOpenFile/binary_data"
+    "TestOpenFile/empty_file"
+    "TestOpenFile/simple_read"
+    "TestReadRemoteOrCached"
+    "TestWriteAndReadFile/binary_data"
+    "TestWriteAndReadFile/empty_file"
+    "TestWriteAndReadFile/simple_write"
+    # keep-sorted end
+  ];
+in
+buildGoModule rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
-  doCheck = false;
+  checkFlags = [ "-skip=^${builtins.concatStringsSep "$|^" skippedTests}$" ];
   env.CGO_ENABLED = 0;
   ldflags = [
     "-X github.com/timo-reymann/gitlab-ci-verify/internal/buildinfo.BuildTime=unknown"
@@ -23,6 +37,6 @@ buildGo124Module rec {
     license = licenses.gpl3Plus;
     mainProgram = "gitlab-ci-verify";
   };
-  vendorHash = "sha256-P6pjPwDkkvHRm+D+piYVp2rdxoSUS9CgZTRCwAxljeM=";
+  vendorHash = "sha256-jO5U+coKOitil98sfo6+UlKYjDPcoinctUdIzTYh0Ls=";
   # keep-sorted end
 }
