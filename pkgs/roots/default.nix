@@ -6,9 +6,8 @@
 
 buildGoModule rec {
   inherit (source) pname src version;
-
-  vendorHash = "sha256-80X5ZmHrpi32aKplbqtX6E9DQs/8gzIQkm6BC4I8/Bw=";
-
+  # keep-sorted start block=yes
+  env.CGO_ENABLED = 0;
   ldflags = [
     "-s"
     "-w"
@@ -17,9 +16,6 @@ buildGoModule rec {
     "-X github.com/k1LoW/roots.date=unknown"
     "-X github.com/k1LoW/roots/version.version=${version}"
   ];
-
-  env.CGO_ENABLED = 0;
-
   meta = with lib; {
     description = ''
       `roots` is a tool for exploring multiple root directories, such as those in a monorepo project.
@@ -29,4 +25,6 @@ buildGoModule rec {
     license = licenses.mit;
     mainProgram = "roots";
   };
+  vendorHash = "sha256-uxcT5VzlTCxxnx09p13mot0wVbbas/otoHdg7QSDt4E=";
+  # keep-sorted end
 }

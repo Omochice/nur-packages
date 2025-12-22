@@ -194,13 +194,13 @@
   };
   roots = {
     pname = "roots";
-    version = "v0.4.0";
+    version = "v0.4.1";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "roots";
-      rev = "v0.4.0";
+      rev = "v0.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-NOUxbYp3dPJiK6ZJ96tyCrdQfeQWMsWfwIpinIQfowU=";
+      sha256 = "sha256-ACMRfWY/lhc3C/KVhuUyS1rgkSHGWPxZrmYt+pXupJI=";
     };
   };
   slack-reminder = {
