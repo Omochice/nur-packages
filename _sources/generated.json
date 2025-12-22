@@ -376,12 +376,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "roots",
-            "rev": "v0.4.0",
-            "sha256": "sha256-NOUxbYp3dPJiK6ZJ96tyCrdQfeQWMsWfwIpinIQfowU=",
+            "rev": "v0.4.1",
+            "sha256": "sha256-ACMRfWY/lhc3C/KVhuUyS1rgkSHGWPxZrmYt+pXupJI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.4.0"
+        "version": "v0.4.1"
     },
     "slack-reminder": {
         "cargoLocks": null,
