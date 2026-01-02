@@ -6,21 +6,14 @@
 
 buildGoModule rec {
   inherit (source) pname src version;
-
-  vendorHash = "sha256-M0FOwsyXgNr05uofTZN6XcoWU/xaGVPE4ncyzddTKEI=";
-
+  # keep-sorted start block=yes
+  doCheck = false;
+  env.CGO_ENABLED = 0;
   ldflags = [
     "-X main.date=unknown"
     "-X main.commit=unknown"
     "-X main.version=${version}"
   ];
-
-  subPackages = [ "./cmd/ghatm" ];
-
-  env.CGO_ENABLED = 0;
-
-  doCheck = false;
-
   meta = with lib; {
     description = "Set timeout-minutes to all GitHub Actions jobs";
     homepage = "https://github.com/suzuki-shunsuke/ghatm";
@@ -28,4 +21,7 @@ buildGoModule rec {
     license = licenses.mit;
     mainProgram = "ghatm";
   };
+  subPackages = [ "./cmd/ghatm" ];
+  vendorHash = "sha256-M0FOwsyXgNr05uofTZN6XcoWU/xaGVPE4ncyzddTKEI=";
+  # keep-sorted end
 }
