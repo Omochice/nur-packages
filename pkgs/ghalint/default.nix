@@ -6,21 +6,14 @@
 
 buildGoModule rec {
   inherit (source) pname src version;
-
-  vendorHash = "sha256-pCrVBgS7eLCYlfY6FyAGAeEhpV2dYQowtE/BoRUju0o=";
-
+  # keep-sorted start block=yes
+  doCheck = false;
+  env.CGO_ENABLED = 0;
   ldflags = [
     "-X main.date=unknown"
     "-X main.commit=unknown"
     "-X main.version=${version}"
   ];
-
-  env.CGO_ENABLED = 0;
-
-  subPackages = [ "./cmd/ghalint" ];
-
-  doCheck = false;
-
   meta = with lib; {
     description = "GitHub Actions linter";
     homepage = "https://github.com/suzuki-shunsuke/ghalint";
@@ -28,4 +21,7 @@ buildGoModule rec {
     license = licenses.mit;
     mainProgram = "ghalint";
   };
+  subPackages = [ "./cmd/ghalint" ];
+  vendorHash = "sha256-VCv5ZCeUWHld+q7tkHSUyeVagMhSN9893vYHyO/VlAI=";
+  # keep-sorted end
 }
