@@ -22,6 +22,6 @@ buildGoModule rec {
     mainProgram = "ghalint";
   };
   subPackages = [ "./cmd/ghalint" ];
-  vendorHash = "sha256-pCrVBgS7eLCYlfY6FyAGAeEhpV2dYQowtE/BoRUju0o=";
+  vendorHash = "sha256-VCv5ZCeUWHld+q7tkHSUyeVagMhSN9893vYHyO/VlAI=";
   # keep-sorted end
 }
