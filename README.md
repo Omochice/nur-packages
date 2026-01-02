@@ -21,7 +21,7 @@
 |[gh-grep](https://github.com/k1LoW/gh-grep)|v1.2.5|Print lines matching a pattern in repositories using GitHub API.|
 |[gh-triage](https://github.com/k1LoW/gh-triage)|v0.11.0|`gh-triage` is a tool that helps you manage and triage GitHub issues and pull requests through unread notifications.|
 |[ghalint](https://github.com/suzuki-shunsuke/ghalint)|v1.5.3|GitHub Actions linter.|
-|[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v0.3.7|Set timeout-minutes to all GitHub Actions jobs.|
+|[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v1.0.0|Set timeout-minutes to all GitHub Actions jobs.|
 |[ghq](https://github.com/x-motemen/ghq)|v1.8.0|Remote repository management made easy.|
 |[gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls)|v1.2.4|Language server for Gitlab CI.|
 |[gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)|v2.7.3|Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .|
