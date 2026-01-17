@@ -3,10 +3,10 @@
 {
   cc-sdd = {
     pname = "cc-sdd";
-    version = "2.0.3";
+    version = "2.0.5";
     src = fetchurl {
-      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.3.tgz";
-      sha256 = "sha256-QGSct0riYB8ndhsgg5h1/qZb86R3wGpUzlpf4MYfvcM=";
+      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.5.tgz";
+      sha256 = "sha256-31xaBx028+I62lZrQ8YD4E2rno7Cxb1C2T2+RN1djIM=";
     };
   };
   ccusage = {
