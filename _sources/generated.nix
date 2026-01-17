@@ -161,13 +161,13 @@
   };
   lazygit = {
     pname = "lazygit";
-    version = "v0.58.0";
+    version = "v0.58.1";
     src = fetchFromGitHub {
       owner = "jesseduffield";
       repo = "lazygit";
-      rev = "v0.58.0";
+      rev = "v0.58.1";
       fetchSubmodules = false;
-      sha256 = "sha256-+xWryg9iLip0VF6GFCDXPKayooNPurBgBfZestpSv4M=";
+      sha256 = "sha256-J1r5WSEo1OleSFtobVCkvedHt21up+3q5TpYtfzvfos=";
     };
   };
   octocov = {
