@@ -129,6 +129,17 @@
       sha256 = "sha256-5BN96/RShfJpkfpJe0qrZVDuyFoAV9kgCiBv4REY/5Y=";
     };
   };
+  git-wt = {
+    pname = "git-wt";
+    version = "v0.15.0";
+    src = fetchFromGitHub {
+      owner = "k1LoW";
+      repo = "git-wt";
+      rev = "v0.15.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-A8vkwa8+RfupP9UaUuSVjkt5HtWvqR5VmSsVg2KpeMo=";
+    };
+  };
   gitlab-ci-ls = {
     pname = "gitlab-ci-ls";
     version = "1.2.4";
