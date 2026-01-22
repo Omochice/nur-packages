@@ -50,6 +50,10 @@ src.manual = "v1.0.0"
 fetch.github = "x-motemen/ghq"
 src.manual = "v1.8.0"
 
+[git-wt]
+fetch.github = "k1LoW/git-wt"
+src.manual = "v0.15.0"
+
 [gitlab-ci-ls]
 fetch.github = "alesbrelih/gitlab-ci-ls"
 src.manual = "1.2.4"

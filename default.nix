@@ -62,6 +62,7 @@ in
     source = sources.ghq;
     original = pkgs.ghq;
   };
+  git-wt = pkgs.callPackage ./pkgs/git-wt/default.nix { source = sources.git-wt; };
   gitlab-ci-ls = pkgs.callPackage ./pkgs/gitlab-ci-ls/default.nix { source = sources.gitlab-ci-ls; };
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
