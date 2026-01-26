@@ -88,7 +88,7 @@ src.manual = "v0.1.1"
 
 [sort-package-json]
 fetch.github = "keithamus/sort-package-json"
-src.manual = "v3.6.0"
+src.manual = "v3.6.1"
 
 [vim-startuptime]
 fetch.github = "rhysd/vim-startuptime"

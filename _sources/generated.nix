@@ -227,13 +227,13 @@
   };
   sort-package-json = {
     pname = "sort-package-json";
-    version = "v3.6.0";
+    version = "v3.6.1";
     src = fetchFromGitHub {
       owner = "keithamus";
       repo = "sort-package-json";
-      rev = "v3.6.0";
+      rev = "v3.6.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Y3za+CCkXf2KK5cRZxupM/1A89weP1uIqk/KqLYBl/w=";
+      sha256 = "sha256-PGstuD9NNdY8dkrtLLZjGbUJ7fb4U5mPSFygnZcGi9k=";
     };
   };
   vim-startuptime = {
