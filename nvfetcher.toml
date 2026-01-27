@@ -52,7 +52,7 @@ src.manual = "v1.8.0"
 
 [git-wt]
 fetch.github = "k1LoW/git-wt"
-src.manual = "v0.15.0"
+src.manual = "v0.16.1"
 
 [gitlab-ci-ls]
 fetch.github = "alesbrelih/gitlab-ci-ls"
