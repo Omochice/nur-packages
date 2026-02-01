@@ -153,13 +153,13 @@
   };
   gitlab-ci-verify = {
     pname = "gitlab-ci-verify";
-    version = "v2.8.0";
+    version = "v2.8.3";
     src = fetchFromGitHub {
       owner = "timo-reymann";
       repo = "gitlab-ci-verify";
-      rev = "v2.8.0";
+      rev = "v2.8.3";
       fetchSubmodules = false;
-      sha256 = "sha256-oB7KXP+RbWLrCke17a31VheouijdSmkIGtbA8JqkZfM=";
+      sha256 = "sha256-FQiFH8PXW4lTK29yJGvv428eF7xjeqTTzk2c4k+1kKk=";
     };
   };
   ibm-plex-sans-jp = {
