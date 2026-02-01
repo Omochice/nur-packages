@@ -131,13 +131,13 @@
   };
   git-wt = {
     pname = "git-wt";
-    version = "v0.15.0";
+    version = "v0.16.1";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "git-wt";
-      rev = "v0.15.0";
+      rev = "v0.16.1";
       fetchSubmodules = false;
-      sha256 = "sha256-A8vkwa8+RfupP9UaUuSVjkt5HtWvqR5VmSsVg2KpeMo=";
+      sha256 = "sha256-hy9h9QY59h7mp0W2B4cRz8SQFtAGp+2puRtM6ojfKds=";
     };
   };
   gitlab-ci-ls = {
