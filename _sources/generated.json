@@ -1,6 +1,6 @@
 {
     "cc-sdd": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "cc-sdd",
@@ -15,7 +15,7 @@
         "version": "2.0.5"
     },
     "ccusage": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "ccusage",
@@ -30,7 +30,7 @@
         "version": "18.0.5"
     },
     "claude-code": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "claude-code",
@@ -38,14 +38,14 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-d5lDUN2Lyw6meXBFY3EiMt/7BNLVYX7xRnbPMjPpx7g=",
+            "sha256": "sha256-hpY0E5suHr1dZP+LXmQ1XD1H5Wz4pphinMIkXGq0scc=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.1.23.tgz"
+            "url": "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.1.26.tgz"
         },
-        "version": "2.1.23"
+        "version": "2.1.26"
     },
     "disable-checkout-persist-credentials": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "disable-checkout-persist-credentials",
@@ -66,7 +66,7 @@
         "version": "v1.0.0"
     },
     "duckgo": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "duckgo",
@@ -87,7 +87,7 @@
         "version": "v0.1.1"
     },
     "firge": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "firge",
@@ -102,7 +102,7 @@
         "version": "v0.3.0"
     },
     "firge-nerd": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "firge-nerd",
@@ -117,7 +117,7 @@
         "version": "v0.3.0"
     },
     "gh-dep": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "gh-dep",
@@ -138,7 +138,7 @@
         "version": "v0.10.0"
     },
     "gh-grep": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "gh-grep",
@@ -159,7 +159,7 @@
         "version": "v1.2.5"
     },
     "gh-triage": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "gh-triage",
@@ -180,7 +180,7 @@
         "version": "v0.11.0"
     },
     "ghalint": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "ghalint",
@@ -201,7 +201,7 @@
         "version": "v1.5.4"
     },
     "ghatm": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "ghatm",
@@ -222,7 +222,7 @@
         "version": "v1.0.0"
     },
     "ghq": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "ghq",
@@ -243,7 +243,7 @@
         "version": "v1.8.0"
     },
     "git-wt": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "git-wt",
@@ -264,7 +264,7 @@
         "version": "v0.16.1"
     },
     "gitlab-ci-ls": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "gitlab-ci-ls",
@@ -285,7 +285,7 @@
         "version": "1.2.4"
     },
     "gitlab-ci-verify": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "gitlab-ci-verify",
@@ -306,7 +306,7 @@
         "version": "v2.8.0"
     },
     "ibm-plex-sans-jp": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "ibm-plex-sans-jp",
@@ -321,7 +321,7 @@
         "version": "@ibm/plex-sans-jp@3.0.0"
     },
     "lazygit": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "lazygit",
@@ -342,7 +342,7 @@
         "version": "v0.58.1"
     },
     "octocov": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "octocov",
@@ -363,7 +363,7 @@
         "version": "v0.74.2"
     },
     "pinact": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "pinact",
@@ -384,7 +384,7 @@
         "version": "v3.8.0"
     },
     "roots": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "roots",
@@ -405,7 +405,7 @@
         "version": "v0.4.1"
     },
     "slack-reminder": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "slack-reminder",
@@ -426,7 +426,7 @@
         "version": "v0.1.1"
     },
     "sort-package-json": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "sort-package-json",
@@ -447,7 +447,7 @@
         "version": "v3.6.1"
     },
     "vim-startuptime": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "vim-startuptime",
