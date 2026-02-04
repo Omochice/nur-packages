@@ -1,6 +1,6 @@
 [cc-sdd]
 fetch.url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-$ver.tgz"
-src.manual = "2.0.5"
+src.manual = "2.1.0"
 
 [ccusage]
 fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"
