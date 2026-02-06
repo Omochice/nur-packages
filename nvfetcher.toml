@@ -72,7 +72,7 @@ src.manual = "v0.58.1"
 
 [octocov]
 fetch.github = "k1LoW/octocov"
-src.manual = "v0.74.2"
+src.manual = "v0.74.3"
 
 [pinact]
 fetch.github = "suzuki-shunsuke/pinact"
