@@ -48,7 +48,7 @@ src.manual = "v1.0.0"
 
 [ghq]
 fetch.github = "x-motemen/ghq"
-src.manual = "v1.8.0"
+src.manual = "v1.8.1"
 
 [git-wt]
 fetch.github = "k1LoW/git-wt"
