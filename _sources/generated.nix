@@ -125,13 +125,13 @@
   };
   ghq = {
     pname = "ghq";
-    version = "v1.8.0";
+    version = "v1.8.1";
     src = fetchFromGitHub {
       owner = "x-motemen";
       repo = "ghq";
-      rev = "v1.8.0";
+      rev = "v1.8.1";
       fetchSubmodules = false;
-      sha256 = "sha256-5BN96/RShfJpkfpJe0qrZVDuyFoAV9kgCiBv4REY/5Y=";
+      sha256 = "sha256-Iw8hu2QtnRgRbSTqtIPDmKbx5FcE2j68VfzP4egbZgY=";
     };
   };
   git-wt = {
