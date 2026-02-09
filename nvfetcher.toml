@@ -8,7 +8,7 @@ src.manual = "18.0.5"
 
 [claude-code]
 fetch.url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-$ver.tgz"
-src.manual = "2.1.33"
+src.manual = "2.1.34"
 
 [disable-checkout-persist-credentials]
 fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
