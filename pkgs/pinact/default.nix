@@ -23,6 +23,6 @@ buildGo126Module rec {
   meta.license = lib.licenses.mit;
   meta.mainProgram = "pinact";
   subPackages = [ "./cmd/pinact" ];
-  vendorHash = "sha256-EqfhHy9OUiaoCI/VFjUJlm917un3Lf4/cUmeHG7w9Bg=";
+  vendorHash = "sha256-ilJ9xhDqojZv6Ie33jDulaLnhoRRaM6AHYIqSbp0OiI=";
   # keep-sorted end
 }
