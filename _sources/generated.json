@@ -256,12 +256,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "git-wt",
-            "rev": "v0.24.0",
-            "sha256": "sha256-J2SIwvqmSqUys//jsxH0MTuFK85CVpAespjUEQPKw2Q=",
+            "rev": "v0.25.0",
+            "sha256": "sha256-QdyONDVokpOaH5dI5v1rmaymCgIiWZ16h26FAIsAHPc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.24.0"
+        "version": "v0.25.0"
     },
     "gitlab-ci-ls": {
         "cargoLock": null,
