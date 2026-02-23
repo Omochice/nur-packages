@@ -20,7 +20,7 @@
 |[gh-dep](https://github.com/jackchuka/gh-dep)|v0.10.1|A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.|
 |[gh-grep](https://github.com/k1LoW/gh-grep)|v1.2.5|Print lines matching a pattern in repositories using GitHub API.|
 |[gh-triage](https://github.com/k1LoW/gh-triage)|v0.11.0|`gh-triage` is a tool that helps you manage and triage GitHub issues and pull requests through unread notifications.|
-|[ghalint](https://github.com/suzuki-shunsuke/ghalint)|v1.5.4|GitHub Actions linter.|
+|[ghalint](https://github.com/suzuki-shunsuke/ghalint)|v1.5.5|GitHub Actions linter.|
 |[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v1.0.0|Set timeout-minutes to all GitHub Actions jobs.|
 |[ghq](https://github.com/x-motemen/ghq)|v1.8.1|Remote repository management made easy.|
 |[git-wt](https://github.com/k1LoW/git-wt)|v0.25.0|A Git subcommand that makes `git worktree` simple.|
