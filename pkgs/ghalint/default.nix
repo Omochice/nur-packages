@@ -20,6 +20,6 @@ buildGo126Module rec {
   meta.license = lib.licenses.mit;
   meta.mainProgram = "ghalint";
   subPackages = [ "./cmd/ghalint" ];
-  vendorHash = "sha256-VCv5ZCeUWHld+q7tkHSUyeVagMhSN9893vYHyO/VlAI=";
+  vendorHash = "sha256-XIalA/usvyvzrvGU7Ygf1DWSlTm1YYaN+X0Xm+YiiTI=";
   # keep-sorted end
 }
