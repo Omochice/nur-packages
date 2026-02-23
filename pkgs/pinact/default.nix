@@ -14,14 +14,16 @@ buildGo126Module rec {
     "-X main.commit=unknown"
     "-X main.version=${version}"
   ];
-  meta.description = ''
-    pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.
-    pinact can also update their versions and verify version annotations.
-  '';
-  meta.homepage = "https://github.com/suzuki-shunsuke/pinact";
-  meta.changelog = "https://github.com/suzuki-shunsuke/pinact/releases/tag/v${version}";
-  meta.license = lib.licenses.mit;
-  meta.mainProgram = "pinact";
+  meta = with lib; {
+    description = ''
+      pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.
+      pinact can also update their versions and verify version annotations.
+    '';
+    homepage = "https://github.com/suzuki-shunsuke/pinact";
+    changelog = "https://github.com/suzuki-shunsuke/pinact/releases/tag/v${version}";
+    license = licenses.mit;
+    mainProgram = "pinact";
+  };
   subPackages = [ "./cmd/pinact" ];
   vendorHash = "sha256-ilJ9xhDqojZv6Ie33jDulaLnhoRRaM6AHYIqSbp0OiI=";
   # keep-sorted end
