@@ -12,15 +12,11 @@ buildGoModule rec {
     "-s"
     "-w"
   ];
-  meta = {
-    # keep-sorted start block=yes
-    changelog = "https://github.com/jackchuka/gh-dep/releases/tag/${version}";
-    description = "A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.";
-    homepage = "https://github.com/jackchuka/gh-dep";
-    license = lib.licenses.mit;
-    mainProgram = "gh-dep";
-    # keep-sorted end
-  };
+  meta.changelog = "https://github.com/jackchuka/gh-dep/releases/tag/${version}";
+  meta.description = "A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.";
+  meta.homepage = "https://github.com/jackchuka/gh-dep";
+  meta.license = lib.licenses.mit;
+  meta.mainProgram = "gh-dep";
   vendorHash = "sha256-njInErbSVChWzZFm3hmdnwo5KDzyBD4mVCBO4xWk33s=";
   # keep-sorted end
 }
