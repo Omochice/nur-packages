@@ -1,10 +1,10 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGo126Module,
 }:
 
-buildGoModule rec {
+buildGo126Module rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   doCheck = false;
@@ -25,6 +25,6 @@ buildGoModule rec {
     mainProgram = "pinact";
   };
   subPackages = [ "./cmd/pinact" ];
-  vendorHash = "sha256-EqfhHy9OUiaoCI/VFjUJlm917un3Lf4/cUmeHG7w9Bg=";
+  vendorHash = "sha256-ilJ9xhDqojZv6Ie33jDulaLnhoRRaM6AHYIqSbp0OiI=";
   # keep-sorted end
 }
