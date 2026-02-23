@@ -1,10 +1,10 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGo126Module,
   git,
 }:
-buildGoModule rec {
+buildGo126Module rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   doCheck = true;
@@ -20,6 +20,6 @@ buildGoModule rec {
   meta.license = lib.licenses.mit;
   meta.mainProgram = "git-wt";
   nativeCheckInputs = [ git ];
-  vendorHash = "sha256-LkyH7czzBkiyAYGrKuPSeB4pNAZLmgwXgp6fmYBps6s=";
+  vendorHash = "sha256-O4vqouNxvA3GvrnpRO6GXDD8ysPfFCaaSJVFj2ufxwI=";
   # keep-sorted end
 }
