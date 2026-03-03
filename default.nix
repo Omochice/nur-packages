@@ -19,6 +19,7 @@ let
       runCommand
       writeTextFile
       writeShellScript
+      srcOnly
       ;
     inherit (pkgs) nodejs;
     inherit pkgs;

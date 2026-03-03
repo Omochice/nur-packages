@@ -23,7 +23,7 @@
 
 # This file originates from node2nix
 
-{lib, stdenv, nodejs, python2, pkgs, libtool, runCommand, writeTextFile, writeShellScript}:
+{lib, stdenv, nodejs, python2, pkgs, libtool, runCommand, writeTextFile, writeShellScript, srcOnly}:
 
 let
   # Workaround to cope with utillinux in Nixpkgs 20.09 and util-linux in Nixpkgs master
@@ -231,10 +231,7 @@ let
 
   # Extract the Node.js source code which is used to compile packages with
   # native bindings
-  nodeSources = runCommand "node-sources" {} ''
-    tar --no-same-owner --no-same-permissions -xf ${nodejs.src}
-    mv node-* $out
-  '';
+  nodeSources = srcOnly nodejs;
 
   # Script that adds _integrity fields to all package.json files to prevent NPM from consulting the cache (that is empty)
   addIntegrityFieldsScript = writeTextFile {
