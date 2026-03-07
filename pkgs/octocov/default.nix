@@ -17,15 +17,11 @@ buildGoModule rec {
     "-X github.com/k1LoW/octocov.date=unknown"
     "-X github.com/k1LoW/octocov/version.version=${version}"
   ];
-  meta = with lib; {
-    description = ''
-      octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).
-    '';
-    homepage = "https://github.com/k1LoW/octocov";
-    changelog = "https://github.com/k1LoW/octocov/releases/tag/v${version}";
-    license = licenses.mit;
-    mainProgram = "octocov";
-  };
-  vendorHash = "sha256-hKdLKzyP2dmLfZ5BQfamqHwVmCTqMvffLV2YLJDEIyI=";
+  meta.changelog = "https://github.com/k1LoW/octocov/releases/tag/v${version}";
+  meta.description = "octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).";
+  meta.homepage = "https://github.com/k1LoW/octocov";
+  meta.license = lib.licenses.mit;
+  meta.mainProgram = "octocov";
+  vendorHash = "sha256-Bb7F75L6qg0WEqoVUUHcZi6RXTT2nB7rc9RfKsluZBg=";
   # keep-sorted end
 }
