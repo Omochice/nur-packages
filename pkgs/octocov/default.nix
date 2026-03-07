@@ -26,6 +26,6 @@ buildGoModule rec {
     license = licenses.mit;
     mainProgram = "octocov";
   };
-  vendorHash = "sha256-hKdLKzyP2dmLfZ5BQfamqHwVmCTqMvffLV2YLJDEIyI=";
+  vendorHash = "sha256-Bb7F75L6qg0WEqoVUUHcZi6RXTT2nB7rc9RfKsluZBg=";
   # keep-sorted end
 }
