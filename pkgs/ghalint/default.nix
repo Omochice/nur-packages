@@ -1,10 +1,10 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGo126Module,
 }:
 
-buildGoModule rec {
+buildGo126Module rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   doCheck = false;
@@ -14,14 +14,12 @@ buildGoModule rec {
     "-X main.commit=unknown"
     "-X main.version=${version}"
   ];
-  meta = with lib; {
-    description = "GitHub Actions linter";
-    homepage = "https://github.com/suzuki-shunsuke/ghalint";
-    changelog = "https://github.com/suzuki-shunsuke/ghalint/releases/tag/v${version}";
-    license = licenses.mit;
-    mainProgram = "ghalint";
-  };
+  meta.description = "GitHub Actions linter";
+  meta.homepage = "https://github.com/suzuki-shunsuke/ghalint";
+  meta.changelog = "https://github.com/suzuki-shunsuke/ghalint/releases/tag/v${version}";
+  meta.license = lib.licenses.mit;
+  meta.mainProgram = "ghalint";
   subPackages = [ "./cmd/ghalint" ];
-  vendorHash = "sha256-VCv5ZCeUWHld+q7tkHSUyeVagMhSN9893vYHyO/VlAI=";
+  vendorHash = "sha256-XIalA/usvyvzrvGU7Ygf1DWSlTm1YYaN+X0Xm+YiiTI=";
   # keep-sorted end
 }
