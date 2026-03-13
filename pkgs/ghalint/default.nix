@@ -14,9 +14,9 @@ buildGo126Module rec {
     "-X main.commit=unknown"
     "-X main.version=${version}"
   ];
+  meta.changelog = "https://github.com/suzuki-shunsuke/ghalint/releases/tag/v${version}";
   meta.description = "GitHub Actions linter";
   meta.homepage = "https://github.com/suzuki-shunsuke/ghalint";
-  meta.changelog = "https://github.com/suzuki-shunsuke/ghalint/releases/tag/v${version}";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "ghalint";
   subPackages = [ "./cmd/ghalint" ];
