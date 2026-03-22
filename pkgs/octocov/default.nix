@@ -1,10 +1,10 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGo126Module,
 }:
 
-buildGoModule rec {
+buildGo126Module rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   doCheck = false;
