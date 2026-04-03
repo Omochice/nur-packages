@@ -20,6 +20,6 @@ buildGo126Module rec {
   meta.license = lib.licenses.mit;
   meta.mainProgram = "git-wt";
   nativeCheckInputs = [ git ];
-  vendorHash = "sha256-O4vqouNxvA3GvrnpRO6GXDD8ysPfFCaaSJVFj2ufxwI=";
+  vendorHash = "sha256-stE3S6+ogv0bei6+eiyrR/fHMu+jizSEuL1NGakPszU=";
   # keep-sorted end
 }
