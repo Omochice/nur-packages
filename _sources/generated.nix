@@ -147,13 +147,13 @@
   };
   gitlab-ci-ls = {
     pname = "gitlab-ci-ls";
-    version = "1.2.4";
+    version = "1.3.1";
     src = fetchFromGitHub {
       owner = "alesbrelih";
       repo = "gitlab-ci-ls";
-      rev = "1.2.4";
+      rev = "1.3.1";
       fetchSubmodules = false;
-      sha256 = "sha256-J7VdaD9RfaEv7J0RE4ffZnp0RkMtFmHWEHVnmaXMUdI=";
+      sha256 = "sha256-ZZjx6VdBZuVuHl42n0iXZkvvUku2CN7x4JCZxZTMOMk=";
     };
   };
   gitlab-ci-verify = {
