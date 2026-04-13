@@ -9,6 +9,7 @@ on:
   workflow_dispatch: null
 jobs:
   update-by-renovate:
+    environment: renovate
     permissions:
       contents: write
       pull-requests: write
