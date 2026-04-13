@@ -4,5 +4,5 @@
 }:
 original.overrideAttrs (old: {
   inherit (source) pname src version;
-  vendorHash = "sha256-RRxRwYTkveOZvvxAwpG9ie4+ZdUDDkZZfX5cNn0DAhA=";
+  vendorHash = "sha256-8aC1J/mM7ZTEQBdZwstvHxMKDPqgzjzYztC7shuwu/Q=";
 })
