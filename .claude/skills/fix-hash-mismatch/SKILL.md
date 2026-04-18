@@ -75,11 +75,11 @@ Create an isolated worktree for the PR branch. This avoids touching the main wor
 ```bash
 git fetch origin <headRefName>
 mkdir -p .wt
-git worktree add .wt/<package> -b fix-hash-<package> origin/<headRefName>
+git worktree add .wt/<package> -B fix-hash-<package> origin/<headRefName>
 cd .wt/<package>
 ```
 
-The `.wt/` directory is in the repository root. The `-b` flag creates a local branch tracking the remote, avoiding detached HEAD. All subsequent steps run inside this worktree directory.
+The `.wt/` directory is in the repository root. The `-B` flag creates (or resets) a local branch tracking the remote, avoiding detached HEAD and handling re-runs gracefully. All subsequent steps run inside this worktree directory.
 
 ### Step 5: Extract the correct hash
 
