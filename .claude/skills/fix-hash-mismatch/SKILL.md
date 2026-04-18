@@ -165,10 +165,11 @@ Rules:
 
 ```bash
 cd <repository-root>
-git worktree remove .wt/<package>
+git worktree remove .wt/<package> --force
+git branch -D fix-hash-<package>
 ```
 
-Always clean up even if the PR was skipped.
+The `--force` flag ensures removal even when build artifacts (e.g., `result` symlink) are present. The branch created by `-B` is also deleted so subsequent runs start clean. Always clean up even if the PR was skipped.
 
 ### Step 10: Repeat
 
