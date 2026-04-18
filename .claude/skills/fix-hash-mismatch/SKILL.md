@@ -50,7 +50,7 @@ A PR is a candidate when both conditions hold:
 To confirm condition 2, check the full diff for changes to hash lines:
 
 ```bash
-gh pr diff <PR_NUMBER> | grep -E '^\+.*?(vendorHash|cargoHash)\s*='
+gh pr diff <PR_NUMBER> | grep -E '^\+.*(vendorHash|cargoHash)[[:space:]]*='
 ```
 
 If that grep matches, the PR already updates the hash — skip it.
