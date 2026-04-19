@@ -28,6 +28,22 @@
         in
         treefmt-nix.lib.evalModule pkgs (
           { ... }:
+          let
+            rumdlConfig = (pkgs.formats.toml { }).generate "rumdl.toml" {
+              # keep-sorted start
+              MD004.style = "dash";
+              MD007.indent = 4;
+              MD007.style = "fixed";
+              MD041.enabled = false;
+              MD049.style = "underscore";
+              MD050.style = "asterisk";
+              MD055.style = "leading-and-trailing";
+              MD060.enabled = true;
+              MD060.style = "aligned";
+              global.line_length = 0;
+              # keep-sorted end
+            };
+          in
           {
             settings.global.excludes = [
               "LICENSE"
@@ -51,6 +67,15 @@
                   ".github/workflows/*.yml"
                 ];
               };
+              rumdl = {
+                command = "${pkgs.lib.getExe pkgs.rumdl}";
+                options = [
+                  "fmt"
+                  "--config"
+                  (toString rumdlConfig)
+                ];
+                includes = [ "*.md" ];
+              };
               sort-package-json = {
                 command = "${pkgs.sort-package-json}/bin/sort-package-json";
                 includes = [
@@ -66,7 +91,6 @@
                 indent = 2;
               };
               keep-sorted.enable = true;
-              mdformat.enable = true;
               nixfmt.enable = true;
               shfmt.enable = true;
               taplo.enable = true;
