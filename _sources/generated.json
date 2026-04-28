@@ -404,6 +404,21 @@
         },
         "version": "v0.4.1"
     },
+    "salesforce-cli": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "salesforce-cli",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-eEJZlabz/PmbipSqvR49XJweOl1ZBUtS/zjMIggWWYw=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/@salesforce/cli/-/cli-2.133.2.tgz"
+        },
+        "version": "2.133.2"
+    },
     "slack-reminder": {
         "cargoLock": null,
         "date": null,

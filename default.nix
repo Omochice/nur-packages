@@ -75,6 +75,9 @@ in
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
   roots = pkgs.callPackage ./pkgs/roots/default.nix { source = sources.roots; };
+  salesforce-cli = pkgs.callPackage ./pkgs/salesforce-cli/default.nix {
+    source = sources.salesforce-cli;
+  };
   slack-reminder = pkgs.callPackage ./pkgs/slack-reminder/default.nix {
     source = sources.slack-reminder;
   };
