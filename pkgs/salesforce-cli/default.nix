@@ -47,16 +47,13 @@ stdenv.mkDerivation rec {
 
     # Create wrapper scripts instead of symlinks because patchShebangs
     # mishandles the complex shebang `#!/usr/bin/env -S node --no-deprecation`
-    makeWrapper ${nodejs}/bin/node $out/bin/sf \
-      --add-flags "--no-deprecation" \
-      --add-flags "$out/lib/node_modules/@salesforce/cli/bin/run.js" \
-      --set SF_AUTOUPDATE_DISABLE true \
-      --set SF_DISABLE_TELEMETRY true
-    makeWrapper ${nodejs}/bin/node $out/bin/sfdx \
-      --add-flags "--no-deprecation" \
-      --add-flags "$out/lib/node_modules/@salesforce/cli/bin/run.js" \
-      --set SF_AUTOUPDATE_DISABLE true \
-      --set SF_DISABLE_TELEMETRY true
+    for cmd in sf sfdx; do
+      makeWrapper ${nodejs}/bin/node $out/bin/$cmd \
+        --add-flags "--no-deprecation" \
+        --add-flags "$out/lib/node_modules/@salesforce/cli/bin/run.js" \
+        --set SF_AUTOUPDATE_DISABLE true \
+        --set SF_DISABLE_TELEMETRY true
+    done
     runHook postInstall
   '';
 
