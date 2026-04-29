@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     export npm_config_cache="$TMPDIR/npm_cache"
     cp -r ${npmDeps}/. "$npm_config_cache"
     chmod -R u+w "$npm_config_cache"
-    npm install --offline --legacy-peer-deps --ignore-scripts --no-audit --no-fund
+    npm install --offline --legacy-peer-deps --ignore-scripts --no-audit --no-fund --omit=dev
     runHook postConfigure
   '';
 
