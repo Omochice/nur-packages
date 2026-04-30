@@ -25,6 +25,6 @@ buildGo126Module rec {
     mainProgram = "pinact";
   };
   subPackages = [ "./cmd/pinact" ];
-  vendorHash = "sha256-ilJ9xhDqojZv6Ie33jDulaLnhoRRaM6AHYIqSbp0OiI=";
+  vendorHash = "sha256-FEZ0F/6gmWMKE5iNfBONbeEIGVwTrBgDFa7q7knrfK8=";
   # keep-sorted end
 }
