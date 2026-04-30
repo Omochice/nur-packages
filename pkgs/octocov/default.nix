@@ -22,6 +22,6 @@ buildGo126Module rec {
   meta.homepage = "https://github.com/k1LoW/octocov";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "octocov";
-  vendorHash = "sha256-jrJ4USM25krlq5QAc3Pgk4eh5CLj1tU9+AqUu2caq90=";
+  vendorHash = "sha256-jUSehzA5CMdKy5geumIOMIYh0H0qdr6XPJnNjGgBviI=";
   # keep-sorted end
 }
