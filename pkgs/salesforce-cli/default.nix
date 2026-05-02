@@ -11,7 +11,7 @@ let
   npmDeps = fetchNpmDeps {
     src = source.src;
     sourceRoot = "package";
-    hash = "sha256-mul/em8FSbrza9NAipB+w+tdAkLNGHbK8U1aRj1PLtw=";
+    hash = "sha256-RRuEZjgFsRoMn+oLzYYUXyn2UPZQluTvTeo/ScmpOtQ=";
     npmDepsFetcherVersion = 2;
   };
 in
