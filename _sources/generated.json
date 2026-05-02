@@ -193,12 +193,12 @@
             "name": null,
             "owner": "suzuki-shunsuke",
             "repo": "ghalint",
-            "rev": "v1.5.5",
-            "sha256": "sha256-xAXcvvSwcJjdG2BCItBLdsu6vZiID5FmRYYF9PZe1QE=",
+            "rev": "v1.5.6",
+            "sha256": "sha256-u85vX9lg5JKUvRjFloE4KZUm/qs8RmjoY/hybtJk/kc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.5"
+        "version": "v1.5.6"
     },
     "ghatm": {
         "cargoLock": null,

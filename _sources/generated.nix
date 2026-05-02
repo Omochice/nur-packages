@@ -103,13 +103,13 @@
   };
   ghalint = {
     pname = "ghalint";
-    version = "v1.5.5";
+    version = "v1.5.6";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "ghalint";
-      rev = "v1.5.5";
+      rev = "v1.5.6";
       fetchSubmodules = false;
-      sha256 = "sha256-xAXcvvSwcJjdG2BCItBLdsu6vZiID5FmRYYF9PZe1QE=";
+      sha256 = "sha256-u85vX9lg5JKUvRjFloE4KZUm/qs8RmjoY/hybtJk/kc=";
     };
   };
   ghatm = {
