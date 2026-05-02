@@ -221,10 +221,10 @@
   };
   salesforce-cli = {
     pname = "salesforce-cli";
-    version = "2.133.2";
+    version = "2.133.4";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@salesforce/cli/-/cli-2.133.2.tgz";
-      sha256 = "sha256-eEJZlabz/PmbipSqvR49XJweOl1ZBUtS/zjMIggWWYw=";
+      url = "https://registry.npmjs.org/@salesforce/cli/-/cli-2.133.4.tgz";
+      sha256 = "sha256-e0hO1SfCWab3lDX1w+wn2ibbvEu1xSYUKaWbp+7uZPA=";
     };
   };
   slack-reminder = {
