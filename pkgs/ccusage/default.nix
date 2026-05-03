@@ -5,17 +5,21 @@
   globalBuildInputs ? [ ],
 }:
 
-nodeEnv.buildNodePackage rec {
-  inherit (source) pname src version;
-  name = source.pname;
-  packageName = source.pname;
-  buildInputs = globalBuildInputs;
+lib.warn
+  "ccusage: this package is deprecated in favor of numtide/llm-agents.nix (https://github.com/numtide/llm-agents.nix); use that flake instead."
+  (
+    nodeEnv.buildNodePackage rec {
+      inherit (source) pname src version;
+      name = source.pname;
+      packageName = source.pname;
+      buildInputs = globalBuildInputs;
 
-  meta = with lib; {
-    description = "A CLI tool for analyzing Claude Code usage from local JSONL files.";
-    homepage = "https://github.com/ryoppippi/ccusage";
-    changelog = "https://github.com/ryoppippi/ccusage/releases/tag/v${version}";
-    license = licenses.mit;
-    mainProgram = "ccusage";
-  };
-}
+      meta = with lib; {
+        description = "A CLI tool for analyzing Claude Code usage from local JSONL files.";
+        homepage = "https://github.com/ryoppippi/ccusage";
+        changelog = "https://github.com/ryoppippi/ccusage/releases/tag/v${version}";
+        license = licenses.mit;
+        mainProgram = "ccusage";
+      };
+    }
+  )
