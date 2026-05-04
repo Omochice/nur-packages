@@ -15,7 +15,7 @@ buildGoModule rec {
     "-X main.version=${version}"
   ];
   meta.changelog = "https://github.com/babarot/gh-infra/releases/tag/${version}";
-  meta.description = "[babarot/gh-infra: Declarative GitHub infrastructure management via YAML](https://github.com/babarot/gh-infra)";
+  meta.description = "Declarative GitHub infrastructure management via YAML";
   meta.homepage = "https://github.com/babarot/gh-infra/";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "gh-infra";
