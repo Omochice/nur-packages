@@ -34,6 +34,10 @@ src.manual = "v0.11.2"
 fetch.github = "k1LoW/gh-grep"
 src.manual = "v1.2.5"
 
+[gh-infra]
+fetch.github = "babarot/gh-infra"
+src.manual = "v0.13.0"
+
 [gh-triage]
 fetch.github = "k1LoW/gh-triage"
 src.manual = "v0.11.0"

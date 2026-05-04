@@ -56,6 +56,7 @@ in
   };
   gh-dep = pkgs.callPackage ./pkgs/gh-dep/default.nix { source = sources.gh-dep; };
   gh-grep = pkgs.callPackage ./pkgs/gh-grep/default.nix { source = sources.gh-grep; };
+  gh-infra = pkgs.callPackage ./pkgs/gh-infra/default.nix { source = sources.gh-infra; };
   gh-triage = pkgs.callPackage ./pkgs/gh-triage/default.nix { source = sources.gh-triage; };
   ghalint = pkgs.callPackage ./pkgs/ghalint/default.nix { source = sources.ghalint; };
   ghatm = pkgs.callPackage ./pkgs/ghatm/default.nix { source = sources.ghatm; };

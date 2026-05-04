@@ -90,6 +90,17 @@
       sha256 = "sha256-xCr68IMrGPIQr+RmAgNdgD+Bw0dQSSi9GcpoDy3q86U=";
     };
   };
+  gh-infra = {
+    pname = "gh-infra";
+    version = "v0.13.0";
+    src = fetchFromGitHub {
+      owner = "babarot";
+      repo = "gh-infra";
+      rev = "v0.13.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-pIDn6BI/pzHG1dRRuNX5IfHJYOey4mXmVVQ+7+9Wd2k=";
+    };
+  };
   gh-triage = {
     pname = "gh-triage";
     version = "v0.11.0";
