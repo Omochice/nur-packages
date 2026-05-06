@@ -1,15 +1,24 @@
 ---
 name: fix-hash-mismatch
 description: >
-  Find open PRs with failing CI caused by Nix hash mismatches (vendorHash, cargoHash),
+  Find open PRs with failing CI caused by Nix dependency hash mismatches
+  (vendorHash, cargoHash, npmDepsHash, pnpmDepsHash, and similar fixed-output hashes),
   then automatically fix them by extracting the correct hash from CI logs or rebuilding locally.
   Use this skill when the user mentions fixing hashes, hash mismatches, failing Renovate PRs,
-  vendorHash, cargoHash, or wants to batch-fix CI failures on open PRs.
+  vendorHash, cargoHash, npmDepsHash, npmHash, pnpmDepsHash, or wants to batch-fix CI failures on open PRs.
 ---
 
 # Fix Hash Mismatches in Failing PRs
 
-Automate fixing `vendorHash` (Go) and `cargoHash` (Rust) mismatches in open PRs with failing CI.
+Automate fixing Nix dependency hash mismatches in open PRs with failing CI.
+The skill handles any top-level fixed-output hash attribute, including:
+
+- `vendorHash` — Go (`buildGoModule`, `buildGo126Module`, etc.)
+- `cargoHash` — Rust (`buildRustPackage`)
+- `npmDepsHash` — Node.js (`buildNpmPackage`)
+- `pnpmDepsHash` — pnpm (`fetchPnpmDeps`-based packages)
+- Other fetcher hashes that follow the same `<name>Hash = "sha256-...";` pattern
+
 Each PR is processed in an isolated git worktree so the main working tree stays clean.
 
 ## Prerequisites
@@ -45,28 +54,36 @@ gh pr diff <PR_NUMBER> --name-only
 A PR is a candidate when both conditions hold:
 
 1. It modifies files in `_sources/` (indicating a version bump by Renovate/nvfetcher).
-2. It does NOT already modify a `vendorHash` or `cargoHash` line in `pkgs/*/default.nix`.
+2. It does NOT already modify a hash line (e.g. `vendorHash`, `cargoHash`, `npmDepsHash`, `pnpmDepsHash`) in `pkgs/*/default.nix`.
 
-To confirm condition 2, check the full diff for changes to hash lines:
+To confirm condition 2, check the full diff for changes to any `*Hash = "sha256-...";` line:
 
 ```bash
-gh pr diff <PR_NUMBER> | grep -E '^\+.*(vendorHash|cargoHash)[[:space:]]*='
+gh pr diff <PR_NUMBER> | grep -E '^\+[[:space:]]*[A-Za-z][A-Za-z0-9_]*Hash[[:space:]]*='
 ```
 
-If that grep matches, the PR already updates the hash — skip it.
+If that grep matches, the PR already updates a hash — skip it. The pattern intentionally matches any attribute name ending in `Hash` so newer hash kinds are covered without further edits.
 
-### Step 3: Identify the package
+### Step 3: Identify the package and hash field
 
-Determine which package needs a hash fix:
+Determine which package and which hash attribute need to be fixed:
 
 1. The PR title from Renovate follows `chore(deps): update dependency <owner>/<repo> to <version>`. The repo name maps to a package directory under `pkgs/`.
 2. Cross-reference with root `default.nix` to find the exact package attribute name used by `nix build .#<name>`.
-3. Read `pkgs/<package>/default.nix` and identify the hash field:
-    - `vendorHash` — Go package (`buildGoModule` / `buildGo126Module`)
-    - `cargoHash` — Rust package (`buildRustPackage`)
-    - If `vendorHash = null;`, skip this PR (vendored deps, no hash update needed).
+3. Read `pkgs/<package>/default.nix` and identify the hash field by looking at the builder function. Common cases:
 
-Also handle the `overrideAttrs` pattern (e.g., `pkgs/ghq/default.nix`) where `vendorHash` appears inside the override block. In this pattern `lib` is typically not in scope.
+   | Builder                              | Hash attribute |
+   | ------------------------------------ | -------------- |
+   | `buildGoModule` / `buildGo126Module` | `vendorHash`   |
+   | `buildRustPackage`                   | `cargoHash`    |
+   | `buildNpmPackage`                    | `npmDepsHash`  |
+   | `fetchPnpmDeps` (pnpm packages)      | `pnpmDepsHash` |
+
+    If the file uses a different builder, find the top-level attribute that matches the pattern `<name>Hash = "sha256-...";` and treat it as the hash field for the rest of the workflow.
+
+    If the hash attribute is set to `null` (e.g. `vendorHash = null;`), skip this PR — there is no hash to update.
+
+Also handle the `overrideAttrs` pattern (e.g., `pkgs/ghq/default.nix`) where the hash appears inside the override block. In this pattern `lib` is typically not in scope.
 
 ### Step 4: Create a worktree
 
@@ -118,12 +135,12 @@ If CI logs do not contain the hash (e.g., logs expired or truncated):
 
 ### Step 6: Update the hash
 
-Replace the fake hash (or old hash if using CI log result) with the correct hash value as a quoted string in `pkgs/<package>/default.nix`.
+Replace the fake hash (or old hash if using CI log result) with the correct hash value as a quoted string in `pkgs/<package>/default.nix`. Update only the hash attribute identified in Step 3, regardless of its name (`vendorHash`, `cargoHash`, `npmDepsHash`, `pnpmDepsHash`, etc.).
 
-For example:
+For example, for a Node.js package using `buildNpmPackage`:
 
 ```text
-vendorHash = "sha256-CORRECT_HASH_HERE=";
+npmDepsHash = "sha256-CORRECT_HASH_HERE=";
 ```
 
 ### Step 7: Verify the build
@@ -144,8 +161,10 @@ Otherwise, commit manually:
 
 ```bash
 git add pkgs/<package>/default.nix
-git commit -m "chore(<package>): update <vendorHash|cargoHash> for <version>"
+git commit -m "chore(<package>): update <hashAttribute> for <version>"
 ```
+
+`<hashAttribute>` is the exact attribute name identified in Step 3 (e.g. `vendorHash`, `cargoHash`, `npmDepsHash`, `pnpmDepsHash`). Use the literal attribute name so the commit history is self-explanatory.
 
 Then push:
 
@@ -180,4 +199,4 @@ Go back to Step 4 for the next candidate PR.
 Summarize what was done:
 
 - **Fixed**: List each PR number, package name, hash type, old hash, new hash.
-- **Skipped**: List each skipped PR with the reason (not a hash mismatch, `vendorHash = null`, build failure for other reasons, etc.).
+- **Skipped**: List each skipped PR with the reason (not a hash mismatch, hash attribute set to `null` such as `vendorHash = null`, build failure for other reasons, etc.).
