@@ -502,5 +502,26 @@
             "type": "github"
         },
         "version": "v1.3.2"
+    },
+    "zsp": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "zsp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "zapstore",
+            "repo": "zsp",
+            "rev": "v0.4.10",
+            "sha256": "sha256-+5HQluNxkLgI0XMlit1yQa5jvUpPW9SbdLg1HCSi6Dk=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.4.10"
     }
 }

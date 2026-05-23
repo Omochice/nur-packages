@@ -271,4 +271,15 @@
       sha256 = "sha256-d6AXTWTUawkBCXCvMs3C937qoRUZmy0qCFdSLcWh0BE=";
     };
   };
+  zsp = {
+    pname = "zsp";
+    version = "v0.4.10";
+    src = fetchFromGitHub {
+      owner = "zapstore";
+      repo = "zsp";
+      rev = "v0.4.10";
+      fetchSubmodules = false;
+      sha256 = "sha256-+5HQluNxkLgI0XMlit1yQa5jvUpPW9SbdLg1HCSi6Dk=";
+    };
+  };
 }
