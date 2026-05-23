@@ -89,5 +89,6 @@ in
   vim-startuptime = pkgs.callPackage ./pkgs/vim-startuptime/default.nix {
     source = sources.vim-startuptime;
   };
+  zsp = pkgs.callPackage ./pkgs/zsp/default.nix { source = sources.zsp; };
   # keep-sorted end
 }
