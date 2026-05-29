@@ -4,7 +4,7 @@ src.manual = "3.0.2"
 
 [ccusage]
 fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"
-src.manual = "20.0.4"
+src.manual = "20.0.5"
 
 [claude-code]
 fetch.url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-$ver.tgz"
