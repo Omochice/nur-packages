@@ -475,12 +475,12 @@
             "name": null,
             "owner": "keithamus",
             "repo": "sort-package-json",
-            "rev": "v3.6.1",
-            "sha256": "sha256-PGstuD9NNdY8dkrtLLZjGbUJ7fb4U5mPSFygnZcGi9k=",
+            "rev": "v3.7.1",
+            "sha256": "sha256-2W7g3xiwOzXWItnK7dSnL4ejbvZXch5EJcJubzewlIE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v3.6.1"
+        "version": "v3.7.1"
     },
     "vim-startuptime": {
         "cargoLock": null,
