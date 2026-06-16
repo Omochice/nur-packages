@@ -517,11 +517,11 @@
             "name": null,
             "owner": "zapstore",
             "repo": "zsp",
-            "rev": "v0.4.10",
-            "sha256": "sha256-+5HQluNxkLgI0XMlit1yQa5jvUpPW9SbdLg1HCSi6Dk=",
+            "rev": "v0.4.11",
+            "sha256": "sha256-R9psX5uj6FJEdpwOWWXyzkwFZNsXxy/Y0X5u1/4vOQA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.4.10"
+        "version": "v0.4.11"
     }
 }
