@@ -20,6 +20,6 @@ buildNpmPackage rec {
     license = licenses.mit;
     mainProgram = "sort-package-json";
   };
-  npmDepsHash = "sha256-dECVKQE7AwAZERSmFhv9qXG+zCSXxSxKBqX/mtFFXFs=";
+  npmDepsHash = "sha256-YqQXrWUi9+Gf8Ni2qcFy/cl3OOsI255/gt0tMDhqpko=";
   # keep-sorted end
 }
