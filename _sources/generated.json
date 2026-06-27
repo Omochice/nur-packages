@@ -434,11 +434,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-65qaO+psxCJvM17/9AcmRyyh6WkSxJGlggbh99X3u0E=",
+            "sha256": "sha256-8AeARnPHbNm71zNII5OpJ8oiKHnxIg9AwPoEu9coEOo=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@salesforce/cli/-/cli-2.134.6.tgz"
+            "url": "https://registry.npmjs.org/@salesforce/cli/-/cli-2.140.6.tgz"
         },
-        "version": "2.134.6"
+        "version": "2.140.6"
     },
     "slack-reminder": {
         "cargoLock": null,
