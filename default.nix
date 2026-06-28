@@ -69,6 +69,7 @@ in
   gitlab-ci-verify = pkgs.callPackage ./pkgs/gitlab-ci-verify/default.nix {
     source = sources.gitlab-ci-verify;
   };
+  godoclint = pkgs.callPackage ./pkgs/godoclint/default.nix { source = sources.godoclint; };
   ibm-plex-sans-jp = pkgs.callPackage ./pkgs/data/fonts/ibm-plex-sans-jp/default.nix {
     source = sources.ibm-plex-sans-jp;
   };
