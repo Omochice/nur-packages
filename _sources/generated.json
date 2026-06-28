@@ -326,6 +326,27 @@
         },
         "version": "v2.11.0"
     },
+    "godoclint": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "godoclint",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "godoc-lint",
+            "repo": "godoc-lint",
+            "rev": "v0.11.2",
+            "sha256": "sha256-+JPdDaZOUy3Ml3LGGKd1H269LuxW2W/aTTd2Ty4tuC8=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.11.2"
+    },
     "ibm-plex-sans-jp": {
         "cargoLock": null,
         "date": null,

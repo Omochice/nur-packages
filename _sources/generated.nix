@@ -178,6 +178,17 @@
       sha256 = "sha256-HmNyou/B0TFKz0CgnBNFfmgbHf37P6QN6QCRaH5KHjk=";
     };
   };
+  godoclint = {
+    pname = "godoclint";
+    version = "v0.11.2";
+    src = fetchFromGitHub {
+      owner = "godoc-lint";
+      repo = "godoc-lint";
+      rev = "v0.11.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-+JPdDaZOUy3Ml3LGGKd1H269LuxW2W/aTTd2Ty4tuC8=";
+    };
+  };
   ibm-plex-sans-jp = {
     pname = "ibm-plex-sans-jp";
     version = "@ibm/plex-sans-jp@3.0.0";
