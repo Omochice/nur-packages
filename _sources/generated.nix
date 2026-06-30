@@ -221,13 +221,13 @@
   };
   pinact = {
     pname = "pinact";
-    version = "v3.10.1";
+    version = "v4.1.0";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "pinact";
-      rev = "v3.10.1";
+      rev = "v4.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-YtXnIBAD0HT6U4hPxNmcsV285AWH3GJIb4YJ7cGB8uo=";
+      sha256 = "sha256-wZ0Q4OCjTRUUZCbZzF4DxMLi/UBtun6TszJhU9LdGd8=";
     };
   };
   roots = {
