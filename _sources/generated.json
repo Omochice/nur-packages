@@ -376,12 +376,12 @@
             "name": null,
             "owner": "jesseduffield",
             "repo": "lazygit",
-            "rev": "v0.62.2",
-            "sha256": "sha256-V/dW7zx3D+RuYLqvTvblc93qrpwHB/wnysGdKS5FhoA=",
+            "rev": "v0.63.0",
+            "sha256": "sha256-WDGYS2W0FCIDoayafzUjcwTAW+v2jxfJo54kaM6ymCE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.62.2"
+        "version": "v0.63.0"
     },
     "octocov": {
         "cargoLock": null,
