@@ -284,13 +284,13 @@
   };
   zsp = {
     pname = "zsp";
-    version = "v0.4.11";
+    version = "v0.4.13";
     src = fetchFromGitHub {
       owner = "zapstore";
       repo = "zsp";
-      rev = "v0.4.11";
+      rev = "v0.4.13";
       fetchSubmodules = false;
-      sha256 = "sha256-R9psX5uj6FJEdpwOWWXyzkwFZNsXxy/Y0X5u1/4vOQA=";
+      sha256 = "sha256-mnsvhpmrndN1v8dnb1GPqkujDY4hdYDtv6CycXP+dwE=";
     };
   };
 }
