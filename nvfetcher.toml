@@ -92,7 +92,7 @@ src.manual = "v0.4.1"
 
 [salesforce-cli]
 fetch.url = "https://registry.npmjs.org/@salesforce/cli/-/cli-$ver.tgz"
-src.manual = "2.140.6"
+src.manual = "2.144.6"
 
 [slack-reminder]
 fetch.github = "skanehira/slack-reminder"
