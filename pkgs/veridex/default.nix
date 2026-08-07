@@ -1,29 +1,19 @@
 {
+  lib,
+  stdenv,
   autoPatchelfHook,
   fetchzip,
   makeWrapper,
-  lib,
-  stdenv,
   unzip,
 }:
+
 let
   version = "android-15.0.0_r25";
   archive = if stdenv.hostPlatform.isDarwin then "veridex-mac.zip" else "veridex-linux.zip";
 in
 stdenv.mkDerivation {
-  inherit version;
-
   pname = "veridex";
-
-  nativeBuildInputs = [
-    makeWrapper
-    unzip
-  ]
-  ++ lib.optionals stdenv.hostPlatform.isLinux [ autoPatchelfHook ];
-
-  buildInputs = lib.optionals stdenv.hostPlatform.isLinux [ stdenv.cc.cc.lib ];
-
-  dontBuild = true;
+  inherit version;
 
   # Gitiles can archive a single directory, and only appcompat is needed.
   # Archiving the whole prebuilts/runtime repository downloads hundreds of
@@ -34,6 +24,16 @@ stdenv.mkDerivation {
     stripRoot = false;
     hash = "sha256-slqJwsUwfcDvN8oWF8YM4z+wk51qMqICR3yF5dxSFaY=";
   };
+
+  nativeBuildInputs = [
+    makeWrapper
+    unzip
+  ]
+  ++ lib.optionals stdenv.hostPlatform.isLinux [ autoPatchelfHook ];
+
+  buildInputs = lib.optionals stdenv.hostPlatform.isLinux [ stdenv.cc.cc.lib ];
+
+  dontBuild = true;
 
   # appcompat.sh only takes its prebuilt code path when veridex and the data
   # files sit next to it, so the archive stays whole under libexec and is
@@ -47,14 +47,12 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
-    description = "Given an APK, finds API uses that fall into the blocklist/max-target-X/unsupported APIs.";
-    homepage = "https://android.googlesource.com/platform/art/+/refs/tags/${version}/tools/veridex/";
-    license = licenses.asl20;
-    platforms = [
-      "x86_64-linux"
-      "aarch64-darwin"
-    ];
-    mainProgram = "appcompat.sh";
-  };
+  meta.description = "Given an APK, finds API uses that fall into the blocklist/max-target-X/unsupported APIs.";
+  meta.homepage = "https://android.googlesource.com/platform/art/+/refs/tags/${version}/tools/veridex/";
+  meta.license = lib.licenses.asl20;
+  meta.mainProgram = "appcompat.sh";
+  meta.platforms = [
+    "x86_64-linux"
+    "aarch64-darwin"
+  ];
 }
