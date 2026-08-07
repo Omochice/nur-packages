@@ -1,5 +1,6 @@
 {
   fetchzip,
+  makeWrapper,
   lib,
   stdenvNoCC,
   unzip,
@@ -13,7 +14,12 @@ stdenvNoCC.mkDerivation {
 
   pname = "veridex";
 
-  nativeBuildInputs = [ unzip ];
+  nativeBuildInputs = [
+    makeWrapper
+    unzip
+  ];
+
+  dontBuild = true;
 
   # Gitiles can archive a single directory, and only appcompat is needed.
   # Archiving the whole prebuilts/runtime repository downloads hundreds of
@@ -25,10 +31,15 @@ stdenvNoCC.mkDerivation {
     hash = "sha256-slqJwsUwfcDvN8oWF8YM4z+wk51qMqICR3yF5dxSFaY=";
   };
 
+  # appcompat.sh only takes its prebuilt code path when veridex and the data
+  # files sit next to it, so the archive stays whole under libexec and is
+  # reached through a wrapper. A symlink into bin would make the script look
+  # for its siblings in bin and fall back to the Android tree layout.
   installPhase = ''
     runHook preInstall
-    mkdir -p $out/bin
-    unzip ${archive} -d $out/bin
+    mkdir -p $out/libexec
+    unzip ${archive} -d $out/libexec/veridex
+    makeWrapper $out/libexec/veridex/appcompat.sh $out/bin/appcompat.sh
     runHook postInstall
   '';
 
