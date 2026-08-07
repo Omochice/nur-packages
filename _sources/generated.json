@@ -503,6 +503,28 @@
         },
         "version": "v4.0.0"
     },
+    "veridex": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "veridex",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "android-15.0.0_r25",
+            "sha256": "sha256-U0hcP06Y+Xwp4R8iS+2atZfpn/2XC2BwSKMMK9oez0c=",
+            "sparseCheckout": [
+                "appcompat"
+            ],
+            "type": "git",
+            "url": "https://android.googlesource.com/platform/prebuilts/runtime"
+        },
+        "version": "android-15.0.0_r25"
+    },
     "vim-startuptime": {
         "cargoLock": null,
         "date": null,

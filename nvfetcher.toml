@@ -102,6 +102,11 @@ src.manual = "v0.1.1"
 fetch.github = "keithamus/sort-package-json"
 src.manual = "v4.0.0"
 
+[veridex]
+fetch.git = "https://android.googlesource.com/platform/prebuilts/runtime"
+git.sparseCheckout = ["appcompat"]
+src.manual = "android-15.0.0_r25"
+
 [vim-startuptime]
 fetch.github = "rhysd/vim-startuptime"
 src.manual = "v1.3.2"
