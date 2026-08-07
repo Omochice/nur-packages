@@ -3,12 +3,11 @@
   lib,
   stdenvNoCC,
   unzip,
-  pkgs,
 }:
 let
   version = "android-15.0.0_r25";
   target =
-    if pkgs.stdenv.hostPlatform.isDarwin then
+    if stdenvNoCC.hostPlatform.isDarwin then
       {
         path = "veridex-mac.zip";
         hash = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
