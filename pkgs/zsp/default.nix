@@ -10,8 +10,12 @@ buildGoModule rec {
   # keep-sorted start block=yes
   # Upstream's "glob pattern" subtest lacks the missing-fixture skip guard that
   # its sibling subtests have, so it fails because testdata/apks/ is absent from
-  # the release source. Skip only that subtest rather than disabling all checks.
-  checkFlags = [ "-skip=^TestLocalSource$/^glob_pattern$" ];
+  # the release source. TestDeleteDownloadedAPKRemovesCacheAndTemp creates its
+  # cache directory under HOME, which the sandbox points at the read-only
+  # /homeless-shelter. Skip only these rather than disabling all checks.
+  checkFlags = [
+    "-skip=^TestLocalSource$/^glob_pattern$|^TestDeleteDownloadedAPKRemovesCacheAndTemp$"
+  ];
   doCheck = true;
   env.CGO_ENABLED = 0;
   ldflags = [
