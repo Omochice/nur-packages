@@ -1,15 +1,16 @@
 {
+  autoPatchelfHook,
   fetchzip,
   makeWrapper,
   lib,
-  stdenvNoCC,
+  stdenv,
   unzip,
 }:
 let
   version = "android-15.0.0_r25";
-  archive = if stdenvNoCC.hostPlatform.isDarwin then "veridex-mac.zip" else "veridex-linux.zip";
+  archive = if stdenv.hostPlatform.isDarwin then "veridex-mac.zip" else "veridex-linux.zip";
 in
-stdenvNoCC.mkDerivation {
+stdenv.mkDerivation {
   inherit version;
 
   pname = "veridex";
@@ -17,7 +18,10 @@ stdenvNoCC.mkDerivation {
   nativeBuildInputs = [
     makeWrapper
     unzip
-  ];
+  ]
+  ++ lib.optionals stdenv.hostPlatform.isLinux [ autoPatchelfHook ];
+
+  buildInputs = lib.optionals stdenv.hostPlatform.isLinux [ stdenv.cc.cc.lib ];
 
   dontBuild = true;
 
