@@ -1,22 +1,12 @@
 {
-  fetchFromGitiles,
+  fetchzip,
   lib,
   stdenvNoCC,
   unzip,
 }:
 let
   version = "android-15.0.0_r25";
-  target =
-    if stdenvNoCC.hostPlatform.isDarwin then
-      {
-        path = "veridex-mac.zip";
-        hash = "sha256-7wpNcsCfMaQZ5hvDLUG+JD7AM7oRBFVnl8yaURQ2Mkc=";
-      }
-    else
-      {
-        path = "veridex-linux.zip";
-        hash = "sha256-IaFtakCDE/VeWAT3Okojon8ajuFzAe/wvY7kEBGajAM=";
-      };
+  archive = if stdenvNoCC.hostPlatform.isDarwin then "veridex-mac.zip" else "veridex-linux.zip";
 in
 stdenvNoCC.mkDerivation {
   inherit version;
@@ -25,16 +15,20 @@ stdenvNoCC.mkDerivation {
 
   nativeBuildInputs = [ unzip ];
 
-  src = fetchFromGitiles {
-    url = "https://android.googlesource.com/platform/prebuilts/runtime";
-    rev = version;
-    hash = target.hash;
+  # Gitiles can archive a single directory, and only appcompat is needed.
+  # Archiving the whole prebuilts/runtime repository downloads hundreds of
+  # megabytes to reach the same two zips.
+  src = fetchzip {
+    name = "veridex-prebuilts-${version}";
+    url = "https://android.googlesource.com/platform/prebuilts/runtime/+archive/refs/tags/${version}/appcompat.tar.gz";
+    stripRoot = false;
+    hash = "sha256-slqJwsUwfcDvN8oWF8YM4z+wk51qMqICR3yF5dxSFaY=";
   };
 
   installPhase = ''
     runHook preInstall
     mkdir -p $out/bin
-    unzip appcompat/${target.path} -d $out/bin
+    unzip ${archive} -d $out/bin
     runHook postInstall
   '';
 
