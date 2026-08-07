@@ -271,6 +271,19 @@
       sha256 = "sha256-uoZqILgsg/aaMA2/tRmUZrM96JkaYp/ga2Xdi03UquU=";
     };
   };
+  veridex = {
+    pname = "veridex";
+    version = "android-15.0.0_r25";
+    src = fetchgit {
+      url = "https://android.googlesource.com/platform/prebuilts/runtime";
+      rev = "android-15.0.0_r25";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ "appcompat" ];
+      sha256 = "sha256-U0hcP06Y+Xwp4R8iS+2atZfpn/2XC2BwSKMMK9oez0c=";
+    };
+  };
   vim-startuptime = {
     pname = "vim-startuptime";
     version = "v1.3.2";
