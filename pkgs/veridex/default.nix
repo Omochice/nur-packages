@@ -9,6 +9,8 @@
 
 let
   version = "android-15.0.0_r25";
+  # The macOS prebuilt is an x86_64 Mach-O binary, which aarch64-darwin runs
+  # through Rosetta 2. Upstream ships no aarch64 build to prefer over it.
   archive = if stdenv.hostPlatform.isDarwin then "veridex-mac.zip" else "veridex-linux.zip";
 in
 stdenv.mkDerivation {
@@ -52,7 +54,9 @@ stdenv.mkDerivation {
   meta.license = lib.licenses.asl20;
   meta.mainProgram = "appcompat.sh";
   meta.platforms = [
-    "x86_64-linux"
     "aarch64-darwin"
+    "x86_64-darwin"
+    "x86_64-linux"
   ];
+  meta.sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
 }
