@@ -24,14 +24,18 @@
           $npmPackage := fetch.url ~> /^https:\\/\\/registry\\.npmjs\\.org\\/(.+)\\/-\\//; \
           { \
             "depName": fetch.github ? fetch.github : ( \
-              $npmPackage ? $npmPackage.groups[0] : ( \
-                $url := fetch.url ~> /^https:\\/\\/github\\.com\\/([^\\/]+?\\/[^\\/]+)/; \
-                $isCommitHash ? $url.match : $url.groups[0] \
+              fetch.git ? fetch.git : ( \
+                $npmPackage ? $npmPackage.groups[0] : ( \
+                  $url := fetch.url ~> /^https:\\/\\/github\\.com\\/([^\\/]+?\\/[^\\/]+)/; \
+                  $isCommitHash ? $url.match : $url.groups[0] \
+                ) \
               ) \
             ), \
             "currentValue": src.manual, \
             "datasource": $isCommitHash ? "git-refs" : ( \
-              $npmPackage ? "npm" : "github-releases" \
+              fetch.git ? "git-tags" : ( \
+                $npmPackage ? "npm" : "github-releases" \
+              ) \
             ) \
         })',
       ],
@@ -61,6 +65,14 @@
         "IBM/plex",
       ],
       versioning: "regex:^(?<compatibility>@.+)@(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$",
+    },
+    {
+      description: "AOSP release tags are not semver, and the repository also carries cts, vts, mainline, platform and security tag families that this regex excludes",
+      matchPackageNames: [
+        "https://android.googlesource.com/platform/prebuilts/runtime",
+      ],
+      versioning: "regex:^android-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)_r(?<build>\\d+)$",
+      automerge: false,
     },
   ],
 }
