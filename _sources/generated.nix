@@ -158,13 +158,13 @@
   };
   gitlab-ci-ls = {
     pname = "gitlab-ci-ls";
-    version = "1.3.3";
+    version = "1.3.4";
     src = fetchFromGitHub {
       owner = "alesbrelih";
       repo = "gitlab-ci-ls";
-      rev = "1.3.3";
+      rev = "1.3.4";
       fetchSubmodules = false;
-      sha256 = "sha256-VA1y24JObxUcY8BPq9xtbajBrFlcq5H1wi8j7jQtsY4=";
+      sha256 = "sha256-B5XNh1SzxTC7m5TGDgrPBTrOwbhVJCjkxcq9AAxf42k=";
     };
   };
   gitlab-ci-verify = {
@@ -221,13 +221,13 @@
   };
   pinact = {
     pname = "pinact";
-    version = "v3.10.1";
+    version = "v4.1.1";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "pinact";
-      rev = "v3.10.1";
+      rev = "v4.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-YtXnIBAD0HT6U4hPxNmcsV285AWH3GJIb4YJ7cGB8uo=";
+      sha256 = "sha256-GiwAbVKpVczugr9oIH+afV4ozlepSyyYDivJpwlJHGc=";
     };
   };
   roots = {
@@ -243,10 +243,10 @@
   };
   salesforce-cli = {
     pname = "salesforce-cli";
-    version = "2.140.6";
+    version = "2.146.3";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@salesforce/cli/-/cli-2.140.6.tgz";
-      sha256 = "sha256-8AeARnPHbNm71zNII5OpJ8oiKHnxIg9AwPoEu9coEOo=";
+      url = "https://registry.npmjs.org/@salesforce/cli/-/cli-2.146.3.tgz";
+      sha256 = "sha256-TZcQOspYEsfjD4Gg/cHWHhuCZpXzwhPVNrJS1b2hrCY=";
     };
   };
   slack-reminder = {
@@ -284,13 +284,13 @@
   };
   zsp = {
     pname = "zsp";
-    version = "v0.4.13";
+    version = "v0.4.17";
     src = fetchFromGitHub {
       owner = "zapstore";
       repo = "zsp";
-      rev = "v0.4.13";
+      rev = "v0.4.17";
       fetchSubmodules = false;
-      sha256 = "sha256-mnsvhpmrndN1v8dnb1GPqkujDY4hdYDtv6CycXP+dwE=";
+      sha256 = "sha256-4zx/9tjLU1sdDM3sWDy9mmGb93phnsKTVq2vv2tE/BE=";
     };
   };
 }
