@@ -105,7 +105,7 @@ src.manual = "v4.0.0"
 [veridex]
 fetch.git = "https://android.googlesource.com/platform/prebuilts/runtime"
 git.sparseCheckout = ["appcompat"]
-src.manual = "android-15.0.0_r25"
+src.manual = "android-17.0.0_r1"
 
 [vim-startuptime]
 fetch.github = "rhysd/vim-startuptime"
