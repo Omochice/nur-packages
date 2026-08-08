@@ -273,10 +273,10 @@
   };
   veridex = {
     pname = "veridex";
-    version = "android-15.0.0_r25";
+    version = "android-17.0.0_r1";
     src = fetchgit {
       url = "https://android.googlesource.com/platform/prebuilts/runtime";
-      rev = "android-15.0.0_r25";
+      rev = "android-17.0.0_r1";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
