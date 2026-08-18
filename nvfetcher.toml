@@ -64,7 +64,7 @@ src.manual = "1.4.0"
 
 [gitlab-ci-verify]
 fetch.github = "timo-reymann/gitlab-ci-verify"
-src.manual = "v2.11.2"
+src.manual = "v2.11.3"
 
 [godoclint]
 fetch.github = "godoc-lint/godoc-lint"

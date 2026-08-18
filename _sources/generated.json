@@ -319,12 +319,12 @@
             "name": null,
             "owner": "timo-reymann",
             "repo": "gitlab-ci-verify",
-            "rev": "v2.11.2",
-            "sha256": "sha256-JuTb7L5yJV0za+8GTPJeYsFBF/P6FES8p0Q8gaPKwjM=",
+            "rev": "v2.11.3",
+            "sha256": "sha256-SytYentAp/QKbtaJkagLk0pC+w1glgOfcX+ucMBJZqg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.11.2"
+        "version": "v2.11.3"
     },
     "godoclint": {
         "cargoLock": null,
