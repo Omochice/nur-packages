@@ -10,7 +10,7 @@ rustPlatform.buildRustPackage rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   buildInputs = [ openssl ];
-  cargoHash = "sha256-lAvNbDalVQfs8HMnnlSPRTqztOldvoQSG0LCHBunx8Y=";
+  cargoHash = "sha256-sOrhE1Uqnm45eWEj6+qTbmn7ie3HoPsah5ZzWLCqLnA=";
   doCheck = true;
   meta = with lib; {
     # keep-sorted start
