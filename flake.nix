@@ -182,6 +182,34 @@
           nvfetcher = nixpkgs.lib.pipe "nvfetcher \"$@\"" [
             (runAs "nvfetcher" [ pkgs.nvfetcher ])
           ];
+          refresh-hashes =
+            nixpkgs.lib.pipe
+              ''
+                base="''${1:-origin/main}"
+                old="$(mktemp)"
+                trap 'rm -f "$old"' EXIT
+                git show "$base:nvfetcher.toml" >"$old"
+
+                mapfile -t changed < <(
+                  nix-instantiate --eval --json --strict \
+                    --argstr old "$old" \
+                    --argstr new "$PWD/nvfetcher.toml" \
+                    ${./scripts/changed-sources.nix} | jq --raw-output '.[]'
+                )
+
+                for name in ''${changed[@]+"''${changed[@]}"}; do
+                  echo "refreshing hashes of $name" >&2
+                  nix-update --flake --version=skip "$name"
+                done
+              ''
+              [
+                (runAs "refresh-hashes" [
+                  pkgs.git
+                  pkgs.jq
+                  pkgs.nix
+                  pkgs.nix-update
+                ])
+              ];
         }
       );
       devShells = forAllSystems (
@@ -192,6 +220,7 @@
         {
           default = pkgs.mkShell {
             packages = [
+              pkgs.nix-update
               pkgs.nvfetcher
               (treefmt system).config.build.wrapper
             ];

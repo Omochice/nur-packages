@@ -1,0 +1,94 @@
+name: Refresh dependency hashes
+
+on:
+  push:
+    branches:
+      - self-hosted-renovate/**
+
+permissions: {}
+
+concurrency:
+  group: refresh-hashes-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  detect:
+    # The Renovate app's bot user ID. Unlike the login it cannot be spoofed by
+    # a look-alike account name.
+    if: github.event.sender.id == 199254225
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      stale: ${{ steps.diff.outputs.stale }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Look for a source bump that carries no hash refresh
+        id: diff
+        run: |
+          if git diff --quiet origin/main...HEAD -- nvfetcher.toml; then
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          elif git diff origin/main...HEAD -- pkgs | grep -qE '^\+[[:space:]]*[A-Za-z0-9_]+Hash[[:space:]]*='; then
+            # Nothing but the refresh job adds such a line, so its presence
+            # means this push was the refresh job's own and must not loop.
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          fi
+  refresh:
+    needs:
+      - detect
+    if: needs.detect.outputs.stale == 'true'
+    environment: renovate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install nix
+        uses: ./.github/actions/setup-nix
+        with:
+          github-token: ${{ secrets.github_token }}
+      - name: Recompute the hashes of the bumped packages
+        run: nix run .#refresh-hashes -- origin/main
+        env:
+          NIXPKGS_ALLOW_UNFREE: 1
+      - name: Get token
+        id: app-token
+        uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3.1.1
+        with:
+          private-key: ${{ secrets.RENOVATE_PRIVATE_KEY }}
+          client-id: ${{ vars.RENOVATE_CLIENT_ID }}
+          owner: ${{ github.repository_owner }}
+          repositories: |
+            nur-packages
+          permission-contents: write
+      - name: Send the refreshed hashes back to the Renovate branch
+        env:
+          PUSH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          if git diff --quiet -- pkgs; then
+            echo "the bumped packages record no dependency hash"
+            exit 0
+          fi
+          git config user.name "omochice-renovatebot[bot]"
+          git config user.email "199254225+omochice-renovatebot[bot]@users.noreply.github.com"
+          git diff --name-only -- pkgs | while read -r file; do
+            package="$(basename "$(dirname "$file")")"
+            attribute="$(git diff -- "$file" | grep -oE '^\+[[:space:]]*[A-Za-z0-9_]+Hash' | grep -oE '[A-Za-z0-9_]+Hash' | head -1)"
+            git add "$file"
+            git commit \
+              -m "chore($package): update $attribute" \
+              -m "The source bump on this branch invalidates the hash recorded for the previous version, and the dependencies cannot be fetched until it is recomputed."
+          done
+          git push "https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
