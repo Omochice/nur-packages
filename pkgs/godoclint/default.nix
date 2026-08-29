@@ -18,6 +18,6 @@ buildGoModule rec {
   meta.license = lib.licenses.mit;
   meta.mainProgram = "godoclint";
   subPackages = [ "./cmd/godoclint" ];
-  vendorHash = "sha256-uU4zd5y/xaAfVdKtY3BNhFR90m9UQZRu8SNqkwIpKcE=";
+  vendorHash = "sha256-TauXxk1nbYTJLIGNU9Cae0AEV7wLbkMnoXImePSJcts=";
   # keep-sorted end
 }
