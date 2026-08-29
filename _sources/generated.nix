@@ -180,13 +180,13 @@
   };
   godoclint = {
     pname = "godoclint";
-    version = "v0.11.2";
+    version = "v0.11.4";
     src = fetchFromGitHub {
       owner = "godoc-lint";
       repo = "godoc-lint";
-      rev = "v0.11.2";
+      rev = "v0.11.4";
       fetchSubmodules = false;
-      sha256 = "sha256-+JPdDaZOUy3Ml3LGGKd1H269LuxW2W/aTTd2Ty4tuC8=";
+      sha256 = "sha256-OFj1PcgMcCivkq1XfclQdueqU1n2fbTMyN0fYsxE1+g=";
     };
   };
   ibm-plex-sans-jp = {
