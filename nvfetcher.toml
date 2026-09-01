@@ -14,6 +14,10 @@ src.manual = "2.1.251"
 fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
 src.manual = "v1.0.0"
 
+[dockerfile-pin]
+fetch.github = "azu/dockerfile-pin"
+src.manual = "v1.5.0"
+
 [duckgo]
 fetch.github = "sheepla/duckgo"
 src.manual = "v0.1.1"
