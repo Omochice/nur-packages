@@ -49,6 +49,9 @@ in
   disable-checkout-persist-credentials =
     pkgs.callPackage ./pkgs/disable-checkout-persist-credentials/default.nix
       { source = sources.disable-checkout-persist-credentials; };
+  dockerfile-pin = pkgs.callPackage ./pkgs/dockerfile-pin/default.nix {
+    source = sources.dockerfile-pin;
+  };
   duckgo = pkgs.callPackage ./pkgs/duckgo/default.nix { source = sources.duckgo; };
   firge = pkgs.callPackage ./pkgs/data/fonts/firge/default.nix { source = sources.firge; };
   firge-nerd = pkgs.callPackage ./pkgs/data/fonts/firge-nerd/default.nix {
