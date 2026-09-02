@@ -17,7 +17,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "A CLI tool that pins Dockerfile, Docker Compose, and GitHub Actions images to sha256 digests to prevent supply chain attacks.";
     homepage = "https://github.com/azu/dockerfile-pin";
-    changelog = "https://github.com/azu/dockerfile-pin/releases/tag/v${version}";
+    changelog = "https://github.com/azu/dockerfile-pin/releases/tag/${version}";
     license = licenses.mit;
     mainProgram = "dockerfile-pin";
   };
