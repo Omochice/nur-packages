@@ -17,6 +17,6 @@ buildGo126Module rec {
   meta.homepage = "https://github.com/jackchuka/gh-dep";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "gh-dep";
-  vendorHash = "sha256-njInErbSVChWzZFm3hmdnwo5KDzyBD4mVCBO4xWk33s=";
+  vendorHash = "sha256-GkOVUN2gCTgKB8IpvIQdRkk+BFC4mgnNlck1Z3MkrXw=";
   # keep-sorted end
 }
