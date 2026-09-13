@@ -189,6 +189,19 @@
       sha256 = "sha256-6KxOryxlp4fJiji5lwc0F3vA2wMWUh7NQTgV2yG3hDU=";
     };
   };
+  glci = {
+    pname = "glci";
+    version = "v0.7.0";
+    src = fetchgit {
+      url = "https://gitlab.com/gitlab-org/ci-cd/runner-tools/glci";
+      rev = "v0.7.0";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-S6MvJIAQmRqrME+sl/2MUiQ2FsStbcn6lclxRY8s+X4=";
+    };
+  };
   godoclint = {
     pname = "godoclint";
     version = "v0.11.4";
