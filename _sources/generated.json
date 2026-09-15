@@ -359,13 +359,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "v0.7.0",
-            "sha256": "sha256-S6MvJIAQmRqrME+sl/2MUiQ2FsStbcn6lclxRY8s+X4=",
+            "rev": "v0.8.0",
+            "sha256": "sha256-vlz75vm09jrtcMMobx51Lnj7sTtObBqHyeLCaBPoR9g=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/gitlab-org/ci-cd/runner-tools/glci"
         },
-        "version": "v0.7.0"
+        "version": "v0.8.0"
     },
     "godoclint": {
         "cargoLock": null,
