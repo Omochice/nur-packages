@@ -191,15 +191,15 @@
   };
   glci = {
     pname = "glci";
-    version = "v0.7.0";
+    version = "v0.8.0";
     src = fetchgit {
       url = "https://gitlab.com/gitlab-org/ci-cd/runner-tools/glci";
-      rev = "v0.7.0";
+      rev = "v0.8.0";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-S6MvJIAQmRqrME+sl/2MUiQ2FsStbcn6lclxRY8s+X4=";
+      sha256 = "sha256-vlz75vm09jrtcMMobx51Lnj7sTtObBqHyeLCaBPoR9g=";
     };
   };
   godoclint = {
