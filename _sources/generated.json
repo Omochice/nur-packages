@@ -151,12 +151,12 @@
             "name": null,
             "owner": "jackchuka",
             "repo": "gh-dep",
-            "rev": "v0.11.8",
-            "sha256": "sha256-31/MKyPQaDMsd+2dJkxdrWO2pX8HlPhU6wAdJ6V5hZE=",
+            "rev": "v0.11.9",
+            "sha256": "sha256-LtdlvkbZ6t/NGh9iy09YZTrPrEGFvZeZLuaikeb1uJM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.11.8"
+        "version": "v0.11.9"
     },
     "gh-grep": {
         "cargoLock": null,
