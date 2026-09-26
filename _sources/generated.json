@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rlokezV+YROdHxVNzcZ5luXaeD+THJndRQzwNWlEH+Q=",
+            "sha256": "sha256-4Ty4BzXH+y1yvbSn5NEwzmUGUUD7sTozcl4nkpUGypU=",
             "type": "url",
-            "url": "https://registry.npmjs.org/cc-sdd/-/cc-sdd-3.0.2.tgz"
+            "url": "https://registry.npmjs.org/cc-sdd/-/cc-sdd-3.1.0.tgz"
         },
-        "version": "3.0.2"
+        "version": "3.1.0"
     },
     "ccusage": {
         "cargoLock": null,
