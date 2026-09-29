@@ -172,12 +172,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "gh-grep",
-            "rev": "v1.2.5",
-            "sha256": "sha256-xCr68IMrGPIQr+RmAgNdgD+Bw0dQSSi9GcpoDy3q86U=",
+            "rev": "v1.2.6",
+            "sha256": "sha256-i2+YbgD6yS7OzkSG1W6Ki/37ks9YNlNQv+QkvqRWwyg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.2.5"
+        "version": "v1.2.6"
     },
     "gh-infra": {
         "cargoLock": null,
