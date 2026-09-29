@@ -92,13 +92,13 @@
   };
   gh-grep = {
     pname = "gh-grep";
-    version = "v1.2.5";
+    version = "v1.2.6";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "gh-grep";
-      rev = "v1.2.5";
+      rev = "v1.2.6";
       fetchSubmodules = false;
-      sha256 = "sha256-xCr68IMrGPIQr+RmAgNdgD+Bw0dQSSi9GcpoDy3q86U=";
+      sha256 = "sha256-i2+YbgD6yS7OzkSG1W6Ki/37ks9YNlNQv+QkvqRWwyg=";
     };
   };
   gh-infra = {
