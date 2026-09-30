@@ -90,6 +90,10 @@ in
   sort-package-json = pkgs.callPackage ./pkgs/sort-package-json/default.nix {
     source = sources.sort-package-json;
   };
+  upm = pkgs.callPackage ./pkgs/upm/default.nix {
+    inherit nodeEnv;
+    source = sources.upm;
+  };
   veridex = pkgs.callPackage ./pkgs/veridex/default.nix { source = sources.veridex; };
   vim-startuptime = pkgs.callPackage ./pkgs/vim-startuptime/default.nix {
     source = sources.vim-startuptime;

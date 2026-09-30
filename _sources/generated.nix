@@ -295,6 +295,14 @@
       sha256 = "sha256-uoZqILgsg/aaMA2/tRmUZrM96JkaYp/ga2Xdi03UquU=";
     };
   };
+  upm = {
+    pname = "upm";
+    version = "1.3.1";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/upm/-/upm-1.3.1.tgz";
+      sha256 = "sha256-ggkDWnYpPuNyjqHLVwyo6jXws9FYqCLTdj8ZNIt55W4=";
+    };
+  };
   veridex = {
     pname = "veridex";
     version = "android-17.0.0_r1";
