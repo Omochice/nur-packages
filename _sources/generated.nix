@@ -103,13 +103,13 @@
   };
   gh-infra = {
     pname = "gh-infra";
-    version = "v0.13.1";
+    version = "v0.14.0";
     src = fetchFromGitHub {
       owner = "babarot";
       repo = "gh-infra";
-      rev = "v0.13.1";
+      rev = "v0.14.0";
       fetchSubmodules = false;
-      sha256 = "sha256-jOF6G8rDe9XY7yDzRGc9Pq02k1naymaS6g8mFs9W/bw=";
+      sha256 = "sha256-1k7HVa86jR933lyEr1cLnb6ilLRqhGPvsPEJ8S2Of84=";
     };
   };
   gh-triage = {
