@@ -480,12 +480,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "roots",
-            "rev": "v0.4.1",
-            "sha256": "sha256-ACMRfWY/lhc3C/KVhuUyS1rgkSHGWPxZrmYt+pXupJI=",
+            "rev": "v0.4.2",
+            "sha256": "sha256-neK1K3Emam70LJR/oVi1Gn0dNM+OC6X5TyAufQJE7BQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.4.1"
+        "version": "v0.4.2"
     },
     "salesforce-cli": {
         "cargoLock": null,
