@@ -256,13 +256,13 @@
   };
   roots = {
     pname = "roots";
-    version = "v0.4.1";
+    version = "v0.4.2";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "roots";
-      rev = "v0.4.1";
+      rev = "v0.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-ACMRfWY/lhc3C/KVhuUyS1rgkSHGWPxZrmYt+pXupJI=";
+      sha256 = "sha256-neK1K3Emam70LJR/oVi1Gn0dNM+OC6X5TyAufQJE7BQ=";
     };
   };
   salesforce-cli = {
