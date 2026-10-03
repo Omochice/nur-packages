@@ -25,6 +25,6 @@ buildGoModule rec {
     license = licenses.mit;
     mainProgram = "roots";
   };
-  vendorHash = "sha256-uxcT5VzlTCxxnx09p13mot0wVbbas/otoHdg7QSDt4E=";
+  vendorHash = "sha256-po/kY9zXId2qvk3oNgdrgFLEbVIWedYjfqMfdX4J5Ls=";
   # keep-sorted end
 }
