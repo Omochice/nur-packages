@@ -79,6 +79,9 @@ in
   };
   lazygit = pkgs.callPackage ./pkgs/lazygit/default.nix { source = sources.lazygit; };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
+  oh-my-mermaid = pkgs.callPackage ./pkgs/oh-my-mermaid/default.nix {
+    source = sources.oh-my-mermaid;
+  };
   pinact = pkgs.callPackage ./pkgs/pinact/default.nix { source = sources.pinact; };
   roots = pkgs.callPackage ./pkgs/roots/default.nix { source = sources.roots; };
   salesforce-cli = pkgs.callPackage ./pkgs/salesforce-cli/default.nix {
