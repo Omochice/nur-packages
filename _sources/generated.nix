@@ -243,6 +243,17 @@
       sha256 = "sha256-pawi8f/YQoJegG/BDPJiIz3QU5dJtYxiKjO4hygxjAo=";
     };
   };
+  oh-my-mermaid = {
+    pname = "oh-my-mermaid";
+    version = "v0.2.0";
+    src = fetchFromGitHub {
+      owner = "oh-my-mermaid";
+      repo = "oh-my-mermaid";
+      rev = "v0.2.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-kMo8nmyuuaL16QwXxPcLHS3F64vSLfNCgXM31vUUgPo=";
+    };
+  };
   pinact = {
     pname = "pinact";
     version = "v4.1.1";
