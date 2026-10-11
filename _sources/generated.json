@@ -438,12 +438,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "octocov",
-            "rev": "v0.83.2",
-            "sha256": "sha256-pawi8f/YQoJegG/BDPJiIz3QU5dJtYxiKjO4hygxjAo=",
+            "rev": "v0.83.3",
+            "sha256": "sha256-YssdjpA26KvdEXPTSEodK4ETPikCiDwI6consfaTejw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.83.2"
+        "version": "v0.83.3"
     },
     "pinact": {
         "cargoLock": null,
