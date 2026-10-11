@@ -40,7 +40,7 @@ src.manual = "v1.2.6"
 
 [gh-infra]
 fetch.github = "babarot/gh-infra"
-src.manual = "v0.15.0"
+src.manual = "v0.16.0"
 
 [gh-triage]
 fetch.github = "k1LoW/gh-triage"
