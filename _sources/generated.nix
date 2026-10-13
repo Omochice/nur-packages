@@ -81,13 +81,13 @@
   };
   gh-dep = {
     pname = "gh-dep";
-    version = "v0.11.9";
+    version = "v0.11.10";
     src = fetchFromGitHub {
       owner = "jackchuka";
       repo = "gh-dep";
-      rev = "v0.11.9";
+      rev = "v0.11.10";
       fetchSubmodules = false;
-      sha256 = "sha256-LtdlvkbZ6t/NGh9iy09YZTrPrEGFvZeZLuaikeb1uJM=";
+      sha256 = "sha256-QKbRbrypcXSh2gQqmLSfdQDVnmcVZswQ42HLOzyMY2M=";
     };
   };
   gh-grep = {
