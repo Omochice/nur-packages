@@ -558,12 +558,12 @@
             "name": null,
             "owner": "keithamus",
             "repo": "sort-package-json",
-            "rev": "v4.0.0",
-            "sha256": "sha256-uoZqILgsg/aaMA2/tRmUZrM96JkaYp/ga2Xdi03UquU=",
+            "rev": "v4.1.0",
+            "sha256": "sha256-dqk0BypmVx23FTaTvq46MxAI+Tr0Q66xR4srwpi4Kfs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.0.0"
+        "version": "v4.1.0"
     },
     "upm": {
         "cargoLock": null,
