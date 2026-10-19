@@ -180,13 +180,13 @@
   };
   gitlab-ci-verify = {
     pname = "gitlab-ci-verify";
-    version = "v2.11.11";
+    version = "v2.11.12";
     src = fetchFromGitHub {
       owner = "timo-reymann";
       repo = "gitlab-ci-verify";
-      rev = "v2.11.11";
+      rev = "v2.11.12";
       fetchSubmodules = false;
-      sha256 = "sha256-2kkEeecBgakQA4rysWez8cEJTYdDWpZOPDC2+5WoNtI=";
+      sha256 = "sha256-YdfnNFOwlTWpcWSLeSG1NsVXmH7vww3RYRBgt+ER5So=";
     };
   };
   glci = {
