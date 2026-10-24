@@ -308,10 +308,10 @@
   };
   upm = {
     pname = "upm";
-    version = "1.4.0";
+    version = "1.5.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/upm/-/upm-1.4.0.tgz";
-      sha256 = "sha256-nUMLU4LdpZ9MnBcg2PQw87HdSDYMOjqqTv2JcwkiF+s=";
+      url = "https://registry.npmjs.org/upm/-/upm-1.5.0.tgz";
+      sha256 = "sha256-/uGIy2eXD3fa2xs0ma6me6bc8v0wLQPHB1GBp+wN/i4=";
     };
   };
   veridex = {
