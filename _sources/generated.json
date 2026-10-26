@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Y11NqgETQFkI5nSc/XnsB2hVowPG/MoXpauWZIYdpdU=",
+            "sha256": "sha256-5W9+3niRqi3V5XBEVvgwfSpjdtkDbcaPjhPkjuidlDE=",
             "type": "url",
-            "url": "https://registry.npmjs.org/ccusage/-/ccusage-20.0.40.tgz"
+            "url": "https://registry.npmjs.org/ccusage/-/ccusage-20.0.41.tgz"
         },
-        "version": "20.0.40"
+        "version": "20.0.41"
     },
     "claude-code": {
         "cargoLock": null,
