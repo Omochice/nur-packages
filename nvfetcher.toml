@@ -116,7 +116,7 @@ src.manual = "v4.1.0"
 
 [upm]
 fetch.url = "https://registry.npmjs.org/upm/-/upm-$ver.tgz"
-src.manual = "1.5.0"
+src.manual = "1.5.1"
 
 [veridex]
 fetch.git = "https://android.googlesource.com/platform/prebuilts/runtime"
