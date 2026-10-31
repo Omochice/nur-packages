@@ -52,7 +52,7 @@ src.manual = "v1.5.6"
 
 [ghatm]
 fetch.github = "suzuki-shunsuke/ghatm"
-src.manual = "v1.0.0"
+src.manual = "v1.0.1"
 
 [ghq]
 fetch.github = "x-motemen/ghq"
