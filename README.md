@@ -8,38 +8,38 @@
 
 ## Packages
 
-| Package                                                                                                         | Version                 | Description                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| [cc-sdd](https://github.com/gotalab/cc-sdd)                                                                     | v3.1.0                  | Spec-driven development (SDD) for your team's workflow.                                                                                |
-| [ccusage](https://github.com/ryoppippi/ccusage)                                                                 | v20.0.45                | A CLI tool for analyzing Claude Code usage from local JSONL files.                                                                     |
-| [claude-code](https://github.com/anthropics/claude-code)                                                        | v2.1.312                | Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.                                 |
-| [disable-checkout-persist-credentials](https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials) | v1.0.0                  | CLI to disable actions/checkout's persist-credentials.                                                                                 |
-| [dockerfile-pin](https://github.com/azu/dockerfile-pin)                                                         | v1.5.0                  | A CLI tool that pins Dockerfile, Docker Compose, and GitHub Actions images to sha256 digests to prevent supply chain attacks.          |
-| [duckgo](https://github.com/sheepla/duckgo)                                                                     | v0.1.1                  | A command line DuckDuckGo client with fuzzyfinder UI written in Go.                                                                    |
-| [firge](https://github.com/yuru7/Firge)                                                                         | v0.3.0                  | Programming font that combines Genshin Gothic and Fira Mono.                                                                           |
-| [firge-nerd](https://github.com/yuru7/Firge)                                                                    | v0.3.0                  | Programming font that combines Genshin Gothic and Fira Mono with Nerd Font.                                                            |
-| [gh-dep](https://github.com/jackchuka/gh-dep)                                                                   | v0.11.10                | A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.                             |
-| [gh-grep](https://github.com/k1LoW/gh-grep)                                                                     | v1.2.6                  | Print lines matching a pattern in repositories using GitHub API.                                                                       |
-| [gh-infra](https://github.com/babarot/gh-infra/)                                                                | v0.17.5                 | Declarative GitHub infrastructure management via YAML.                                                                                 |
-| [gh-triage](https://github.com/k1LoW/gh-triage)                                                                 | v0.11.0                 | `gh-triage` is a tool that helps you manage and triage GitHub issues and pull requests through unread notifications.                   |
-| [ghalint](https://github.com/suzuki-shunsuke/ghalint)                                                           | v1.5.6                  | GitHub Actions linter.                                                                                                                 |
-| [ghatm](https://github.com/suzuki-shunsuke/ghatm)                                                               | v1.0.0                  | Set timeout-minutes to all GitHub Actions jobs.                                                                                        |
-| [ghq](https://github.com/x-motemen/ghq)                                                                         | v1.11.2                 | Remote repository management made easy.                                                                                                |
-| [git-wt](https://github.com/k1LoW/git-wt)                                                                       | v0.30.0                 | A Git subcommand that makes `git worktree` simple.                                                                                     |
-| [gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls)                                                      | v1.4.0                  | Language server for Gitlab CI.                                                                                                         |
-| [gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)                                            | v2.11.13                | Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .                |
-| [glci](https://gitlab.com/gitlab-org/ci-cd/runner-tools/glci)                                                   | v0.8.0                  | Run GitLab CI/CD pipelines locally.                                                                                                    |
-| [godoclint](https://github.com/godoc-lint/godoc-lint)                                                           | v0.11.4                 | A linter for Go documentation practice (aka "Go Doc Comments" or "godoc").                                                             |
-| [ibm-plex-sans-jp](https://github.com/IBM/plex)                                                                 | @ibm/plex-sans-jp@3.0.0 | The package of IBM’s typeface, IBM Plex.                                                                                               |
-| [lazygit](https://github.com/jesseduffield/lazygit)                                                             | v0.66.2                 | simple terminal UI for git commands.                                                                                                   |
-| [octocov](https://github.com/k1LoW/octocov)                                                                     | v0.83.4                 | octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics). |
-| [oh-my-mermaid](https://github.com/oh-my-mermaid/oh-my-mermaid)                                                 | v0.2.0                  | Turn complex codebases into clear, navigable architecture diagrams with Claude Code.                                                   |
-| [pinact](https://github.com/suzuki-shunsuke/pinact)                                                             | v4.1.1                  | pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.                 |
-| [roots](https://github.com/k1LoW/roots)                                                                         | v0.4.2                  | `roots` is a tool for exploring multiple root directories, such as those in a monorepo project.                                        |
-| [salesforce-cli](https://github.com/salesforcecli/cli)                                                          | v2.146.3                | Salesforce CLI for interacting with Salesforce orgs and services.                                                                      |
-| [slack-reminder](https://github.com/skanehira/slack-reminder)                                                   | v0.1.1                  | Slack remind generator.                                                                                                                |
-| [sort-package-json](https://github.com/keithamus/sort-package-json)                                             | v4.1.0                  | Sort an Object or package.                                                                                                             |
-| [upm](https://github.com/unjs/upm)                                                                              | v1.5.1                  | A fast, tiny package manager for the npm registry, written in TypeScript.                                                              |
-| [veridex](https://android.googlesource.com/platform/art/+/refs/tags/android-17.0.0_r1/tools/veridex/)           | android-17.0.0_r1       | Given an APK, finds API uses that fall into the blocklist/max-target-X/unsupported APIs.                                               |
-| [vim-startuptime](https://github.com/rhysd/vim-startuptime)                                                     | v1.3.2                  | A small Go program for better `vim --startuptime` alternative.                                                                         |
-| [zsp](https://github.com/zapstore/zsp)                                                                          | v0.4.17                 | Publish apps to relays.                                                                                                                |
+|Package|Version|Description|
+|-|-|-|
+|[cc-sdd](https://github.com/gotalab/cc-sdd)|v3.1.0|Spec-driven development (SDD) for your team's workflow.|
+|[ccusage](https://github.com/ryoppippi/ccusage)|v20.0.45|A CLI tool for analyzing Claude Code usage from local JSONL files.|
+|[claude-code](https://github.com/anthropics/claude-code)|v2.1.312|Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster.|
+|[disable-checkout-persist-credentials](https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials)|v1.0.2|CLI to disable actions/checkout's persist-credentials.|
+|[dockerfile-pin](https://github.com/azu/dockerfile-pin)|v1.5.0|A CLI tool that pins Dockerfile, Docker Compose, and GitHub Actions images to sha256 digests to prevent supply chain attacks.|
+|[duckgo](https://github.com/sheepla/duckgo)|v0.1.1|A command line DuckDuckGo client with fuzzyfinder UI written in Go.|
+|[firge](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono.|
+|[firge-nerd](https://github.com/yuru7/Firge)|v0.3.0|Programming font that combines Genshin Gothic and Fira Mono with Nerd Font.|
+|[gh-dep](https://github.com/jackchuka/gh-dep)|v0.11.10|A GitHub CLI extension that streamlines the review and merge workflow for automated dependency update PRs.|
+|[gh-grep](https://github.com/k1LoW/gh-grep)|v1.2.6|Print lines matching a pattern in repositories using GitHub API.|
+|[gh-infra](https://github.com/babarot/gh-infra/)|v0.17.5|Declarative GitHub infrastructure management via YAML.|
+|[gh-triage](https://github.com/k1LoW/gh-triage)|v0.11.0|`gh-triage` is a tool that helps you manage and triage GitHub issues and pull requests through unread notifications.|
+|[ghalint](https://github.com/suzuki-shunsuke/ghalint)|v1.5.6|GitHub Actions linter.|
+|[ghatm](https://github.com/suzuki-shunsuke/ghatm)|v1.0.0|Set timeout-minutes to all GitHub Actions jobs.|
+|[ghq](https://github.com/x-motemen/ghq)|v1.11.2|Remote repository management made easy.|
+|[git-wt](https://github.com/k1LoW/git-wt)|v0.30.0|A Git subcommand that makes `git worktree` simple.|
+|[gitlab-ci-ls](https://github.com/alesbrelih/gitlab-ci-ls)|v1.4.0|Language server for Gitlab CI.|
+|[gitlab-ci-verify](https://github.com/timo-reymann/gitlab-ci-verify)|v2.11.13|Validate and lint your gitlab ci files using ShellCheck, the Gitlab API, curated checks or even build your own checks .|
+|[glci](https://gitlab.com/gitlab-org/ci-cd/runner-tools/glci)|v0.8.0|Run GitLab CI/CD pipelines locally.|
+|[godoclint](https://github.com/godoc-lint/godoc-lint)|v0.11.4|A linter for Go documentation practice (aka "Go Doc Comments" or "godoc").|
+|[ibm-plex-sans-jp](https://github.com/IBM/plex)|@ibm/plex-sans-jp@3.0.0|The package of IBM’s typeface, IBM Plex.|
+|[lazygit](https://github.com/jesseduffield/lazygit)|v0.66.2|simple terminal UI for git commands.|
+|[octocov](https://github.com/k1LoW/octocov)|v0.83.4|octocov is a toolkit for collecting code metrics (code coverage, code to test ratio, test execution time and your own custom metrics).|
+|[oh-my-mermaid](https://github.com/oh-my-mermaid/oh-my-mermaid)|v0.2.0|Turn complex codebases into clear, navigable architecture diagrams with Claude Code.|
+|[pinact](https://github.com/suzuki-shunsuke/pinact)|v4.1.1|pinact is a CLI to edit GitHub Workflow and Composite action files and pin versions of Actions and Reusable Workflows.|
+|[roots](https://github.com/k1LoW/roots)|v0.4.2|`roots` is a tool for exploring multiple root directories, such as those in a monorepo project.|
+|[salesforce-cli](https://github.com/salesforcecli/cli)|v2.146.3|Salesforce CLI for interacting with Salesforce orgs and services.|
+|[slack-reminder](https://github.com/skanehira/slack-reminder)|v0.1.1|Slack remind generator.|
+|[sort-package-json](https://github.com/keithamus/sort-package-json)|v4.1.0|Sort an Object or package.|
+|[upm](https://github.com/unjs/upm)|v1.5.1|A fast, tiny package manager for the npm registry, written in TypeScript.|
+|[veridex](https://android.googlesource.com/platform/art/+/refs/tags/android-17.0.0_r1/tools/veridex/)|android-17.0.0_r1|Given an APK, finds API uses that fall into the blocklist/max-target-X/unsupported APIs.|
+|[vim-startuptime](https://github.com/rhysd/vim-startuptime)|v1.3.2|A small Go program for better `vim --startuptime` alternative.|
+|[zsp](https://github.com/zapstore/zsp)|v0.4.17|Publish apps to relays.|
