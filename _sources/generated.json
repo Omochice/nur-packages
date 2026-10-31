@@ -517,11 +517,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-TZcQOspYEsfjD4Gg/cHWHhuCZpXzwhPVNrJS1b2hrCY=",
+            "sha256": "sha256-FYdWTsV/Y4VMNCdlqns9mB03y34kidRkmitocXZ4P5A=",
             "type": "url",
-            "url": "https://registry.npmjs.org/@salesforce/cli/-/cli-2.146.3.tgz"
+            "url": "https://registry.npmjs.org/@salesforce/cli/-/cli-2.156.8.tgz"
         },
-        "version": "2.146.3"
+        "version": "2.156.8"
     },
     "slack-reminder": {
         "cargoLock": null,
