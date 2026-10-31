@@ -12,7 +12,7 @@ src.manual = "2.1.312"
 
 [disable-checkout-persist-credentials]
 fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
-src.manual = "v1.0.0"
+src.manual = "v1.0.2"
 
 [dockerfile-pin]
 fetch.github = "azu/dockerfile-pin"
