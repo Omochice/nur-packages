@@ -37,6 +37,6 @@ buildGoModule rec {
     license = licenses.gpl3Plus;
     mainProgram = "gitlab-ci-verify";
   };
-  vendorHash = "sha256-x282G+KDcyBjPiHLcU6q5bajZbJTvgRqUIpNFWUz/uc=";
+  vendorHash = "sha256-mlmEoRxZ5lVPClyN8mz0nEtoZtyH8+2UqoB1E7FJfQ8=";
   # keep-sorted end
 }
