@@ -277,12 +277,12 @@
             "name": null,
             "owner": "x-motemen",
             "repo": "ghq",
-            "rev": "v1.11.2",
-            "sha256": "sha256-Ro/PbI9UZ0l0OsfIQOlmX8GZBWBvAeKDgHpz8DrsQPM=",
+            "rev": "v1.12.0",
+            "sha256": "sha256-UrxfWZw9TBQUuTfhp2IVfVxnFvGF1GIRfP87mkND/1Q=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.11.2"
+        "version": "v1.12.0"
     },
     "git-wt": {
         "cargoLock": null,
