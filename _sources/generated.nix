@@ -234,13 +234,13 @@
   };
   octocov = {
     pname = "octocov";
-    version = "v0.83.4";
+    version = "v0.83.5";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "octocov";
-      rev = "v0.83.4";
+      rev = "v0.83.5";
       fetchSubmodules = false;
-      sha256 = "sha256-vrKzR6hAKChHspXoByplcqEH3mYDICya4vAHrX9TZ1g=";
+      sha256 = "sha256-btw9mgwm9y1QsvqU/Gz1/VuupR+M8CPh9Y79Lji0Iyo=";
     };
   };
   oh-my-mermaid = {

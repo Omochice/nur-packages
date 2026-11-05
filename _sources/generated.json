@@ -438,12 +438,12 @@
             "name": null,
             "owner": "k1LoW",
             "repo": "octocov",
-            "rev": "v0.83.4",
-            "sha256": "sha256-vrKzR6hAKChHspXoByplcqEH3mYDICya4vAHrX9TZ1g=",
+            "rev": "v0.83.5",
+            "sha256": "sha256-btw9mgwm9y1QsvqU/Gz1/VuupR+M8CPh9Y79Lji0Iyo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.83.4"
+        "version": "v0.83.5"
     },
     "oh-my-mermaid": {
         "cargoLock": null,
