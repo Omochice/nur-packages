@@ -10,13 +10,14 @@ buildGoLatestModule rec {
   inherit (source) pname src;
   version = lib.removePrefix "v" source.version;
   # keep-sorted start block=yes
-  # The first two read testdata/apks/, which upstream does not ship, and the rest
+  # The first three read testdata/apks/, which upstream does not ship, and the rest
   # need Android build tools at the hard-coded /opt/homebrew prefix.
   checkFlags = [
     "-skip=${
       lib.concatStringsSep "|" [
-        "^TestLocalSource$/^glob_pattern$"
+        "^TestLocalSource$/^(glob_pattern|directory)$"
         "^TestFetchDirectURLSource$"
+        "^TestCLI$/^utils_extract-apk_reports_the_signer$"
         "^TestUnsignedAPKFile$"
         "^TestFetchAPKUsesPrivateVerifiedSnapshot$"
         "^TestFetchLocalAPKReturnsVerifiedIdentity$"
