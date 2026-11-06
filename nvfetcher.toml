@@ -96,7 +96,7 @@ src.manual = "v0.2.0"
 
 [pinact]
 fetch.github = "suzuki-shunsuke/pinact"
-src.manual = "v4.1.1"
+src.manual = "v5.0.2"
 
 [roots]
 fetch.github = "k1LoW/roots"
