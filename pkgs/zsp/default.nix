@@ -2,6 +2,7 @@
   source,
   lib,
   buildGoLatestModule,
+  jdk_headless,
 }:
 
 buildGoLatestModule rec {
@@ -27,6 +28,9 @@ buildGoLatestModule rec {
   meta.homepage = "https://github.com/zapstore/zsp";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "zsp";
+  # The keystore tests generate their JKS and PKCS#12 fixtures with keytool.
+  # Providing it keeps those tests running instead of skipping a dozen of them.
+  nativeCheckInputs = [ jdk_headless ];
   vendorHash = "sha256-HU0l8cLYatcserUZwGcNz/4qtyuU9GjIWqVWGwSipVI=";
   # keep-sorted end
 }
