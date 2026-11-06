@@ -17,6 +17,6 @@ buildGoLatestModule rec {
   meta.homepage = "https://github.com/jackchuka/gh-dep";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "gh-dep";
-  vendorHash = "sha256-7gMmI8MGhswW/sZc7oLZLt7n3oZqHaPfQkFahXBSlHc=";
+  vendorHash = "sha256-MqWsK5HoSSa6erz4RWSgd4Vmv1mCNeM1HzdrXBSo1sY=";
   # keep-sorted end
 }
