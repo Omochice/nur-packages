@@ -3,6 +3,7 @@
   lib,
   buildGoLatestModule,
   jdk_headless,
+  writableTmpDirAsHomeHook,
 }:
 
 buildGoLatestModule rec {
@@ -41,7 +42,12 @@ buildGoLatestModule rec {
   meta.mainProgram = "zsp";
   # The keystore tests generate their JKS and PKCS#12 fixtures with keytool.
   # Providing it keeps those tests running instead of skipping a dozen of them.
-  nativeCheckInputs = [ jdk_headless ];
+  # TestTextShowsPathsRelativeToWorkingDir cannot pass with the top-level
+  # /homeless-shelter as HOME, because its relative form still contains it.
+  nativeCheckInputs = [
+    jdk_headless
+    writableTmpDirAsHomeHook
+  ];
   vendorHash = "sha256-HU0l8cLYatcserUZwGcNz/4qtyuU9GjIWqVWGwSipVI=";
   # keep-sorted end
 }
