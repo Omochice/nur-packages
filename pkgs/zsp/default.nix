@@ -17,7 +17,6 @@ buildGoLatestModule rec {
     "-skip=^TestLocalSource$/^glob_pattern$|^TestDeleteDownloadedAPKRemovesCacheAndTemp$"
   ];
   doCheck = true;
-  env.CGO_ENABLED = 0;
   ldflags = [
     "-s"
     "-w"
