@@ -14,12 +14,7 @@
       treefmt-nix,
     }:
     let
-      pkgsFor =
-        system:
-        import nixpkgs {
-          inherit system;
-          overlays = [ self.overlays.default ];
-        };
+      pkgsFor = system: nixpkgs.legacyPackages.${system};
       forAllSystems = nixpkgs.lib.genAttrs nixpkgs.lib.systems.flakeExposed;
       treefmt =
         system:
