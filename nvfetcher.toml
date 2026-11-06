@@ -48,7 +48,7 @@ src.manual = "v0.11.0"
 
 [ghalint]
 fetch.github = "suzuki-shunsuke/ghalint"
-src.manual = "v1.5.6"
+src.manual = "v1.6.0"
 
 [ghatm]
 fetch.github = "suzuki-shunsuke/ghatm"
