@@ -9,13 +9,24 @@ buildGoLatestModule rec {
   inherit (source) pname src;
   version = lib.removePrefix "v" source.version;
   # keep-sorted start block=yes
-  # Upstream's "glob pattern" subtest lacks the missing-fixture skip guard that
-  # its sibling subtests have, so it fails because testdata/apks/ is absent from
-  # the release source. TestDeleteDownloadedAPKRemovesCacheAndTemp creates its
-  # cache directory under HOME, which the sandbox points at the read-only
-  # /homeless-shelter. Skip only these rather than disabling all checks.
+  # The first two read testdata/apks/, which upstream does not ship, and the rest
+  # need Android build tools at the hard-coded /opt/homebrew prefix.
   checkFlags = [
-    "-skip=^TestLocalSource$/^glob_pattern$|^TestDeleteDownloadedAPKRemovesCacheAndTemp$"
+    "-skip=${
+      lib.concatStringsSep "|" [
+        "^TestLocalSource$/^glob_pattern$"
+        "^TestFetchDirectURLSource$"
+        "^TestUnsignedAPKFile$"
+        "^TestFetchAPKUsesPrivateVerifiedSnapshot$"
+        "^TestFetchLocalAPKReturnsVerifiedIdentity$"
+        "^TestFetchKeepsValidatorsInHTTPCacheDir$"
+        "^TestFetchReturnsErrNoNewAPKWhenETagUnchanged$"
+        "^TestFetchWarnsWhenHTTPCacheCannotBeSaved$"
+        "^TestPublishClearsHTTPCacheOnRetryableFailure$"
+        "^TestPublishKeepsHTTPCacheOnCancel$"
+        "^TestPublishKeepsHTTPCacheOnPermanentFailure$"
+      ]
+    }"
   ];
   doCheck = true;
   ldflags = [
