@@ -22,6 +22,6 @@ buildGoLatestModule rec {
     mainProgram = "ghatm";
   };
   subPackages = [ "./cmd/ghatm" ];
-  vendorHash = "sha256-CQ2HAyBuULKbmGdJ9RmPYFr2nZYxDePoJu+k8cjKxpk=";
+  vendorHash = "sha256-y3pUBKLDiEz9O/kMguPuGg9VO6LUsCvCE5YtEKSaRXY=";
   # keep-sorted end
 }
