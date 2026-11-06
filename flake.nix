@@ -14,12 +14,7 @@
       treefmt-nix,
     }:
     let
-      pkgsFor =
-        system:
-        import nixpkgs {
-          inherit system;
-          overlays = [ self.overlays.default ];
-        };
+      pkgsFor = system: nixpkgs.legacyPackages.${system};
       forAllSystems = nixpkgs.lib.genAttrs nixpkgs.lib.systems.flakeExposed;
       treefmt =
         system:
@@ -53,21 +48,6 @@
             ];
             settings.formatter = {
               # keep-sorted start block=yes
-              disable-checkout-persist-credentials = {
-                command = "${pkgs.disable-checkout-persist-credentials}/bin/disable-checkout-persist-credentials";
-                includes = [
-                  ".github/workflows/*.yaml"
-                  ".github/workflows/*.yml"
-                ];
-              };
-              ghatm = {
-                command = "${pkgs.ghatm}/bin/ghatm";
-                options = [ "set" ];
-                includes = [
-                  ".github/workflows/*.yaml"
-                  ".github/workflows/*.yml"
-                ];
-              };
               rumdl = {
                 command = "${pkgs.lib.getExe pkgs.rumdl}";
                 options = [
@@ -76,12 +56,6 @@
                   (toString rumdlConfig)
                 ];
                 includes = [ "*.md" ];
-              };
-              sort-package-json = {
-                command = "${pkgs.sort-package-json}/bin/sort-package-json";
-                includes = [
-                  "**/package.json"
-                ];
               };
               # keep-sorted end
             };
