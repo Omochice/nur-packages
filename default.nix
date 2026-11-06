@@ -23,7 +23,7 @@ let
       ;
     inherit (pkgs) nodejs;
     inherit pkgs;
-    libtool = if pkgs.stdenv.isDarwin then pkgs.cctools or pkgs.darwin.cctools else null;
+    libtool = if pkgs.stdenv.hostPlatform.isDarwin then pkgs.cctools or pkgs.darwin.cctools else null;
   };
 in
 
