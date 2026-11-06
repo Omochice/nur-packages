@@ -32,13 +32,13 @@
   };
   disable-checkout-persist-credentials = {
     pname = "disable-checkout-persist-credentials";
-    version = "v1.0.0";
+    version = "v1.0.2";
     src = fetchFromGitHub {
       owner = "suzuki-shunsuke";
       repo = "disable-checkout-persist-credentials";
-      rev = "v1.0.0";
+      rev = "v1.0.2";
       fetchSubmodules = false;
-      sha256 = "sha256-TEjUf7Uc049g/ZRuKMtWYxod+ZN5dKabDINJgqXxkuk=";
+      sha256 = "sha256-if3UCgKfl71WdnvsOIiJ2XaSt0X2/9E5I3im6vTq+Iw=";
     };
   };
   dockerfile-pin = {
