@@ -2,22 +2,35 @@
   source,
   lib,
   buildGoLatestModule,
+  jdk_headless,
+  writableTmpDirAsHomeHook,
 }:
 
 buildGoLatestModule rec {
   inherit (source) pname src;
   version = lib.removePrefix "v" source.version;
   # keep-sorted start block=yes
-  # Upstream's "glob pattern" subtest lacks the missing-fixture skip guard that
-  # its sibling subtests have, so it fails because testdata/apks/ is absent from
-  # the release source. TestDeleteDownloadedAPKRemovesCacheAndTemp creates its
-  # cache directory under HOME, which the sandbox points at the read-only
-  # /homeless-shelter. Skip only these rather than disabling all checks.
+  # The first three read testdata/apks/, which upstream does not ship, and the rest
+  # need Android build tools at the hard-coded /opt/homebrew prefix.
   checkFlags = [
-    "-skip=^TestLocalSource$/^glob_pattern$|^TestDeleteDownloadedAPKRemovesCacheAndTemp$"
+    "-skip=${
+      lib.concatStringsSep "|" [
+        "^TestLocalSource$/^(glob_pattern|directory)$"
+        "^TestFetchDirectURLSource$"
+        "^TestCLI$/^utils_extract-apk_reports_the_signer$"
+        "^TestUnsignedAPKFile$"
+        "^TestFetchAPKUsesPrivateVerifiedSnapshot$"
+        "^TestFetchLocalAPKReturnsVerifiedIdentity$"
+        "^TestFetchKeepsValidatorsInHTTPCacheDir$"
+        "^TestFetchReturnsErrNoNewAPKWhenETagUnchanged$"
+        "^TestFetchWarnsWhenHTTPCacheCannotBeSaved$"
+        "^TestPublishClearsHTTPCacheOnRetryableFailure$"
+        "^TestPublishKeepsHTTPCacheOnCancel$"
+        "^TestPublishKeepsHTTPCacheOnPermanentFailure$"
+      ]
+    }"
   ];
   doCheck = true;
-  env.CGO_ENABLED = 0;
   ldflags = [
     "-s"
     "-w"
@@ -28,6 +41,14 @@ buildGoLatestModule rec {
   meta.homepage = "https://github.com/zapstore/zsp";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "zsp";
-  vendorHash = "sha256-fqMrMbbObZ4ki1XtlBuBR2H/s/+9YEO9yL3dXEM1yRI=";
+  # The keystore tests generate their JKS and PKCS#12 fixtures with keytool.
+  # Providing it keeps those tests running instead of skipping a dozen of them.
+  # TestTextShowsPathsRelativeToWorkingDir cannot pass with the top-level
+  # /homeless-shelter as HOME, because its relative form still contains it.
+  nativeCheckInputs = [
+    jdk_headless
+    writableTmpDirAsHomeHook
+  ];
+  vendorHash = "sha256-HU0l8cLYatcserUZwGcNz/4qtyuU9GjIWqVWGwSipVI=";
   # keep-sorted end
 }
