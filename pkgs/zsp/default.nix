@@ -1,10 +1,10 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGoLatestModule,
 }:
 
-buildGoModule rec {
+buildGoLatestModule rec {
   inherit (source) pname src;
   version = lib.removePrefix "v" source.version;
   # keep-sorted start block=yes

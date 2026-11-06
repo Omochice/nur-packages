@@ -1,10 +1,10 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGoLatestModule,
 }:
 
-buildGoModule {
+buildGoLatestModule {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   env.CGO_ENABLED = 0;

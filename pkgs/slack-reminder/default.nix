@@ -1,10 +1,10 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGoLatestModule,
 }:
 
-buildGoModule rec {
+buildGoLatestModule rec {
   inherit (source) pname src version;
 
   vendorHash = "sha256-WTP2iEwffesoS0mSfqPOVZycoyJAs/nTPR0AlIkDyYo=";

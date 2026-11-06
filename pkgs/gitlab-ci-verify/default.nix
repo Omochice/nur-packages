@@ -1,7 +1,7 @@
 {
   source,
   lib,
-  buildGoModule,
+  buildGoLatestModule,
 }:
 let
   # Needs write access, but /homeless-shelter is read-only
@@ -18,7 +18,7 @@ let
     # keep-sorted end
   ];
 in
-buildGoModule rec {
+buildGoLatestModule rec {
   inherit (source) pname src version;
   # keep-sorted start block=yes
   checkFlags = [ "-skip=^${builtins.concatStringsSep "$|^" skippedTests}$" ];
