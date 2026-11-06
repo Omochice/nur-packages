@@ -58,12 +58,12 @@
             "name": null,
             "owner": "suzuki-shunsuke",
             "repo": "disable-checkout-persist-credentials",
-            "rev": "v1.0.0",
-            "sha256": "sha256-TEjUf7Uc049g/ZRuKMtWYxod+ZN5dKabDINJgqXxkuk=",
+            "rev": "v1.0.2",
+            "sha256": "sha256-if3UCgKfl71WdnvsOIiJ2XaSt0X2/9E5I3im6vTq+Iw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.0.0"
+        "version": "v1.0.2"
     },
     "dockerfile-pin": {
         "cargoLock": null,
