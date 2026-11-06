@@ -28,6 +28,6 @@ buildGoLatestModule rec {
   meta.homepage = "https://github.com/zapstore/zsp";
   meta.license = lib.licenses.mit;
   meta.mainProgram = "zsp";
-  vendorHash = "sha256-fqMrMbbObZ4ki1XtlBuBR2H/s/+9YEO9yL3dXEM1yRI=";
+  vendorHash = "sha256-HU0l8cLYatcserUZwGcNz/4qtyuU9GjIWqVWGwSipVI=";
   # keep-sorted end
 }
