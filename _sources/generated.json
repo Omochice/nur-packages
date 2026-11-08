@@ -417,12 +417,12 @@
             "name": null,
             "owner": "jesseduffield",
             "repo": "lazygit",
-            "rev": "v0.66.2",
-            "sha256": "sha256-ZjbaMLHUInTe9heLfQxnU4+rBqZry1ciENJXqpvq9rU=",
+            "rev": "v0.66.3",
+            "sha256": "sha256-L1L6ElQIGU1NgUdtDre60zGtZDScWFl8ioj/yuk/SmE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.66.2"
+        "version": "v0.66.3"
     },
     "nyctereutes": {
         "cargoLock": null,

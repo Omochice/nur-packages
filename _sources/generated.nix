@@ -223,13 +223,13 @@
   };
   lazygit = {
     pname = "lazygit";
-    version = "v0.66.2";
+    version = "v0.66.3";
     src = fetchFromGitHub {
       owner = "jesseduffield";
       repo = "lazygit";
-      rev = "v0.66.2";
+      rev = "v0.66.3";
       fetchSubmodules = false;
-      sha256 = "sha256-ZjbaMLHUInTe9heLfQxnU4+rBqZry1ciENJXqpvq9rU=";
+      sha256 = "sha256-L1L6ElQIGU1NgUdtDre60zGtZDScWFl8ioj/yuk/SmE=";
     };
   };
   nyctereutes = {
