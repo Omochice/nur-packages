@@ -24,6 +24,6 @@ buildGoLatestModule rec {
   nativeBuildInputs = [ makeWrapper ];
   # A suffix rather than a prefix, so a glab the user already has on PATH keeps taking precedence.
   postInstall = "wrapProgram $out/bin/nyctereutes --suffix PATH : ${lib.makeBinPath [ glab ]}";
-  vendorHash = "sha256-qQ/VZ2G5IE8t72CGSyrAJ9glhfirNvkUX+KY7oEKs+w=";
+  vendorHash = "sha256-SvntNkM4aUcQMmINkmjdO2sZP+ifVATt+l5Av2fmuQA=";
   # keep-sorted end
 }

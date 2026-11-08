@@ -234,13 +234,13 @@
   };
   nyctereutes = {
     pname = "nyctereutes";
-    version = "v0.5.0";
+    version = "v0.6.0";
     src = fetchFromGitHub {
       owner = "Omochice";
       repo = "nyctereutes";
-      rev = "v0.5.0";
+      rev = "v0.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-W7xNM9uIjz6huVMgIK54gV+XTIKZ6YvbZ8HB0u0mCJA=";
+      sha256 = "sha256-Tq9KYO2lH3k0XTGjLB2q4vT7Xf/bfdFR9Cy99v5/O8E=";
     };
   };
   octocov = {
