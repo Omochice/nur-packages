@@ -2,6 +2,8 @@
   source,
   lib,
   buildGoLatestModule,
+  glab,
+  makeWrapper,
 }:
 
 buildGoLatestModule rec {
@@ -19,6 +21,9 @@ buildGoLatestModule rec {
   meta.homepage = "https://github.com/Omochice/nyctereutes";
   meta.license = lib.licenses.zlib;
   meta.mainProgram = "nyctereutes";
+  nativeBuildInputs = [ makeWrapper ];
+  # A suffix rather than a prefix, so a glab the user already has on PATH keeps taking precedence.
+  postInstall = "wrapProgram $out/bin/nyctereutes --suffix PATH : ${lib.makeBinPath [ glab ]}";
   vendorHash = "sha256-qQ/VZ2G5IE8t72CGSyrAJ9glhfirNvkUX+KY7oEKs+w=";
   # keep-sorted end
 }
