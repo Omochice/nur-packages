@@ -86,6 +86,10 @@ src.manual = "@ibm/plex-sans-jp@3.0.0"
 fetch.github = "jesseduffield/lazygit"
 src.manual = "v0.66.2"
 
+[nyctereutes]
+fetch.github = "Omochice/nyctereutes"
+src.manual = "v0.5.0"
+
 [octocov]
 fetch.github = "k1LoW/octocov"
 src.manual = "v0.83.5"
