@@ -232,6 +232,17 @@
       sha256 = "sha256-ZjbaMLHUInTe9heLfQxnU4+rBqZry1ciENJXqpvq9rU=";
     };
   };
+  nyctereutes = {
+    pname = "nyctereutes";
+    version = "v0.5.0";
+    src = fetchFromGitHub {
+      owner = "Omochice";
+      repo = "nyctereutes";
+      rev = "v0.5.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-W7xNM9uIjz6huVMgIK54gV+XTIKZ6YvbZ8HB0u0mCJA=";
+    };
+  };
   octocov = {
     pname = "octocov";
     version = "v0.83.5";

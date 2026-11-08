@@ -78,6 +78,7 @@ in
     source = sources.ibm-plex-sans-jp;
   };
   lazygit = pkgs.callPackage ./pkgs/lazygit/default.nix { source = sources.lazygit; };
+  nyctereutes = pkgs.callPackage ./pkgs/nyctereutes/default.nix { source = sources.nyctereutes; };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   oh-my-mermaid = pkgs.callPackage ./pkgs/oh-my-mermaid/default.nix {
     source = sources.oh-my-mermaid;
