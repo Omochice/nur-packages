@@ -193,12 +193,12 @@
             "name": null,
             "owner": "babarot",
             "repo": "gh-infra",
-            "rev": "v0.19.0",
-            "sha256": "sha256-4vrKOdqq5/cFBTcUW6RDAVSfwgwJvgkLf1lp4Q/2xws=",
+            "rev": "v0.20.0",
+            "sha256": "sha256-b0typWimVILRfIV5lP6sBO6cbYWQJNneRLqSSwGUDH8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.19.0"
+        "version": "v0.20.0"
     },
     "gh-triage": {
         "cargoLock": null,
