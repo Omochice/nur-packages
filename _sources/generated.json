@@ -438,12 +438,12 @@
             "name": null,
             "owner": "Omochice",
             "repo": "nyctereutes",
-            "rev": "v0.6.0",
-            "sha256": "sha256-Tq9KYO2lH3k0XTGjLB2q4vT7Xf/bfdFR9Cy99v5/O8E=",
+            "rev": "v0.7.0",
+            "sha256": "sha256-aWCYWKMtrEo3ywMZW1Wg0SuZxNYBaK3GteyWBXqXGwA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.6.0"
+        "version": "v0.7.0"
     },
     "octocov": {
         "cargoLock": null,
