@@ -43,13 +43,13 @@
   };
   dockerfile-pin = {
     pname = "dockerfile-pin";
-    version = "v1.6.0";
+    version = "v1.7.0";
     src = fetchFromGitHub {
       owner = "azu";
       repo = "dockerfile-pin";
-      rev = "v1.6.0";
+      rev = "v1.7.0";
       fetchSubmodules = false;
-      sha256 = "sha256-ZHmVTt6rVc940NA02ltZzZUYJx/bzsB4xQq6mU3/V6w=";
+      sha256 = "sha256-kpUAPN7R/X5jo4iK0c5yHCXhPw/94O54XPSScVNIlk4=";
     };
   };
   duckgo = {
