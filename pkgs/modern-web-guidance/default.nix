@@ -3,7 +3,7 @@
   lib,
   stdenvNoCC,
   makeWrapper,
-  nodejs,
+  nodejs_latest,
 }:
 
 stdenvNoCC.mkDerivation (finalAttrs: {
@@ -48,7 +48,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     cp package.json LICENSE THIRD_PARTY_NOTICES $root/
     cp -r skills/modern-web-guidance $root/skills/
 
-    makeWrapper ${lib.getExe nodejs} $out/bin/modern-web-guidance \
+    makeWrapper ${lib.getExe nodejs_latest} $out/bin/modern-web-guidance \
       --add-flags $root/skills/modern-web-guidance/modern-web.mjs \
       --set DISABLE_TELEMETRY 1
 
