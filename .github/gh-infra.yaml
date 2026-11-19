@@ -1,0 +1,49 @@
+apiVersion: gh-infra/v1
+kind: Repository
+metadata:
+  name: nur-packages
+  owner: Omochice
+spec:
+  description: Omochice NUR repo
+  visibility: public
+  features:
+    wiki: false
+  merge_strategy:
+    allow_merge_commit: false
+    allow_squash_merge: true
+    allow_rebase_merge: false
+    allow_auto_merge: true
+    auto_delete_head_branches: true
+  security:
+    vulnerability_alerts: true
+    private_vulnerability_reporting: true
+  rulesets:
+    - name: default branch
+      target: branch
+      enforcement: active
+      conditions:
+        ref_name:
+          include:
+            - ~DEFAULT_BRANCH
+      rules:
+        pull_request:
+          required_approving_review_count: 0
+          dismiss_stale_reviews_on_push: false
+          require_code_owner_review: false
+          require_last_push_approval: false
+          required_review_thread_resolution: false
+        required_status_checks:
+          strict_required_status_checks_policy: true
+          contexts:
+            - context: status-check
+              app: github-actions
+        non_fast_forward: true
+        deletion: true
+  actions:
+    enabled: true
+    sha_pinning_required: true
+    workflow_permissions: read
+    fork_pr_approval: all_external_contributors
+  variables:
+    - name: RENOVATE_CLIENT_ID
+      value: Iv23liI6xQcUdt2NnGrr
