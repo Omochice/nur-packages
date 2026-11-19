@@ -216,6 +216,14 @@
       sha256 = "sha256-L1L6ElQIGU1NgUdtDre60zGtZDScWFl8ioj/yuk/SmE=";
     };
   };
+  modern-web-guidance = {
+    pname = "modern-web-guidance";
+    version = "1.0.1";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/modern-web-guidance/-/modern-web-guidance-1.0.1.tgz";
+      sha256 = "sha256-cT09NE1vrVySZ/se2Nr/Xdct9GNOmtayvTsMoX+EOKM=";
+    };
+  };
   nyctereutes = {
     pname = "nyctereutes";
     version = "v0.8.0";

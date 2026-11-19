@@ -394,6 +394,21 @@
         },
         "version": "v0.66.3"
     },
+    "modern-web-guidance": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "modern-web-guidance",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-cT09NE1vrVySZ/se2Nr/Xdct9GNOmtayvTsMoX+EOKM=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/modern-web-guidance/-/modern-web-guidance-1.0.1.tgz"
+        },
+        "version": "1.0.1"
+    },
     "nyctereutes": {
         "cargoLock": null,
         "date": null,

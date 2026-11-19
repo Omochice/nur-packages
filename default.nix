@@ -70,6 +70,9 @@ in
     source = sources.ibm-plex-sans-jp;
   };
   lazygit = pkgs.callPackage ./pkgs/lazygit/default.nix { source = sources.lazygit; };
+  modern-web-guidance = pkgs.callPackage ./pkgs/modern-web-guidance/default.nix {
+    source = sources.modern-web-guidance;
+  };
   nyctereutes = pkgs.callPackage ./pkgs/nyctereutes/default.nix { source = sources.nyctereutes; };
   octocov = pkgs.callPackage ./pkgs/octocov/default.nix { source = sources.octocov; };
   oh-my-mermaid = pkgs.callPackage ./pkgs/oh-my-mermaid/default.nix {
