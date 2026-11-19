@@ -11,11 +11,10 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [ makeWrapper ];
 
-  # Patches carry edits to what the skill instructs, so that an upstream rewrite of the surrounding text stops the build for review.
+  # A patch fails when upstream rewrites these instructions, which is when they need review.
   patches = [ ./patch/skill-without-npx.patch ];
 
-  # Pointing the npx command at the wrapper only swaps one literal for a store path, which a patch cannot hold.
-  # Its occurrences sit in minified bundles and in dozens of guides, where patch context would break on every release without telling anything.
+  # A patch cannot hold a store path, and its context in minified bundles would break on every release.
   postPatch = ''
     bin="$out/bin/modern-web-guidance"
     cd skills/modern-web-guidance
@@ -30,7 +29,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       substituteInPlace "$guide" --replace-fail "npx -y modern-web-guidance@latest" "$bin"
     done
 
-    # A new spelling of the command upstream would otherwise ship a skill that downloads from npm.
+    # Upstream may spell the command differently, which would leave the skill downloading from npm.
     if grep -rn 'npx' SKILL.md guides || grep -n 'npx modern-web-guidance' *.mjs; then
       echo "npx is still referenced after patching" >&2
       exit 1
@@ -65,7 +64,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     $out/bin/modern-web-guidance search "light dismiss dialog" \
       --skill-version "$(< skills/modern-web-guidance/skill-version.txt)" \
       | grep -q '"id":"light-dismiss-a-dialog"'
-    # Redirecting to a file keeps a long guide inline instead of being saved elsewhere.
+    # Unless stdout is a file, a long guide is saved to a temporary file and only its path is printed.
     $out/bin/modern-web-guidance retrieve slider > guide.md
     grep -q "$out/bin/modern-web-guidance retrieve" guide.md
     if grep -n 'npx' guide.md; then
