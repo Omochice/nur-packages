@@ -14,22 +14,6 @@
       sha256 = "sha256-4Ty4BzXH+y1yvbSn5NEwzmUGUUD7sTozcl4nkpUGypU=";
     };
   };
-  ccusage = {
-    pname = "ccusage";
-    version = "20.0.51";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-20.0.51.tgz";
-      sha256 = "sha256-Wrk04t9vFgergh7D8/3KozM9O5wMVXLcjcKgtumh0hI=";
-    };
-  };
-  claude-code = {
-    pname = "claude-code";
-    version = "2.1.325";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.1.325.tgz";
-      sha256 = "sha256-6ELe8fVTeO63NvQ/fhcqfrD+dnua5FIqnOcX/VQe4n8=";
-    };
-  };
   disable-checkout-persist-credentials = {
     pname = "disable-checkout-persist-credentials";
     version = "v1.0.2";

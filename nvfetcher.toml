@@ -2,14 +2,6 @@
 fetch.url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-$ver.tgz"
 src.manual = "3.1.0"
 
-[ccusage]
-fetch.url = "https://registry.npmjs.org/ccusage/-/ccusage-$ver.tgz"
-src.manual = "20.0.51"
-
-[claude-code]
-fetch.url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-$ver.tgz"
-src.manual = "2.1.325"
-
 [disable-checkout-persist-credentials]
 fetch.github = "suzuki-shunsuke/disable-checkout-persist-credentials"
 src.manual = "v1.0.2"
