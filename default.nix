@@ -21,7 +21,7 @@ let
       writeShellScript
       srcOnly
       ;
-    inherit (pkgs) nodejs;
+    nodejs = pkgs.nodejs_latest;
     inherit pkgs;
     libtool = if pkgs.stdenv.hostPlatform.isDarwin then pkgs.cctools or pkgs.darwin.cctools else null;
   };

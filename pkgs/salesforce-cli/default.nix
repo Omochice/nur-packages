@@ -2,7 +2,7 @@
   source,
   lib,
   stdenv,
-  nodejs,
+  nodejs_latest,
   makeWrapper,
   fetchNpmDeps,
 }:
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   sourceRoot = "package";
 
   nativeBuildInputs = [
-    nodejs
+    nodejs_latest
     makeWrapper
   ];
 
@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     # Create wrapper scripts instead of symlinks because patchShebangs
     # mishandles the complex shebang `#!/usr/bin/env -S node --no-deprecation`
     for cmd in sf sfdx; do
-      makeWrapper ${nodejs}/bin/node $out/bin/$cmd \
+      makeWrapper ${lib.getExe nodejs_latest} $out/bin/$cmd \
         --add-flags "--no-deprecation" \
         --add-flags "$out/lib/node_modules/@salesforce/cli/bin/run.js" \
         --set SF_AUTOUPDATE_DISABLE true \
