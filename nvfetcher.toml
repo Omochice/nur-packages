@@ -60,7 +60,7 @@ src.manual = "1.4.0"
 
 [gitlab-ci-verify]
 fetch.github = "timo-reymann/gitlab-ci-verify"
-src.manual = "v2.11.15"
+src.manual = "v2.12.0"
 
 [glci]
 fetch.git = "https://gitlab.com/gitlab-org/ci-cd/runner-tools/glci"
