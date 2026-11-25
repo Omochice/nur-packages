@@ -89,6 +89,13 @@ in
   sort-package-json = pkgs.callPackage ./pkgs/sort-package-json/default.nix {
     source = sources.sort-package-json;
   };
+  turtles = pkgs.callPackage ./pkgs/turtles/default.nix {
+    sources = {
+      aarch64-darwin = sources.turtles-darwin-aarch64;
+      aarch64-linux = sources.turtles-linux-aarch64;
+      x86_64-linux = sources.turtles-linux-x86_64;
+    };
+  };
   upm = pkgs.callPackage ./pkgs/upm/default.nix {
     inherit nodeEnv;
     source = sources.upm;
