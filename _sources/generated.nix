@@ -309,6 +309,30 @@
       sha256 = "sha256-dqk0BypmVx23FTaTvq46MxAI+Tr0Q66xR4srwpi4Kfs=";
     };
   };
+  turtles-darwin-aarch64 = {
+    pname = "turtles-darwin-aarch64";
+    version = "v0.5.1";
+    src = fetchurl {
+      url = "https://github.com/gpui-mbt/turtles.mbt/releases/download/v0.5.1/turtles-darwin-aarch64";
+      sha256 = "sha256-GjZ6ETZfyuCgBWn+ET4A7yt+eGqX3E9ej1dxy4fwvGc=";
+    };
+  };
+  turtles-linux-aarch64 = {
+    pname = "turtles-linux-aarch64";
+    version = "v0.5.1";
+    src = fetchurl {
+      url = "https://github.com/gpui-mbt/turtles.mbt/releases/download/v0.5.1/turtles-linux-aarch64";
+      sha256 = "sha256-uCAd3u0OVQGNHO599fofRWBLGDaJacIl+2cCuXfLDBk=";
+    };
+  };
+  turtles-linux-x86_64 = {
+    pname = "turtles-linux-x86_64";
+    version = "v0.5.1";
+    src = fetchurl {
+      url = "https://github.com/gpui-mbt/turtles.mbt/releases/download/v0.5.1/turtles-linux-x86_64";
+      sha256 = "sha256-zeCTl+SEqR4CsE19jI6AXFlVsBBt64S8eYjEsW3zNHg=";
+    };
+  };
   upm = {
     pname = "upm";
     version = "1.5.1";

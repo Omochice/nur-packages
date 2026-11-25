@@ -168,6 +168,9 @@
                   nix-instantiate --eval --json --strict \
                     --argstr old "$old" \
                     --argstr new "$PWD/nvfetcher.toml" \
+                    --argstr packages ${
+                      nixpkgs.lib.escapeShellArg (builtins.toJSON (builtins.attrNames self.legacyPackages.${system}))
+                    } \
                     ${./scripts/changed-sources.nix} | jq --raw-output '.[]'
                 )
 
