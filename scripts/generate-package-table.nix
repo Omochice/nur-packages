@@ -25,7 +25,7 @@ let
       in
       {
         name = name;
-        version = lib.pipe (if source != null then source.version else "unknown") [
+        version = lib.pipe (if source != null then source.version else pkg.version or "unknown") [
           (e: if builtins.match semver e != null then "v${e}" else e)
         ];
         description = lib.pipe (meta.description or "") [
