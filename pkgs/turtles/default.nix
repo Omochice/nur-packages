@@ -3,6 +3,7 @@
   lib,
   stdenv,
   autoPatchelfHook,
+  versionCheckHook,
 }:
 let
   # Building from source needs the MoonBit toolchain, which nixpkgs does not provide.
@@ -15,6 +16,7 @@ stdenv.mkDerivation {
   version = lib.removePrefix "v" sources.x86_64-linux.version;
   inherit (source) src;
   # keep-sorted start block=yes
+  doInstallCheck = true;
   dontUnpack = true;
   meta = with lib; {
     description = "Mutation testing for MoonBit projects";
@@ -26,6 +28,7 @@ stdenv.mkDerivation {
     sourceProvenance = [ sourceTypes.binaryNativeCode ];
   };
   nativeBuildInputs = lib.optionals stdenv.hostPlatform.isLinux [ autoPatchelfHook ];
+  nativeInstallCheckInputs = [ versionCheckHook ];
   # keep-sorted end
 
   installPhase = ''
