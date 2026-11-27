@@ -218,10 +218,10 @@
   };
   modern-web-guidance = {
     pname = "modern-web-guidance";
-    version = "1.0.1";
+    version = "1.0.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/modern-web-guidance/-/modern-web-guidance-1.0.1.tgz";
-      sha256 = "sha256-cT09NE1vrVySZ/se2Nr/Xdct9GNOmtayvTsMoX+EOKM=";
+      url = "https://registry.npmjs.org/modern-web-guidance/-/modern-web-guidance-1.0.2.tgz";
+      sha256 = "sha256-jDRt8XjJYoSmUWkg4YL3B4nUZB8PuKyyITZCWVNsUA0=";
     };
   };
   nyctereutes = {
