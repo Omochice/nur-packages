@@ -80,7 +80,7 @@ src.manual = "v0.66.3"
 
 [modern-web-guidance]
 fetch.url = "https://registry.npmjs.org/modern-web-guidance/-/modern-web-guidance-$ver.tgz"
-src.manual = "1.0.1"
+src.manual = "1.0.2"
 
 [nyctereutes]
 fetch.github = "Omochice/nyctereutes"
