@@ -141,4 +141,4 @@ src.manual = "v1.3.2"
 
 [zsp]
 fetch.github = "zapstore/zsp"
-src.manual = "v2.0.1"
+src.manual = "v2.1.0"

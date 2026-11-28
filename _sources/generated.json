@@ -688,11 +688,11 @@
             "name": null,
             "owner": "zapstore",
             "repo": "zsp",
-            "rev": "v2.0.1",
-            "sha256": "sha256-iHg6BXiyvEAxysL/JwJnZ6GgCaJY1nyZotMi3NOVutc=",
+            "rev": "v2.1.0",
+            "sha256": "sha256-RtVKFoNsk3fXaafVK0F/bmQKIEHMDUxDcVA335gMsuE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.0.1"
+        "version": "v2.1.0"
     }
 }
